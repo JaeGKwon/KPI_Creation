@@ -1,0 +1,3299 @@
+[
+  {
+    "kpi_name": "Total Orders",
+    "sql_query": "SELECT COUNT(order_id) FROM tb_market_order WHERE order_id IS NOT NULL",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[211]],\"cols\":[{\"database_type\":\"int8\",\"lib/deduplicated-name\":\"count\",\"lib/original-name\":\"count\",\"name\":\"count\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"count\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"count\",\"base_type\":\"type/BigInteger\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT COUNT(order_id) FROM tb_market_order WHERE order_id IS NOT NULL\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"int8\",\"semantic_type\":\"type/Quantity\",\"lib/deduplicated-name\":\"count\",\"lib/original-name\":\"count\",\"name\":\"count\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"count\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"count\",\"fingerprint\":{\"global\":{\"distinct-count\":1,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":211.0,\"q1\":211.0,\"q3\":211.0,\"max\":211.0,\"sd\":null,\"avg\":211.0}}},\"base_type\":\"type/BigInteger\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T00:55:29.939444206Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT COUNT(order_id) FROM tb_market_order WHERE order_id IS NOT NULL\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":1,\"running_time\":540}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              211
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "int8",
+              "lib/deduplicated-name": "count",
+              "lib/original-name": "count",
+              "name": "count",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "count",
+                {
+                  "base-type": "type/BigInteger"
+                }
+              ],
+              "effective_type": "type/BigInteger",
+              "display_name": "count",
+              "base_type": "type/BigInteger"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT COUNT(order_id) FROM tb_market_order WHERE order_id IS NOT NULL"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "int8",
+                "semantic_type": "type/Quantity",
+                "lib/deduplicated-name": "count",
+                "lib/original-name": "count",
+                "name": "count",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "count",
+                  {
+                    "base-type": "type/BigInteger"
+                  }
+                ],
+                "effective_type": "type/BigInteger",
+                "display_name": "count",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 1,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 211.0,
+                      "q1": 211.0,
+                      "q3": 211.0,
+                      "max": 211.0,
+                      "sd": null,
+                      "avg": 211.0
+                    }
+                  }
+                },
+                "base_type": "type/BigInteger"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T00:55:29.939444206Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT COUNT(order_id) FROM tb_market_order WHERE order_id IS NOT NULL",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 1,
+        "running_time": 540
+      }
+    }
+  },
+  {
+    "kpi_name": "Total Sales",
+    "sql_query": "SELECT SUM(payment_total) FROM tb_market_order WHERE payment_total IS NOT NULL",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[2296121]],\"cols\":[{\"database_type\":\"numeric\",\"lib/deduplicated-name\":\"sum\",\"lib/original-name\":\"sum\",\"name\":\"sum\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"sum\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"sum\",\"base_type\":\"type/Decimal\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT SUM(payment_total) FROM tb_market_order WHERE payment_total IS NOT NULL\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"numeric\",\"semantic_type\":null,\"lib/deduplicated-name\":\"sum\",\"lib/original-name\":\"sum\",\"name\":\"sum\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"sum\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"sum\",\"fingerprint\":{\"global\":{\"distinct-count\":1,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":2296121.0,\"q1\":2296121.0,\"q3\":2296121.0,\"max\":2296121.0,\"sd\":null,\"avg\":2296121.0}}},\"base_type\":\"type/Decimal\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T00:55:31.673968854Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT SUM(payment_total) FROM tb_market_order WHERE payment_total IS NOT NULL\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":1,\"running_time\":540}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              2296121
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "numeric",
+              "lib/deduplicated-name": "sum",
+              "lib/original-name": "sum",
+              "name": "sum",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "sum",
+                {
+                  "base-type": "type/Decimal"
+                }
+              ],
+              "effective_type": "type/Decimal",
+              "display_name": "sum",
+              "base_type": "type/Decimal"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT SUM(payment_total) FROM tb_market_order WHERE payment_total IS NOT NULL"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "numeric",
+                "semantic_type": null,
+                "lib/deduplicated-name": "sum",
+                "lib/original-name": "sum",
+                "name": "sum",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "sum",
+                  {
+                    "base-type": "type/Decimal"
+                  }
+                ],
+                "effective_type": "type/Decimal",
+                "display_name": "sum",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 1,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 2296121.0,
+                      "q1": 2296121.0,
+                      "q3": 2296121.0,
+                      "max": 2296121.0,
+                      "sd": null,
+                      "avg": 2296121.0
+                    }
+                  }
+                },
+                "base_type": "type/Decimal"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T00:55:31.673968854Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT SUM(payment_total) FROM tb_market_order WHERE payment_total IS NOT NULL",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 1,
+        "running_time": 540
+      }
+    }
+  },
+  {
+    "kpi_name": "Average Order Value",
+    "sql_query": "SELECT AVG(payment_total) FROM tb_market_order WHERE payment_total IS NOT NULL",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[16518.856115107914]],\"cols\":[{\"database_type\":\"numeric\",\"lib/deduplicated-name\":\"avg\",\"lib/original-name\":\"avg\",\"name\":\"avg\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"avg\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"avg\",\"base_type\":\"type/Decimal\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT AVG(payment_total) FROM tb_market_order WHERE payment_total IS NOT NULL\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"numeric\",\"semantic_type\":null,\"lib/deduplicated-name\":\"avg\",\"lib/original-name\":\"avg\",\"name\":\"avg\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"avg\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"avg\",\"fingerprint\":{\"global\":{\"distinct-count\":1,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":16518.856115107916,\"q1\":16518.856115107916,\"q3\":16518.856115107916,\"max\":16518.856115107916,\"sd\":null,\"avg\":16518.856115107916}}},\"base_type\":\"type/Decimal\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T00:55:33.349242934Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT AVG(payment_total) FROM tb_market_order WHERE payment_total IS NOT NULL\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":1,\"running_time\":539}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              16518.856115107916
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "numeric",
+              "lib/deduplicated-name": "avg",
+              "lib/original-name": "avg",
+              "name": "avg",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "avg",
+                {
+                  "base-type": "type/Decimal"
+                }
+              ],
+              "effective_type": "type/Decimal",
+              "display_name": "avg",
+              "base_type": "type/Decimal"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT AVG(payment_total) FROM tb_market_order WHERE payment_total IS NOT NULL"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "numeric",
+                "semantic_type": null,
+                "lib/deduplicated-name": "avg",
+                "lib/original-name": "avg",
+                "name": "avg",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "avg",
+                  {
+                    "base-type": "type/Decimal"
+                  }
+                ],
+                "effective_type": "type/Decimal",
+                "display_name": "avg",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 1,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 16518.856115107916,
+                      "q1": 16518.856115107916,
+                      "q3": 16518.856115107916,
+                      "max": 16518.856115107916,
+                      "sd": null,
+                      "avg": 16518.856115107916
+                    }
+                  }
+                },
+                "base_type": "type/Decimal"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T00:55:33.349242934Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT AVG(payment_total) FROM tb_market_order WHERE payment_total IS NOT NULL",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 1,
+        "running_time": 539
+      }
+    }
+  },
+  {
+    "kpi_name": "Total Shipping Cost",
+    "sql_query": "SELECT SUM(total_shipping_cost) FROM tb_market_order WHERE total_shipping_cost IS NOT NULL",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[122997]],\"cols\":[{\"database_type\":\"int8\",\"lib/deduplicated-name\":\"sum\",\"lib/original-name\":\"sum\",\"name\":\"sum\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"sum\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"sum\",\"base_type\":\"type/BigInteger\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT SUM(total_shipping_cost) FROM tb_market_order WHERE total_shipping_cost IS NOT NULL\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"int8\",\"semantic_type\":null,\"lib/deduplicated-name\":\"sum\",\"lib/original-name\":\"sum\",\"name\":\"sum\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"sum\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"sum\",\"fingerprint\":{\"global\":{\"distinct-count\":1,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":122997.0,\"q1\":122997.0,\"q3\":122997.0,\"max\":122997.0,\"sd\":null,\"avg\":122997.0}}},\"base_type\":\"type/BigInteger\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T00:55:35.059617035Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT SUM(total_shipping_cost) FROM tb_market_order WHERE total_shipping_cost IS NOT NULL\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":1,\"running_time\":539}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              122997
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "int8",
+              "lib/deduplicated-name": "sum",
+              "lib/original-name": "sum",
+              "name": "sum",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "sum",
+                {
+                  "base-type": "type/BigInteger"
+                }
+              ],
+              "effective_type": "type/BigInteger",
+              "display_name": "sum",
+              "base_type": "type/BigInteger"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT SUM(total_shipping_cost) FROM tb_market_order WHERE total_shipping_cost IS NOT NULL"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "int8",
+                "semantic_type": null,
+                "lib/deduplicated-name": "sum",
+                "lib/original-name": "sum",
+                "name": "sum",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "sum",
+                  {
+                    "base-type": "type/BigInteger"
+                  }
+                ],
+                "effective_type": "type/BigInteger",
+                "display_name": "sum",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 1,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 122997.0,
+                      "q1": 122997.0,
+                      "q3": 122997.0,
+                      "max": 122997.0,
+                      "sd": null,
+                      "avg": 122997.0
+                    }
+                  }
+                },
+                "base_type": "type/BigInteger"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T00:55:35.059617035Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT SUM(total_shipping_cost) FROM tb_market_order WHERE total_shipping_cost IS NOT NULL",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 1,
+        "running_time": 539
+      }
+    }
+  },
+  {
+    "kpi_name": "Average Shipping Cost per Order",
+    "sql_query": "SELECT AVG(total_shipping_cost) FROM tb_market_order WHERE total_shipping_cost IS NOT NULL",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[884.8705035971223022]],\"cols\":[{\"database_type\":\"numeric\",\"lib/deduplicated-name\":\"avg\",\"lib/original-name\":\"avg\",\"name\":\"avg\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"avg\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"avg\",\"base_type\":\"type/Decimal\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT AVG(total_shipping_cost) FROM tb_market_order WHERE total_shipping_cost IS NOT NULL\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"numeric\",\"semantic_type\":null,\"lib/deduplicated-name\":\"avg\",\"lib/original-name\":\"avg\",\"name\":\"avg\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"avg\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"avg\",\"fingerprint\":{\"global\":{\"distinct-count\":1,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":884.8705035971223,\"q1\":884.8705035971223,\"q3\":884.8705035971223,\"max\":884.8705035971223,\"sd\":null,\"avg\":884.8705035971223}}},\"base_type\":\"type/Decimal\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T00:55:36.766681645Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT AVG(total_shipping_cost) FROM tb_market_order WHERE total_shipping_cost IS NOT NULL\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":1,\"running_time\":539}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              884.8705035971223
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "numeric",
+              "lib/deduplicated-name": "avg",
+              "lib/original-name": "avg",
+              "name": "avg",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "avg",
+                {
+                  "base-type": "type/Decimal"
+                }
+              ],
+              "effective_type": "type/Decimal",
+              "display_name": "avg",
+              "base_type": "type/Decimal"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT AVG(total_shipping_cost) FROM tb_market_order WHERE total_shipping_cost IS NOT NULL"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "numeric",
+                "semantic_type": null,
+                "lib/deduplicated-name": "avg",
+                "lib/original-name": "avg",
+                "name": "avg",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "avg",
+                  {
+                    "base-type": "type/Decimal"
+                  }
+                ],
+                "effective_type": "type/Decimal",
+                "display_name": "avg",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 1,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 884.8705035971223,
+                      "q1": 884.8705035971223,
+                      "q3": 884.8705035971223,
+                      "max": 884.8705035971223,
+                      "sd": null,
+                      "avg": 884.8705035971223
+                    }
+                  }
+                },
+                "base_type": "type/Decimal"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T00:55:36.766681645Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT AVG(total_shipping_cost) FROM tb_market_order WHERE total_shipping_cost IS NOT NULL",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 1,
+        "running_time": 539
+      }
+    }
+  },
+  {
+    "kpi_name": "Total Tax Invoices Issued",
+    "sql_query": "SELECT COUNT(order_id) FROM tb_market_order WHERE is_issued_tax_invoice = TRUE",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[16]],\"cols\":[{\"database_type\":\"int8\",\"lib/deduplicated-name\":\"count\",\"lib/original-name\":\"count\",\"name\":\"count\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"count\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"count\",\"base_type\":\"type/BigInteger\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT COUNT(order_id) FROM tb_market_order WHERE is_issued_tax_invoice = TRUE\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"int8\",\"semantic_type\":\"type/Quantity\",\"lib/deduplicated-name\":\"count\",\"lib/original-name\":\"count\",\"name\":\"count\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"count\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"count\",\"fingerprint\":{\"global\":{\"distinct-count\":1,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":16.0,\"q1\":16.0,\"q3\":16.0,\"max\":16.0,\"sd\":null,\"avg\":16.0}}},\"base_type\":\"type/BigInteger\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T00:55:38.443322527Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT COUNT(order_id) FROM tb_market_order WHERE is_issued_tax_invoice = TRUE\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":1,\"running_time\":540}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              16
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "int8",
+              "lib/deduplicated-name": "count",
+              "lib/original-name": "count",
+              "name": "count",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "count",
+                {
+                  "base-type": "type/BigInteger"
+                }
+              ],
+              "effective_type": "type/BigInteger",
+              "display_name": "count",
+              "base_type": "type/BigInteger"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT COUNT(order_id) FROM tb_market_order WHERE is_issued_tax_invoice = TRUE"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "int8",
+                "semantic_type": "type/Quantity",
+                "lib/deduplicated-name": "count",
+                "lib/original-name": "count",
+                "name": "count",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "count",
+                  {
+                    "base-type": "type/BigInteger"
+                  }
+                ],
+                "effective_type": "type/BigInteger",
+                "display_name": "count",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 1,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 16.0,
+                      "q1": 16.0,
+                      "q3": 16.0,
+                      "max": 16.0,
+                      "sd": null,
+                      "avg": 16.0
+                    }
+                  }
+                },
+                "base_type": "type/BigInteger"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T00:55:38.443322527Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT COUNT(order_id) FROM tb_market_order WHERE is_issued_tax_invoice = TRUE",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 1,
+        "running_time": 540
+      }
+    }
+  },
+  {
+    "kpi_name": "Total Cash Receipts Issued",
+    "sql_query": "SELECT COUNT(order_id) FROM tb_market_order WHERE is_issued_cash_receipt = TRUE",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[0]],\"cols\":[{\"database_type\":\"int8\",\"lib/deduplicated-name\":\"count\",\"lib/original-name\":\"count\",\"name\":\"count\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"count\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"count\",\"base_type\":\"type/BigInteger\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT COUNT(order_id) FROM tb_market_order WHERE is_issued_cash_receipt = TRUE\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"int8\",\"semantic_type\":\"type/Quantity\",\"lib/deduplicated-name\":\"count\",\"lib/original-name\":\"count\",\"name\":\"count\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"count\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"count\",\"fingerprint\":{\"global\":{\"distinct-count\":1,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":0.0,\"q1\":0.0,\"q3\":0.0,\"max\":0.0,\"sd\":null,\"avg\":0.0}}},\"base_type\":\"type/BigInteger\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T00:55:40.086457207Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT COUNT(order_id) FROM tb_market_order WHERE is_issued_cash_receipt = TRUE\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":1,\"running_time\":540}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              0
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "int8",
+              "lib/deduplicated-name": "count",
+              "lib/original-name": "count",
+              "name": "count",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "count",
+                {
+                  "base-type": "type/BigInteger"
+                }
+              ],
+              "effective_type": "type/BigInteger",
+              "display_name": "count",
+              "base_type": "type/BigInteger"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT COUNT(order_id) FROM tb_market_order WHERE is_issued_cash_receipt = TRUE"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "int8",
+                "semantic_type": "type/Quantity",
+                "lib/deduplicated-name": "count",
+                "lib/original-name": "count",
+                "name": "count",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "count",
+                  {
+                    "base-type": "type/BigInteger"
+                  }
+                ],
+                "effective_type": "type/BigInteger",
+                "display_name": "count",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 1,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 0.0,
+                      "q1": 0.0,
+                      "q3": 0.0,
+                      "max": 0.0,
+                      "sd": null,
+                      "avg": 0.0
+                    }
+                  }
+                },
+                "base_type": "type/BigInteger"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T00:55:40.086457207Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT COUNT(order_id) FROM tb_market_order WHERE is_issued_cash_receipt = TRUE",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 1,
+        "running_time": 540
+      }
+    }
+  },
+  {
+    "kpi_name": "Total Orders by Status",
+    "sql_query": "SELECT status, COUNT(order_id) FROM tb_market_order WHERE status IS NOT NULL GROUP BY status",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[7,20],[13,14],[10,22],[1,72],[4,22],[16,6],[6,2],[12,6],[3,47]],\"cols\":[{\"database_type\":\"int4\",\"lib/deduplicated-name\":\"status\",\"lib/original-name\":\"status\",\"name\":\"status\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"status\",{\"base-type\":\"type/Integer\"}],\"effective_type\":\"type/Integer\",\"display_name\":\"status\",\"base_type\":\"type/Integer\"},{\"database_type\":\"int8\",\"lib/deduplicated-name\":\"count\",\"lib/original-name\":\"count\",\"name\":\"count\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"count\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"count\",\"base_type\":\"type/BigInteger\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT status, COUNT(order_id) FROM tb_market_order WHERE status IS NOT NULL GROUP BY status\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"int4\",\"semantic_type\":null,\"lib/deduplicated-name\":\"status\",\"lib/original-name\":\"status\",\"name\":\"status\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"status\",{\"base-type\":\"type/Integer\"}],\"effective_type\":\"type/Integer\",\"display_name\":\"status\",\"fingerprint\":{\"global\":{\"distinct-count\":9,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":1.0,\"q1\":3.75,\"q3\":12.25,\"max\":16.0,\"sd\":5.049752469181039,\"avg\":8.0}}},\"base_type\":\"type/Integer\"},{\"database_type\":\"int8\",\"semantic_type\":\"type/Quantity\",\"lib/deduplicated-name\":\"count\",\"lib/original-name\":\"count\",\"name\":\"count\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"count\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"count\",\"fingerprint\":{\"global\":{\"distinct-count\":7,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":2.0,\"q1\":7.033370452904235,\"q3\":32.471529247895255,\"max\":72.0,\"sd\":22.600393310245238,\"avg\":23.444444444444443}}},\"base_type\":\"type/BigInteger\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T00:55:41.821666992Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT status, COUNT(order_id) FROM tb_market_order WHERE status IS NOT NULL GROUP BY status\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":9,\"running_time\":720}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              7,
+              20
+            ],
+            [
+              13,
+              14
+            ],
+            [
+              10,
+              22
+            ],
+            [
+              1,
+              72
+            ],
+            [
+              4,
+              22
+            ],
+            [
+              16,
+              6
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              12,
+              6
+            ],
+            [
+              3,
+              47
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "int4",
+              "lib/deduplicated-name": "status",
+              "lib/original-name": "status",
+              "name": "status",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "status",
+                {
+                  "base-type": "type/Integer"
+                }
+              ],
+              "effective_type": "type/Integer",
+              "display_name": "status",
+              "base_type": "type/Integer"
+            },
+            {
+              "database_type": "int8",
+              "lib/deduplicated-name": "count",
+              "lib/original-name": "count",
+              "name": "count",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "count",
+                {
+                  "base-type": "type/BigInteger"
+                }
+              ],
+              "effective_type": "type/BigInteger",
+              "display_name": "count",
+              "base_type": "type/BigInteger"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT status, COUNT(order_id) FROM tb_market_order WHERE status IS NOT NULL GROUP BY status"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "int4",
+                "semantic_type": null,
+                "lib/deduplicated-name": "status",
+                "lib/original-name": "status",
+                "name": "status",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "status",
+                  {
+                    "base-type": "type/Integer"
+                  }
+                ],
+                "effective_type": "type/Integer",
+                "display_name": "status",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 9,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 1.0,
+                      "q1": 3.75,
+                      "q3": 12.25,
+                      "max": 16.0,
+                      "sd": 5.049752469181039,
+                      "avg": 8.0
+                    }
+                  }
+                },
+                "base_type": "type/Integer"
+              },
+              {
+                "database_type": "int8",
+                "semantic_type": "type/Quantity",
+                "lib/deduplicated-name": "count",
+                "lib/original-name": "count",
+                "name": "count",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "count",
+                  {
+                    "base-type": "type/BigInteger"
+                  }
+                ],
+                "effective_type": "type/BigInteger",
+                "display_name": "count",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 7,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 2.0,
+                      "q1": 7.033370452904235,
+                      "q3": 32.471529247895255,
+                      "max": 72.0,
+                      "sd": 22.600393310245238,
+                      "avg": 23.444444444444443
+                    }
+                  }
+                },
+                "base_type": "type/BigInteger"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T00:55:41.821666992Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT status, COUNT(order_id) FROM tb_market_order WHERE status IS NOT NULL GROUP BY status",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 9,
+        "running_time": 720
+      }
+    }
+  },
+  {
+    "kpi_name": "Total Orders by Partner",
+    "sql_query": "SELECT partner_id, COUNT(order_id) FROM tb_market_order WHERE partner_id IS NOT NULL GROUP BY partner_id",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[25,2],[31,24],[50,2],[49,1],[47,1],[52,1],[28,2],[20,1],[32,39],[33,34],[9,65],[5,2],[64,1],[2,11],[6,9],[26,6],[24,10]],\"cols\":[{\"database_type\":\"int4\",\"lib/deduplicated-name\":\"partner_id\",\"lib/original-name\":\"partner_id\",\"name\":\"partner_id\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"partner_id\",{\"base-type\":\"type/Integer\"}],\"effective_type\":\"type/Integer\",\"display_name\":\"partner_id\",\"base_type\":\"type/Integer\"},{\"database_type\":\"int8\",\"lib/deduplicated-name\":\"count\",\"lib/original-name\":\"count\",\"name\":\"count\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"count\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"count\",\"base_type\":\"type/BigInteger\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT partner_id, COUNT(order_id) FROM tb_market_order WHERE partner_id IS NOT NULL GROUP BY partner_id\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"int4\",\"semantic_type\":null,\"lib/deduplicated-name\":\"partner_id\",\"lib/original-name\":\"partner_id\",\"name\":\"partner_id\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"partner_id\",{\"base-type\":\"type/Integer\"}],\"effective_type\":\"type/Integer\",\"display_name\":\"partner_id\",\"fingerprint\":{\"global\":{\"distinct-count\":17,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":2.0,\"q1\":17.25,\"q3\":47.5,\"max\":64.0,\"sd\":18.2142074475168,\"avg\":29.58823529411765}}},\"base_type\":\"type/Integer\"},{\"database_type\":\"int8\",\"semantic_type\":\"type/Quantity\",\"lib/deduplicated-name\":\"count\",\"lib/original-name\":\"count\",\"name\":\"count\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"count\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"count\",\"fingerprint\":{\"global\":{\"distinct-count\":10,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":1.0,\"q1\":1.363190752252148,\"q3\":14.25,\"max\":65.0,\"sd\":18.05913488905757,\"avg\":12.411764705882353}}},\"base_type\":\"type/BigInteger\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T00:55:43.670087987Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT partner_id, COUNT(order_id) FROM tb_market_order WHERE partner_id IS NOT NULL GROUP BY partner_id\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":17,\"running_time\":720}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              25,
+              2
+            ],
+            [
+              31,
+              24
+            ],
+            [
+              50,
+              2
+            ],
+            [
+              49,
+              1
+            ],
+            [
+              47,
+              1
+            ],
+            [
+              52,
+              1
+            ],
+            [
+              28,
+              2
+            ],
+            [
+              20,
+              1
+            ],
+            [
+              32,
+              39
+            ],
+            [
+              33,
+              34
+            ],
+            [
+              9,
+              65
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              64,
+              1
+            ],
+            [
+              2,
+              11
+            ],
+            [
+              6,
+              9
+            ],
+            [
+              26,
+              6
+            ],
+            [
+              24,
+              10
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "int4",
+              "lib/deduplicated-name": "partner_id",
+              "lib/original-name": "partner_id",
+              "name": "partner_id",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "partner_id",
+                {
+                  "base-type": "type/Integer"
+                }
+              ],
+              "effective_type": "type/Integer",
+              "display_name": "partner_id",
+              "base_type": "type/Integer"
+            },
+            {
+              "database_type": "int8",
+              "lib/deduplicated-name": "count",
+              "lib/original-name": "count",
+              "name": "count",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "count",
+                {
+                  "base-type": "type/BigInteger"
+                }
+              ],
+              "effective_type": "type/BigInteger",
+              "display_name": "count",
+              "base_type": "type/BigInteger"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT partner_id, COUNT(order_id) FROM tb_market_order WHERE partner_id IS NOT NULL GROUP BY partner_id"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "int4",
+                "semantic_type": null,
+                "lib/deduplicated-name": "partner_id",
+                "lib/original-name": "partner_id",
+                "name": "partner_id",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "partner_id",
+                  {
+                    "base-type": "type/Integer"
+                  }
+                ],
+                "effective_type": "type/Integer",
+                "display_name": "partner_id",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 17,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 2.0,
+                      "q1": 17.25,
+                      "q3": 47.5,
+                      "max": 64.0,
+                      "sd": 18.2142074475168,
+                      "avg": 29.58823529411765
+                    }
+                  }
+                },
+                "base_type": "type/Integer"
+              },
+              {
+                "database_type": "int8",
+                "semantic_type": "type/Quantity",
+                "lib/deduplicated-name": "count",
+                "lib/original-name": "count",
+                "name": "count",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "count",
+                  {
+                    "base-type": "type/BigInteger"
+                  }
+                ],
+                "effective_type": "type/BigInteger",
+                "display_name": "count",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 10,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 1.0,
+                      "q1": 1.363190752252148,
+                      "q3": 14.25,
+                      "max": 65.0,
+                      "sd": 18.05913488905757,
+                      "avg": 12.411764705882353
+                    }
+                  }
+                },
+                "base_type": "type/BigInteger"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T00:55:43.670087987Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT partner_id, COUNT(order_id) FROM tb_market_order WHERE partner_id IS NOT NULL GROUP BY partner_id",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 17,
+        "running_time": 720
+      }
+    }
+  },
+  {
+    "kpi_name": "Total Orders by User",
+    "sql_query": "SELECT user_id, COUNT(order_id) FROM tb_market_order WHERE user_id IS NOT NULL GROUP BY user_id",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[68,1],[34,2],[46,2],[67,1],[32,1],[7,2],[9,9],[45,23],[15,62],[48,34],[85,1],[72,1],[39,2],[81,1],[50,2],[47,39],[28,10],[64,1],[2,11],[16,6]],\"cols\":[{\"database_type\":\"int4\",\"lib/deduplicated-name\":\"user_id\",\"lib/original-name\":\"user_id\",\"name\":\"user_id\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"user_id\",{\"base-type\":\"type/Integer\"}],\"effective_type\":\"type/Integer\",\"display_name\":\"user_id\",\"base_type\":\"type/Integer\"},{\"database_type\":\"int8\",\"lib/deduplicated-name\":\"count\",\"lib/original-name\":\"count\",\"name\":\"count\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"count\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"count\",\"base_type\":\"type/BigInteger\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT user_id, COUNT(order_id) FROM tb_market_order WHERE user_id IS NOT NULL GROUP BY user_id\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"int4\",\"semantic_type\":null,\"lib/deduplicated-name\":\"user_id\",\"lib/original-name\":\"user_id\",\"name\":\"user_id\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"user_id\",{\"base-type\":\"type/Integer\"}],\"effective_type\":\"type/Integer\",\"display_name\":\"user_id\",\"fingerprint\":{\"global\":{\"distinct-count\":20,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":2.0,\"q1\":22.0,\"q3\":65.5,\"max\":85.0,\"sd\":25.007104253749468,\"avg\":42.75}}},\"base_type\":\"type/Integer\"},{\"database_type\":\"int8\",\"semantic_type\":\"type/Quantity\",\"lib/deduplicated-name\":\"count\",\"lib/original-name\":\"count\",\"name\":\"count\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"count\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"count\",\"fingerprint\":{\"global\":{\"distinct-count\":10,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":1.0,\"q1\":1.2212807378489998,\"q3\":10.5,\"max\":62.0,\"sd\":16.525817122882227,\"avg\":10.55}}},\"base_type\":\"type/BigInteger\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T00:55:45.496005152Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT user_id, COUNT(order_id) FROM tb_market_order WHERE user_id IS NOT NULL GROUP BY user_id\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":20,\"running_time\":720}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              68,
+              1
+            ],
+            [
+              34,
+              2
+            ],
+            [
+              46,
+              2
+            ],
+            [
+              67,
+              1
+            ],
+            [
+              32,
+              1
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              9,
+              9
+            ],
+            [
+              45,
+              23
+            ],
+            [
+              15,
+              62
+            ],
+            [
+              48,
+              34
+            ],
+            [
+              85,
+              1
+            ],
+            [
+              72,
+              1
+            ],
+            [
+              39,
+              2
+            ],
+            [
+              81,
+              1
+            ],
+            [
+              50,
+              2
+            ],
+            [
+              47,
+              39
+            ],
+            [
+              28,
+              10
+            ],
+            [
+              64,
+              1
+            ],
+            [
+              2,
+              11
+            ],
+            [
+              16,
+              6
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "int4",
+              "lib/deduplicated-name": "user_id",
+              "lib/original-name": "user_id",
+              "name": "user_id",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "user_id",
+                {
+                  "base-type": "type/Integer"
+                }
+              ],
+              "effective_type": "type/Integer",
+              "display_name": "user_id",
+              "base_type": "type/Integer"
+            },
+            {
+              "database_type": "int8",
+              "lib/deduplicated-name": "count",
+              "lib/original-name": "count",
+              "name": "count",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "count",
+                {
+                  "base-type": "type/BigInteger"
+                }
+              ],
+              "effective_type": "type/BigInteger",
+              "display_name": "count",
+              "base_type": "type/BigInteger"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT user_id, COUNT(order_id) FROM tb_market_order WHERE user_id IS NOT NULL GROUP BY user_id"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "int4",
+                "semantic_type": null,
+                "lib/deduplicated-name": "user_id",
+                "lib/original-name": "user_id",
+                "name": "user_id",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "user_id",
+                  {
+                    "base-type": "type/Integer"
+                  }
+                ],
+                "effective_type": "type/Integer",
+                "display_name": "user_id",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 20,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 2.0,
+                      "q1": 22.0,
+                      "q3": 65.5,
+                      "max": 85.0,
+                      "sd": 25.007104253749468,
+                      "avg": 42.75
+                    }
+                  }
+                },
+                "base_type": "type/Integer"
+              },
+              {
+                "database_type": "int8",
+                "semantic_type": "type/Quantity",
+                "lib/deduplicated-name": "count",
+                "lib/original-name": "count",
+                "name": "count",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "count",
+                  {
+                    "base-type": "type/BigInteger"
+                  }
+                ],
+                "effective_type": "type/BigInteger",
+                "display_name": "count",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 10,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 1.0,
+                      "q1": 1.2212807378489998,
+                      "q3": 10.5,
+                      "max": 62.0,
+                      "sd": 16.525817122882227,
+                      "avg": 10.55
+                    }
+                  }
+                },
+                "base_type": "type/BigInteger"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T00:55:45.496005152Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT user_id, COUNT(order_id) FROM tb_market_order WHERE user_id IS NOT NULL GROUP BY user_id",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 20,
+        "running_time": 720
+      }
+    }
+  },
+  {
+    "kpi_name": "Total Sales by User",
+    "sql_query": "SELECT user_id, SUM(payment_total) FROM tb_market_order WHERE user_id IS NOT NULL AND payment_total IS NOT NULL GROUP BY user_id",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[68,1200],[9,484920],[7,60000],[45,593381],[15,419727],[48,152833],[85,2000],[72,20000],[39,1700],[81,59460],[50,4000],[47,51500],[28,71400],[64,1000],[2,193500],[16,179500]],\"cols\":[{\"database_type\":\"int4\",\"lib/deduplicated-name\":\"user_id\",\"lib/original-name\":\"user_id\",\"name\":\"user_id\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"user_id\",{\"base-type\":\"type/Integer\"}],\"effective_type\":\"type/Integer\",\"display_name\":\"user_id\",\"base_type\":\"type/Integer\"},{\"database_type\":\"numeric\",\"lib/deduplicated-name\":\"sum\",\"lib/original-name\":\"sum\",\"name\":\"sum\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"sum\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"sum\",\"base_type\":\"type/Decimal\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT user_id, SUM(payment_total) FROM tb_market_order WHERE user_id IS NOT NULL AND payment_total IS NOT NULL GROUP BY user_id\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"int4\",\"semantic_type\":null,\"lib/deduplicated-name\":\"user_id\",\"lib/original-name\":\"user_id\",\"name\":\"user_id\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"user_id\",{\"base-type\":\"type/Integer\"}],\"effective_type\":\"type/Integer\",\"display_name\":\"user_id\",\"fingerprint\":{\"global\":{\"distinct-count\":16,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":2.0,\"q1\":15.5,\"q3\":66.0,\"max\":85.0,\"sd\":27.187006700505545,\"avg\":42.25}}},\"base_type\":\"type/Integer\"},{\"database_type\":\"numeric\",\"semantic_type\":null,\"lib/deduplicated-name\":\"sum\",\"lib/original-name\":\"sum\",\"name\":\"sum\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"sum\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"sum\",\"fingerprint\":{\"global\":{\"distinct-count\":16,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":1000.0,\"q1\":3000.0,\"q3\":186500.0,\"max\":593381.0,\"sd\":190129.7629977901,\"avg\":143507.5625}}},\"base_type\":\"type/Decimal\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T00:55:47.339106749Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT user_id, SUM(payment_total) FROM tb_market_order WHERE user_id IS NOT NULL AND payment_total IS NOT NULL GROUP BY user_id\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":16,\"running_time\":540}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              68,
+              1200
+            ],
+            [
+              9,
+              484920
+            ],
+            [
+              7,
+              60000
+            ],
+            [
+              45,
+              593381
+            ],
+            [
+              15,
+              419727
+            ],
+            [
+              48,
+              152833
+            ],
+            [
+              85,
+              2000
+            ],
+            [
+              72,
+              20000
+            ],
+            [
+              39,
+              1700
+            ],
+            [
+              81,
+              59460
+            ],
+            [
+              50,
+              4000
+            ],
+            [
+              47,
+              51500
+            ],
+            [
+              28,
+              71400
+            ],
+            [
+              64,
+              1000
+            ],
+            [
+              2,
+              193500
+            ],
+            [
+              16,
+              179500
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "int4",
+              "lib/deduplicated-name": "user_id",
+              "lib/original-name": "user_id",
+              "name": "user_id",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "user_id",
+                {
+                  "base-type": "type/Integer"
+                }
+              ],
+              "effective_type": "type/Integer",
+              "display_name": "user_id",
+              "base_type": "type/Integer"
+            },
+            {
+              "database_type": "numeric",
+              "lib/deduplicated-name": "sum",
+              "lib/original-name": "sum",
+              "name": "sum",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "sum",
+                {
+                  "base-type": "type/Decimal"
+                }
+              ],
+              "effective_type": "type/Decimal",
+              "display_name": "sum",
+              "base_type": "type/Decimal"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT user_id, SUM(payment_total) FROM tb_market_order WHERE user_id IS NOT NULL AND payment_total IS NOT NULL GROUP BY user_id"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "int4",
+                "semantic_type": null,
+                "lib/deduplicated-name": "user_id",
+                "lib/original-name": "user_id",
+                "name": "user_id",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "user_id",
+                  {
+                    "base-type": "type/Integer"
+                  }
+                ],
+                "effective_type": "type/Integer",
+                "display_name": "user_id",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 16,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 2.0,
+                      "q1": 15.5,
+                      "q3": 66.0,
+                      "max": 85.0,
+                      "sd": 27.187006700505545,
+                      "avg": 42.25
+                    }
+                  }
+                },
+                "base_type": "type/Integer"
+              },
+              {
+                "database_type": "numeric",
+                "semantic_type": null,
+                "lib/deduplicated-name": "sum",
+                "lib/original-name": "sum",
+                "name": "sum",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "sum",
+                  {
+                    "base-type": "type/Decimal"
+                  }
+                ],
+                "effective_type": "type/Decimal",
+                "display_name": "sum",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 16,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 1000.0,
+                      "q1": 3000.0,
+                      "q3": 186500.0,
+                      "max": 593381.0,
+                      "sd": 190129.7629977901,
+                      "avg": 143507.5625
+                    }
+                  }
+                },
+                "base_type": "type/Decimal"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T00:55:47.339106749Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT user_id, SUM(payment_total) FROM tb_market_order WHERE user_id IS NOT NULL AND payment_total IS NOT NULL GROUP BY user_id",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 16,
+        "running_time": 540
+      }
+    }
+  },
+  {
+    "kpi_name": "Total Sales by Partner",
+    "sql_query": "SELECT partner_id, SUM(payment_total) FROM tb_market_order WHERE partner_id IS NOT NULL AND payment_total IS NOT NULL GROUP BY partner_id",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[31,595381],[50,4000],[49,1200],[47,1000],[52,20000],[28,1700],[32,51500],[9,419727],[33,152833],[5,60000],[64,59460],[2,193500],[6,484920],[26,179500],[24,71400]],\"cols\":[{\"database_type\":\"int4\",\"lib/deduplicated-name\":\"partner_id\",\"lib/original-name\":\"partner_id\",\"name\":\"partner_id\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"partner_id\",{\"base-type\":\"type/Integer\"}],\"effective_type\":\"type/Integer\",\"display_name\":\"partner_id\",\"base_type\":\"type/Integer\"},{\"database_type\":\"numeric\",\"lib/deduplicated-name\":\"sum\",\"lib/original-name\":\"sum\",\"name\":\"sum\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"sum\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"sum\",\"base_type\":\"type/Decimal\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT partner_id, SUM(payment_total) FROM tb_market_order WHERE partner_id IS NOT NULL AND payment_total IS NOT NULL GROUP BY partner_id\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"int4\",\"semantic_type\":null,\"lib/deduplicated-name\":\"partner_id\",\"lib/original-name\":\"partner_id\",\"name\":\"partner_id\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"partner_id\",{\"base-type\":\"type/Integer\"}],\"effective_type\":\"type/Integer\",\"display_name\":\"partner_id\",\"fingerprint\":{\"global\":{\"distinct-count\":15,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":2.0,\"q1\":12.75,\"q3\":48.5,\"max\":64.0,\"sd\":19.23860206781692,\"avg\":30.533333333333328}}},\"base_type\":\"type/Integer\"},{\"database_type\":\"numeric\",\"semantic_type\":null,\"lib/deduplicated-name\":\"sum\",\"lib/original-name\":\"sum\",\"name\":\"sum\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"sum\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"sum\",\"fingerprint\":{\"global\":{\"distinct-count\":15,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":1000.0,\"q1\":8000.0,\"q3\":190000.0,\"max\":595381.0,\"sd\":193214.5446689718,\"avg\":153074.73333333334}}},\"base_type\":\"type/Decimal\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T00:55:48.982835204Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT partner_id, SUM(payment_total) FROM tb_market_order WHERE partner_id IS NOT NULL AND payment_total IS NOT NULL GROUP BY partner_id\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":15,\"running_time\":541}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              31,
+              595381
+            ],
+            [
+              50,
+              4000
+            ],
+            [
+              49,
+              1200
+            ],
+            [
+              47,
+              1000
+            ],
+            [
+              52,
+              20000
+            ],
+            [
+              28,
+              1700
+            ],
+            [
+              32,
+              51500
+            ],
+            [
+              9,
+              419727
+            ],
+            [
+              33,
+              152833
+            ],
+            [
+              5,
+              60000
+            ],
+            [
+              64,
+              59460
+            ],
+            [
+              2,
+              193500
+            ],
+            [
+              6,
+              484920
+            ],
+            [
+              26,
+              179500
+            ],
+            [
+              24,
+              71400
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "int4",
+              "lib/deduplicated-name": "partner_id",
+              "lib/original-name": "partner_id",
+              "name": "partner_id",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "partner_id",
+                {
+                  "base-type": "type/Integer"
+                }
+              ],
+              "effective_type": "type/Integer",
+              "display_name": "partner_id",
+              "base_type": "type/Integer"
+            },
+            {
+              "database_type": "numeric",
+              "lib/deduplicated-name": "sum",
+              "lib/original-name": "sum",
+              "name": "sum",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "sum",
+                {
+                  "base-type": "type/Decimal"
+                }
+              ],
+              "effective_type": "type/Decimal",
+              "display_name": "sum",
+              "base_type": "type/Decimal"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT partner_id, SUM(payment_total) FROM tb_market_order WHERE partner_id IS NOT NULL AND payment_total IS NOT NULL GROUP BY partner_id"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "int4",
+                "semantic_type": null,
+                "lib/deduplicated-name": "partner_id",
+                "lib/original-name": "partner_id",
+                "name": "partner_id",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "partner_id",
+                  {
+                    "base-type": "type/Integer"
+                  }
+                ],
+                "effective_type": "type/Integer",
+                "display_name": "partner_id",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 15,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 2.0,
+                      "q1": 12.75,
+                      "q3": 48.5,
+                      "max": 64.0,
+                      "sd": 19.23860206781692,
+                      "avg": 30.533333333333328
+                    }
+                  }
+                },
+                "base_type": "type/Integer"
+              },
+              {
+                "database_type": "numeric",
+                "semantic_type": null,
+                "lib/deduplicated-name": "sum",
+                "lib/original-name": "sum",
+                "name": "sum",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "sum",
+                  {
+                    "base-type": "type/Decimal"
+                  }
+                ],
+                "effective_type": "type/Decimal",
+                "display_name": "sum",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 15,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 1000.0,
+                      "q1": 8000.0,
+                      "q3": 190000.0,
+                      "max": 595381.0,
+                      "sd": 193214.5446689718,
+                      "avg": 153074.73333333334
+                    }
+                  }
+                },
+                "base_type": "type/Decimal"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T00:55:48.982835204Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT partner_id, SUM(payment_total) FROM tb_market_order WHERE partner_id IS NOT NULL AND payment_total IS NOT NULL GROUP BY partner_id",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 15,
+        "running_time": 541
+      }
+    }
+  },
+  {
+    "kpi_name": "Total Sales by Status",
+    "sql_query": "SELECT status, SUM(payment_total) FROM tb_market_order WHERE status IS NOT NULL AND payment_total IS NOT NULL GROUP BY status",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[7,40921],[13,25910],[10,193520],[4,31310],[16,753100],[6,111200],[12,10500],[3,1129660]],\"cols\":[{\"database_type\":\"int4\",\"lib/deduplicated-name\":\"status\",\"lib/original-name\":\"status\",\"name\":\"status\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"status\",{\"base-type\":\"type/Integer\"}],\"effective_type\":\"type/Integer\",\"display_name\":\"status\",\"base_type\":\"type/Integer\"},{\"database_type\":\"numeric\",\"lib/deduplicated-name\":\"sum\",\"lib/original-name\":\"sum\",\"name\":\"sum\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"sum\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"sum\",\"base_type\":\"type/Decimal\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT status, SUM(payment_total) FROM tb_market_order WHERE status IS NOT NULL AND payment_total IS NOT NULL GROUP BY status\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"int4\",\"semantic_type\":null,\"lib/deduplicated-name\":\"status\",\"lib/original-name\":\"status\",\"name\":\"status\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"status\",{\"base-type\":\"type/Integer\"}],\"effective_type\":\"type/Integer\",\"display_name\":\"status\",\"fingerprint\":{\"global\":{\"distinct-count\":8,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":3.0,\"q1\":5.0,\"q3\":12.5,\"max\":16.0,\"sd\":4.611708700997618,\"avg\":8.875}}},\"base_type\":\"type/Integer\"},{\"database_type\":\"numeric\",\"semantic_type\":null,\"lib/deduplicated-name\":\"sum\",\"lib/original-name\":\"sum\",\"name\":\"sum\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"sum\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"sum\",\"fingerprint\":{\"global\":{\"distinct-count\":8,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":10500.0,\"q1\":28610.0,\"q3\":473310.0,\"max\":1129660.0,\"sd\":420462.62320905447,\"avg\":287015.125}}},\"base_type\":\"type/Decimal\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T00:55:50.618793533Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT status, SUM(payment_total) FROM tb_market_order WHERE status IS NOT NULL AND payment_total IS NOT NULL GROUP BY status\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":8,\"running_time\":540}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              7,
+              40921
+            ],
+            [
+              13,
+              25910
+            ],
+            [
+              10,
+              193520
+            ],
+            [
+              4,
+              31310
+            ],
+            [
+              16,
+              753100
+            ],
+            [
+              6,
+              111200
+            ],
+            [
+              12,
+              10500
+            ],
+            [
+              3,
+              1129660
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "int4",
+              "lib/deduplicated-name": "status",
+              "lib/original-name": "status",
+              "name": "status",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "status",
+                {
+                  "base-type": "type/Integer"
+                }
+              ],
+              "effective_type": "type/Integer",
+              "display_name": "status",
+              "base_type": "type/Integer"
+            },
+            {
+              "database_type": "numeric",
+              "lib/deduplicated-name": "sum",
+              "lib/original-name": "sum",
+              "name": "sum",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "sum",
+                {
+                  "base-type": "type/Decimal"
+                }
+              ],
+              "effective_type": "type/Decimal",
+              "display_name": "sum",
+              "base_type": "type/Decimal"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT status, SUM(payment_total) FROM tb_market_order WHERE status IS NOT NULL AND payment_total IS NOT NULL GROUP BY status"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "int4",
+                "semantic_type": null,
+                "lib/deduplicated-name": "status",
+                "lib/original-name": "status",
+                "name": "status",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "status",
+                  {
+                    "base-type": "type/Integer"
+                  }
+                ],
+                "effective_type": "type/Integer",
+                "display_name": "status",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 8,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 3.0,
+                      "q1": 5.0,
+                      "q3": 12.5,
+                      "max": 16.0,
+                      "sd": 4.611708700997618,
+                      "avg": 8.875
+                    }
+                  }
+                },
+                "base_type": "type/Integer"
+              },
+              {
+                "database_type": "numeric",
+                "semantic_type": null,
+                "lib/deduplicated-name": "sum",
+                "lib/original-name": "sum",
+                "name": "sum",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "sum",
+                  {
+                    "base-type": "type/Decimal"
+                  }
+                ],
+                "effective_type": "type/Decimal",
+                "display_name": "sum",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 8,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 10500.0,
+                      "q1": 28610.0,
+                      "q3": 473310.0,
+                      "max": 1129660.0,
+                      "sd": 420462.62320905447,
+                      "avg": 287015.125
+                    }
+                  }
+                },
+                "base_type": "type/Decimal"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T00:55:50.618793533Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT status, SUM(payment_total) FROM tb_market_order WHERE status IS NOT NULL AND payment_total IS NOT NULL GROUP BY status",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 8,
+        "running_time": 540
+      }
+    }
+  },
+  {
+    "kpi_name": "Average Order Value by User",
+    "sql_query": "SELECT user_id, AVG(payment_total) FROM tb_market_order WHERE user_id IS NOT NULL AND payment_total IS NOT NULL GROUP BY user_id",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[68,1200.0000000000000000],[9,96984.000000000000],[7,60000.000000000000],[45,59338.100000000000],[15,10762.230769230769],[48,5660.4814814814814815],[85,2000.0000000000000000],[72,20000.000000000000],[39,1700.0000000000000000],[81,59460.000000000000],[50,4000.0000000000000000],[47,1775.8620689655172414],[28,11900.000000000000],[64,1000.0000000000000000],[2,17590.909090909091],[16,44875.000000000000]],\"cols\":[{\"database_type\":\"int4\",\"lib/deduplicated-name\":\"user_id\",\"lib/original-name\":\"user_id\",\"name\":\"user_id\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"user_id\",{\"base-type\":\"type/Integer\"}],\"effective_type\":\"type/Integer\",\"display_name\":\"user_id\",\"base_type\":\"type/Integer\"},{\"database_type\":\"numeric\",\"lib/deduplicated-name\":\"avg\",\"lib/original-name\":\"avg\",\"name\":\"avg\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"avg\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"avg\",\"base_type\":\"type/Decimal\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT user_id, AVG(payment_total) FROM tb_market_order WHERE user_id IS NOT NULL AND payment_total IS NOT NULL GROUP BY user_id\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"int4\",\"semantic_type\":null,\"lib/deduplicated-name\":\"user_id\",\"lib/original-name\":\"user_id\",\"name\":\"user_id\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"user_id\",{\"base-type\":\"type/Integer\"}],\"effective_type\":\"type/Integer\",\"display_name\":\"user_id\",\"fingerprint\":{\"global\":{\"distinct-count\":16,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":2.0,\"q1\":15.5,\"q3\":66.0,\"max\":85.0,\"sd\":27.187006700505545,\"avg\":42.25}}},\"base_type\":\"type/Integer\"},{\"database_type\":\"numeric\",\"semantic_type\":null,\"lib/deduplicated-name\":\"avg\",\"lib/original-name\":\"avg\",\"name\":\"avg\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"avg\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"avg\",\"fingerprint\":{\"global\":{\"distinct-count\":16,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":1000.0,\"q1\":1887.9310344827586,\"q3\":52106.55,\"max\":96984.0,\"sd\":29654.72722089701,\"avg\":24890.411463161676}}},\"base_type\":\"type/Decimal\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T00:55:52.26054714Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT user_id, AVG(payment_total) FROM tb_market_order WHERE user_id IS NOT NULL AND payment_total IS NOT NULL GROUP BY user_id\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":16,\"running_time\":541}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              68,
+              1200.0
+            ],
+            [
+              9,
+              96984.0
+            ],
+            [
+              7,
+              60000.0
+            ],
+            [
+              45,
+              59338.1
+            ],
+            [
+              15,
+              10762.23076923077
+            ],
+            [
+              48,
+              5660.481481481482
+            ],
+            [
+              85,
+              2000.0
+            ],
+            [
+              72,
+              20000.0
+            ],
+            [
+              39,
+              1700.0
+            ],
+            [
+              81,
+              59460.0
+            ],
+            [
+              50,
+              4000.0
+            ],
+            [
+              47,
+              1775.8620689655172
+            ],
+            [
+              28,
+              11900.0
+            ],
+            [
+              64,
+              1000.0
+            ],
+            [
+              2,
+              17590.909090909092
+            ],
+            [
+              16,
+              44875.0
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "int4",
+              "lib/deduplicated-name": "user_id",
+              "lib/original-name": "user_id",
+              "name": "user_id",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "user_id",
+                {
+                  "base-type": "type/Integer"
+                }
+              ],
+              "effective_type": "type/Integer",
+              "display_name": "user_id",
+              "base_type": "type/Integer"
+            },
+            {
+              "database_type": "numeric",
+              "lib/deduplicated-name": "avg",
+              "lib/original-name": "avg",
+              "name": "avg",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "avg",
+                {
+                  "base-type": "type/Decimal"
+                }
+              ],
+              "effective_type": "type/Decimal",
+              "display_name": "avg",
+              "base_type": "type/Decimal"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT user_id, AVG(payment_total) FROM tb_market_order WHERE user_id IS NOT NULL AND payment_total IS NOT NULL GROUP BY user_id"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "int4",
+                "semantic_type": null,
+                "lib/deduplicated-name": "user_id",
+                "lib/original-name": "user_id",
+                "name": "user_id",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "user_id",
+                  {
+                    "base-type": "type/Integer"
+                  }
+                ],
+                "effective_type": "type/Integer",
+                "display_name": "user_id",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 16,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 2.0,
+                      "q1": 15.5,
+                      "q3": 66.0,
+                      "max": 85.0,
+                      "sd": 27.187006700505545,
+                      "avg": 42.25
+                    }
+                  }
+                },
+                "base_type": "type/Integer"
+              },
+              {
+                "database_type": "numeric",
+                "semantic_type": null,
+                "lib/deduplicated-name": "avg",
+                "lib/original-name": "avg",
+                "name": "avg",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "avg",
+                  {
+                    "base-type": "type/Decimal"
+                  }
+                ],
+                "effective_type": "type/Decimal",
+                "display_name": "avg",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 16,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 1000.0,
+                      "q1": 1887.9310344827586,
+                      "q3": 52106.55,
+                      "max": 96984.0,
+                      "sd": 29654.72722089701,
+                      "avg": 24890.411463161676
+                    }
+                  }
+                },
+                "base_type": "type/Decimal"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T00:55:52.26054714Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT user_id, AVG(payment_total) FROM tb_market_order WHERE user_id IS NOT NULL AND payment_total IS NOT NULL GROUP BY user_id",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 16,
+        "running_time": 541
+      }
+    }
+  },
+  {
+    "kpi_name": "Average Order Value by Partner",
+    "sql_query": "SELECT partner_id, AVG(payment_total) FROM tb_market_order WHERE partner_id IS NOT NULL AND payment_total IS NOT NULL GROUP BY partner_id",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[31,54125.545454545455],[50,4000.0000000000000000],[49,1200.0000000000000000],[47,1000.0000000000000000],[52,20000.000000000000],[28,1700.0000000000000000],[32,1775.8620689655172414],[9,10762.230769230769],[33,5660.4814814814814815],[5,60000.000000000000],[64,59460.000000000000],[2,17590.909090909091],[6,96984.000000000000],[26,44875.000000000000],[24,11900.000000000000]],\"cols\":[{\"database_type\":\"int4\",\"lib/deduplicated-name\":\"partner_id\",\"lib/original-name\":\"partner_id\",\"name\":\"partner_id\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"partner_id\",{\"base-type\":\"type/Integer\"}],\"effective_type\":\"type/Integer\",\"display_name\":\"partner_id\",\"base_type\":\"type/Integer\"},{\"database_type\":\"numeric\",\"lib/deduplicated-name\":\"avg\",\"lib/original-name\":\"avg\",\"name\":\"avg\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"avg\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"avg\",\"base_type\":\"type/Decimal\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT partner_id, AVG(payment_total) FROM tb_market_order WHERE partner_id IS NOT NULL AND payment_total IS NOT NULL GROUP BY partner_id\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"int4\",\"semantic_type\":null,\"lib/deduplicated-name\":\"partner_id\",\"lib/original-name\":\"partner_id\",\"name\":\"partner_id\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"partner_id\",{\"base-type\":\"type/Integer\"}],\"effective_type\":\"type/Integer\",\"display_name\":\"partner_id\",\"fingerprint\":{\"global\":{\"distinct-count\":15,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":2.0,\"q1\":12.75,\"q3\":48.5,\"max\":64.0,\"sd\":19.23860206781692,\"avg\":30.533333333333328}}},\"base_type\":\"type/Integer\"},{\"database_type\":\"numeric\",\"semantic_type\":null,\"lib/deduplicated-name\":\"avg\",\"lib/original-name\":\"avg\",\"name\":\"avg\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"avg\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"avg\",\"fingerprint\":{\"global\":{\"distinct-count\":15,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":1000.0,\"q1\":2331.8965517241377,\"q3\":51812.90909090909,\"max\":96984.0,\"sd\":29657.916071892552,\"avg\":26068.935257675486}}},\"base_type\":\"type/Decimal\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T00:55:54.015773554Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT partner_id, AVG(payment_total) FROM tb_market_order WHERE partner_id IS NOT NULL AND payment_total IS NOT NULL GROUP BY partner_id\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":15,\"running_time\":541}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              31,
+              54125.545454545456
+            ],
+            [
+              50,
+              4000.0
+            ],
+            [
+              49,
+              1200.0
+            ],
+            [
+              47,
+              1000.0
+            ],
+            [
+              52,
+              20000.0
+            ],
+            [
+              28,
+              1700.0
+            ],
+            [
+              32,
+              1775.8620689655172
+            ],
+            [
+              9,
+              10762.23076923077
+            ],
+            [
+              33,
+              5660.481481481482
+            ],
+            [
+              5,
+              60000.0
+            ],
+            [
+              64,
+              59460.0
+            ],
+            [
+              2,
+              17590.909090909092
+            ],
+            [
+              6,
+              96984.0
+            ],
+            [
+              26,
+              44875.0
+            ],
+            [
+              24,
+              11900.0
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "int4",
+              "lib/deduplicated-name": "partner_id",
+              "lib/original-name": "partner_id",
+              "name": "partner_id",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "partner_id",
+                {
+                  "base-type": "type/Integer"
+                }
+              ],
+              "effective_type": "type/Integer",
+              "display_name": "partner_id",
+              "base_type": "type/Integer"
+            },
+            {
+              "database_type": "numeric",
+              "lib/deduplicated-name": "avg",
+              "lib/original-name": "avg",
+              "name": "avg",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "avg",
+                {
+                  "base-type": "type/Decimal"
+                }
+              ],
+              "effective_type": "type/Decimal",
+              "display_name": "avg",
+              "base_type": "type/Decimal"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT partner_id, AVG(payment_total) FROM tb_market_order WHERE partner_id IS NOT NULL AND payment_total IS NOT NULL GROUP BY partner_id"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "int4",
+                "semantic_type": null,
+                "lib/deduplicated-name": "partner_id",
+                "lib/original-name": "partner_id",
+                "name": "partner_id",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "partner_id",
+                  {
+                    "base-type": "type/Integer"
+                  }
+                ],
+                "effective_type": "type/Integer",
+                "display_name": "partner_id",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 15,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 2.0,
+                      "q1": 12.75,
+                      "q3": 48.5,
+                      "max": 64.0,
+                      "sd": 19.23860206781692,
+                      "avg": 30.533333333333328
+                    }
+                  }
+                },
+                "base_type": "type/Integer"
+              },
+              {
+                "database_type": "numeric",
+                "semantic_type": null,
+                "lib/deduplicated-name": "avg",
+                "lib/original-name": "avg",
+                "name": "avg",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "avg",
+                  {
+                    "base-type": "type/Decimal"
+                  }
+                ],
+                "effective_type": "type/Decimal",
+                "display_name": "avg",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 15,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 1000.0,
+                      "q1": 2331.8965517241377,
+                      "q3": 51812.90909090909,
+                      "max": 96984.0,
+                      "sd": 29657.916071892552,
+                      "avg": 26068.935257675486
+                    }
+                  }
+                },
+                "base_type": "type/Decimal"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T00:55:54.015773554Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT partner_id, AVG(payment_total) FROM tb_market_order WHERE partner_id IS NOT NULL AND payment_total IS NOT NULL GROUP BY partner_id",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 15,
+        "running_time": 541
+      }
+    }
+  },
+  {
+    "kpi_name": "Average Order Value by Status",
+    "sql_query": "SELECT status, AVG(payment_total) FROM tb_market_order WHERE status IS NOT NULL AND payment_total IS NOT NULL GROUP BY status",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[7,2046.0500000000000000],[13,1850.7142857142857143],[10,8796.3636363636363636],[4,1423.1818181818181818],[16,125516.666666666667],[6,55600.000000000000],[12,1750.0000000000000000],[3,24035.319148936170]],\"cols\":[{\"database_type\":\"int4\",\"lib/deduplicated-name\":\"status\",\"lib/original-name\":\"status\",\"name\":\"status\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"status\",{\"base-type\":\"type/Integer\"}],\"effective_type\":\"type/Integer\",\"display_name\":\"status\",\"base_type\":\"type/Integer\"},{\"database_type\":\"numeric\",\"lib/deduplicated-name\":\"avg\",\"lib/original-name\":\"avg\",\"name\":\"avg\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"avg\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"avg\",\"base_type\":\"type/Decimal\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT status, AVG(payment_total) FROM tb_market_order WHERE status IS NOT NULL AND payment_total IS NOT NULL GROUP BY status\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"int4\",\"semantic_type\":null,\"lib/deduplicated-name\":\"status\",\"lib/original-name\":\"status\",\"name\":\"status\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"status\",{\"base-type\":\"type/Integer\"}],\"effective_type\":\"type/Integer\",\"display_name\":\"status\",\"fingerprint\":{\"global\":{\"distinct-count\":8,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":3.0,\"q1\":5.0,\"q3\":12.5,\"max\":16.0,\"sd\":4.611708700997618,\"avg\":8.875}}},\"base_type\":\"type/Integer\"},{\"database_type\":\"numeric\",\"semantic_type\":null,\"lib/deduplicated-name\":\"avg\",\"lib/original-name\":\"avg\",\"name\":\"avg\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"avg\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"avg\",\"fingerprint\":{\"global\":{\"distinct-count\":8,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":1423.1818181818182,\"q1\":1800.357142857143,\"q3\":39817.65957446808,\"max\":125516.66666666667,\"sd\":43764.67872951003,\"avg\":27627.286944482825}}},\"base_type\":\"type/Decimal\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T00:55:55.759754158Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT status, AVG(payment_total) FROM tb_market_order WHERE status IS NOT NULL AND payment_total IS NOT NULL GROUP BY status\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":8,\"running_time\":540}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              7,
+              2046.05
+            ],
+            [
+              13,
+              1850.7142857142858
+            ],
+            [
+              10,
+              8796.363636363636
+            ],
+            [
+              4,
+              1423.1818181818182
+            ],
+            [
+              16,
+              125516.66666666667
+            ],
+            [
+              6,
+              55600.0
+            ],
+            [
+              12,
+              1750.0
+            ],
+            [
+              3,
+              24035.31914893617
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "int4",
+              "lib/deduplicated-name": "status",
+              "lib/original-name": "status",
+              "name": "status",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "status",
+                {
+                  "base-type": "type/Integer"
+                }
+              ],
+              "effective_type": "type/Integer",
+              "display_name": "status",
+              "base_type": "type/Integer"
+            },
+            {
+              "database_type": "numeric",
+              "lib/deduplicated-name": "avg",
+              "lib/original-name": "avg",
+              "name": "avg",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "avg",
+                {
+                  "base-type": "type/Decimal"
+                }
+              ],
+              "effective_type": "type/Decimal",
+              "display_name": "avg",
+              "base_type": "type/Decimal"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT status, AVG(payment_total) FROM tb_market_order WHERE status IS NOT NULL AND payment_total IS NOT NULL GROUP BY status"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "int4",
+                "semantic_type": null,
+                "lib/deduplicated-name": "status",
+                "lib/original-name": "status",
+                "name": "status",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "status",
+                  {
+                    "base-type": "type/Integer"
+                  }
+                ],
+                "effective_type": "type/Integer",
+                "display_name": "status",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 8,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 3.0,
+                      "q1": 5.0,
+                      "q3": 12.5,
+                      "max": 16.0,
+                      "sd": 4.611708700997618,
+                      "avg": 8.875
+                    }
+                  }
+                },
+                "base_type": "type/Integer"
+              },
+              {
+                "database_type": "numeric",
+                "semantic_type": null,
+                "lib/deduplicated-name": "avg",
+                "lib/original-name": "avg",
+                "name": "avg",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "avg",
+                  {
+                    "base-type": "type/Decimal"
+                  }
+                ],
+                "effective_type": "type/Decimal",
+                "display_name": "avg",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 8,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 1423.1818181818182,
+                      "q1": 1800.357142857143,
+                      "q3": 39817.65957446808,
+                      "max": 125516.66666666667,
+                      "sd": 43764.67872951003,
+                      "avg": 27627.286944482825
+                    }
+                  }
+                },
+                "base_type": "type/Decimal"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T00:55:55.759754158Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT status, AVG(payment_total) FROM tb_market_order WHERE status IS NOT NULL AND payment_total IS NOT NULL GROUP BY status",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 8,
+        "running_time": 540
+      }
+    }
+  },
+  {
+    "kpi_name": "Total Orders by Order Type",
+    "sql_query": "SELECT order_type, COUNT(order_id) FROM tb_market_order WHERE order_type IS NOT NULL GROUP BY order_type",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[\"구매문의\",198],[\"바로구매\",13]],\"cols\":[{\"database_type\":\"varchar\",\"lib/deduplicated-name\":\"order_type\",\"lib/original-name\":\"order_type\",\"name\":\"order_type\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"order_type\",{\"base-type\":\"type/Text\"}],\"effective_type\":\"type/Text\",\"display_name\":\"order_type\",\"base_type\":\"type/Text\"},{\"database_type\":\"int8\",\"lib/deduplicated-name\":\"count\",\"lib/original-name\":\"count\",\"name\":\"count\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"count\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"count\",\"base_type\":\"type/BigInteger\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT order_type, COUNT(order_id) FROM tb_market_order WHERE order_type IS NOT NULL GROUP BY order_type\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"varchar\",\"semantic_type\":\"type/Category\",\"lib/deduplicated-name\":\"order_type\",\"lib/original-name\":\"order_type\",\"name\":\"order_type\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"order_type\",{\"base-type\":\"type/Text\"}],\"effective_type\":\"type/Text\",\"display_name\":\"order_type\",\"fingerprint\":{\"global\":{\"distinct-count\":2,\"nil%\":0.0},\"type\":{\"type/Text\":{\"percent-json\":0.0,\"percent-url\":0.0,\"percent-email\":0.0,\"percent-state\":0.0,\"average-length\":4.0}}},\"base_type\":\"type/Text\"},{\"database_type\":\"int8\",\"semantic_type\":\"type/Quantity\",\"lib/deduplicated-name\":\"count\",\"lib/original-name\":\"count\",\"name\":\"count\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"count\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"count\",\"fingerprint\":{\"global\":{\"distinct-count\":2,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":13.0,\"q1\":13.0,\"q3\":198.0,\"max\":198.0,\"sd\":130.8147545195113,\"avg\":105.5}}},\"base_type\":\"type/BigInteger\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T00:55:57.399817215Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT order_type, COUNT(order_id) FROM tb_market_order WHERE order_type IS NOT NULL GROUP BY order_type\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":2,\"running_time\":719}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              "구매문의",
+              198
+            ],
+            [
+              "바로구매",
+              13
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "varchar",
+              "lib/deduplicated-name": "order_type",
+              "lib/original-name": "order_type",
+              "name": "order_type",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "order_type",
+                {
+                  "base-type": "type/Text"
+                }
+              ],
+              "effective_type": "type/Text",
+              "display_name": "order_type",
+              "base_type": "type/Text"
+            },
+            {
+              "database_type": "int8",
+              "lib/deduplicated-name": "count",
+              "lib/original-name": "count",
+              "name": "count",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "count",
+                {
+                  "base-type": "type/BigInteger"
+                }
+              ],
+              "effective_type": "type/BigInteger",
+              "display_name": "count",
+              "base_type": "type/BigInteger"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT order_type, COUNT(order_id) FROM tb_market_order WHERE order_type IS NOT NULL GROUP BY order_type"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "varchar",
+                "semantic_type": "type/Category",
+                "lib/deduplicated-name": "order_type",
+                "lib/original-name": "order_type",
+                "name": "order_type",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "order_type",
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "effective_type": "type/Text",
+                "display_name": "order_type",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 2,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Text": {
+                      "percent-json": 0.0,
+                      "percent-url": 0.0,
+                      "percent-email": 0.0,
+                      "percent-state": 0.0,
+                      "average-length": 4.0
+                    }
+                  }
+                },
+                "base_type": "type/Text"
+              },
+              {
+                "database_type": "int8",
+                "semantic_type": "type/Quantity",
+                "lib/deduplicated-name": "count",
+                "lib/original-name": "count",
+                "name": "count",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "count",
+                  {
+                    "base-type": "type/BigInteger"
+                  }
+                ],
+                "effective_type": "type/BigInteger",
+                "display_name": "count",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 2,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 13.0,
+                      "q1": 13.0,
+                      "q3": 198.0,
+                      "max": 198.0,
+                      "sd": 130.8147545195113,
+                      "avg": 105.5
+                    }
+                  }
+                },
+                "base_type": "type/BigInteger"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T00:55:57.399817215Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT order_type, COUNT(order_id) FROM tb_market_order WHERE order_type IS NOT NULL GROUP BY order_type",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 2,
+        "running_time": 719
+      }
+    }
+  },
+  {
+    "kpi_name": "Total Sales by Order Type",
+    "sql_query": "SELECT order_type, SUM(payment_total) FROM tb_market_order WHERE order_type IS NOT NULL AND payment_total IS NOT NULL GROUP BY order_type",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[\"구매문의\",1309891],[\"바로구매\",986230]],\"cols\":[{\"database_type\":\"varchar\",\"lib/deduplicated-name\":\"order_type\",\"lib/original-name\":\"order_type\",\"name\":\"order_type\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"order_type\",{\"base-type\":\"type/Text\"}],\"effective_type\":\"type/Text\",\"display_name\":\"order_type\",\"base_type\":\"type/Text\"},{\"database_type\":\"numeric\",\"lib/deduplicated-name\":\"sum\",\"lib/original-name\":\"sum\",\"name\":\"sum\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"sum\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"sum\",\"base_type\":\"type/Decimal\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT order_type, SUM(payment_total) FROM tb_market_order WHERE order_type IS NOT NULL AND payment_total IS NOT NULL GROUP BY order_type\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"varchar\",\"semantic_type\":\"type/Category\",\"lib/deduplicated-name\":\"order_type\",\"lib/original-name\":\"order_type\",\"name\":\"order_type\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"order_type\",{\"base-type\":\"type/Text\"}],\"effective_type\":\"type/Text\",\"display_name\":\"order_type\",\"fingerprint\":{\"global\":{\"distinct-count\":2,\"nil%\":0.0},\"type\":{\"type/Text\":{\"percent-json\":0.0,\"percent-url\":0.0,\"percent-email\":0.0,\"percent-state\":0.0,\"average-length\":4.0}}},\"base_type\":\"type/Text\"},{\"database_type\":\"numeric\",\"semantic_type\":null,\"lib/deduplicated-name\":\"sum\",\"lib/original-name\":\"sum\",\"name\":\"sum\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"sum\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"sum\",\"fingerprint\":{\"global\":{\"distinct-count\":2,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":986230.0,\"q1\":986230.0,\"q3\":1309891.0,\"max\":1309891.0,\"sd\":228862.88790561917,\"avg\":1148060.5}}},\"base_type\":\"type/Decimal\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T00:55:59.237987143Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT order_type, SUM(payment_total) FROM tb_market_order WHERE order_type IS NOT NULL AND payment_total IS NOT NULL GROUP BY order_type\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":2,\"running_time\":540}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              "구매문의",
+              1309891
+            ],
+            [
+              "바로구매",
+              986230
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "varchar",
+              "lib/deduplicated-name": "order_type",
+              "lib/original-name": "order_type",
+              "name": "order_type",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "order_type",
+                {
+                  "base-type": "type/Text"
+                }
+              ],
+              "effective_type": "type/Text",
+              "display_name": "order_type",
+              "base_type": "type/Text"
+            },
+            {
+              "database_type": "numeric",
+              "lib/deduplicated-name": "sum",
+              "lib/original-name": "sum",
+              "name": "sum",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "sum",
+                {
+                  "base-type": "type/Decimal"
+                }
+              ],
+              "effective_type": "type/Decimal",
+              "display_name": "sum",
+              "base_type": "type/Decimal"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT order_type, SUM(payment_total) FROM tb_market_order WHERE order_type IS NOT NULL AND payment_total IS NOT NULL GROUP BY order_type"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "varchar",
+                "semantic_type": "type/Category",
+                "lib/deduplicated-name": "order_type",
+                "lib/original-name": "order_type",
+                "name": "order_type",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "order_type",
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "effective_type": "type/Text",
+                "display_name": "order_type",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 2,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Text": {
+                      "percent-json": 0.0,
+                      "percent-url": 0.0,
+                      "percent-email": 0.0,
+                      "percent-state": 0.0,
+                      "average-length": 4.0
+                    }
+                  }
+                },
+                "base_type": "type/Text"
+              },
+              {
+                "database_type": "numeric",
+                "semantic_type": null,
+                "lib/deduplicated-name": "sum",
+                "lib/original-name": "sum",
+                "name": "sum",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "sum",
+                  {
+                    "base-type": "type/Decimal"
+                  }
+                ],
+                "effective_type": "type/Decimal",
+                "display_name": "sum",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 2,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 986230.0,
+                      "q1": 986230.0,
+                      "q3": 1309891.0,
+                      "max": 1309891.0,
+                      "sd": 228862.88790561917,
+                      "avg": 1148060.5
+                    }
+                  }
+                },
+                "base_type": "type/Decimal"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T00:55:59.237987143Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT order_type, SUM(payment_total) FROM tb_market_order WHERE order_type IS NOT NULL AND payment_total IS NOT NULL GROUP BY order_type",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 2,
+        "running_time": 540
+      }
+    }
+  },
+  {
+    "kpi_name": "Average Order Value by Order Type",
+    "sql_query": "SELECT order_type, AVG(payment_total) FROM tb_market_order WHERE order_type IS NOT NULL AND payment_total IS NOT NULL GROUP BY order_type",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[\"구매문의\",10395.960317460317],[\"바로구매\",75863.846153846154]],\"cols\":[{\"database_type\":\"varchar\",\"lib/deduplicated-name\":\"order_type\",\"lib/original-name\":\"order_type\",\"name\":\"order_type\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"order_type\",{\"base-type\":\"type/Text\"}],\"effective_type\":\"type/Text\",\"display_name\":\"order_type\",\"base_type\":\"type/Text\"},{\"database_type\":\"numeric\",\"lib/deduplicated-name\":\"avg\",\"lib/original-name\":\"avg\",\"name\":\"avg\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"avg\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"avg\",\"base_type\":\"type/Decimal\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT order_type, AVG(payment_total) FROM tb_market_order WHERE order_type IS NOT NULL AND payment_total IS NOT NULL GROUP BY order_type\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"varchar\",\"semantic_type\":\"type/Category\",\"lib/deduplicated-name\":\"order_type\",\"lib/original-name\":\"order_type\",\"name\":\"order_type\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"order_type\",{\"base-type\":\"type/Text\"}],\"effective_type\":\"type/Text\",\"display_name\":\"order_type\",\"fingerprint\":{\"global\":{\"distinct-count\":2,\"nil%\":0.0},\"type\":{\"type/Text\":{\"percent-json\":0.0,\"percent-url\":0.0,\"percent-email\":0.0,\"percent-state\":0.0,\"average-length\":4.0}}},\"base_type\":\"type/Text\"},{\"database_type\":\"numeric\",\"semantic_type\":null,\"lib/deduplicated-name\":\"avg\",\"lib/original-name\":\"avg\",\"name\":\"avg\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"avg\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"avg\",\"fingerprint\":{\"global\":{\"distinct-count\":2,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":10395.960317460316,\"q1\":10395.960317460316,\"q3\":75863.84615384616,\"max\":75863.84615384616,\"sd\":46292.78602485515,\"avg\":43129.90323565323}}},\"base_type\":\"type/Decimal\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T00:56:00.879660509Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT order_type, AVG(payment_total) FROM tb_market_order WHERE order_type IS NOT NULL AND payment_total IS NOT NULL GROUP BY order_type\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":2,\"running_time\":540}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              "구매문의",
+              10395.960317460316
+            ],
+            [
+              "바로구매",
+              75863.84615384616
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "varchar",
+              "lib/deduplicated-name": "order_type",
+              "lib/original-name": "order_type",
+              "name": "order_type",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "order_type",
+                {
+                  "base-type": "type/Text"
+                }
+              ],
+              "effective_type": "type/Text",
+              "display_name": "order_type",
+              "base_type": "type/Text"
+            },
+            {
+              "database_type": "numeric",
+              "lib/deduplicated-name": "avg",
+              "lib/original-name": "avg",
+              "name": "avg",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "avg",
+                {
+                  "base-type": "type/Decimal"
+                }
+              ],
+              "effective_type": "type/Decimal",
+              "display_name": "avg",
+              "base_type": "type/Decimal"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT order_type, AVG(payment_total) FROM tb_market_order WHERE order_type IS NOT NULL AND payment_total IS NOT NULL GROUP BY order_type"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "varchar",
+                "semantic_type": "type/Category",
+                "lib/deduplicated-name": "order_type",
+                "lib/original-name": "order_type",
+                "name": "order_type",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "order_type",
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "effective_type": "type/Text",
+                "display_name": "order_type",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 2,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Text": {
+                      "percent-json": 0.0,
+                      "percent-url": 0.0,
+                      "percent-email": 0.0,
+                      "percent-state": 0.0,
+                      "average-length": 4.0
+                    }
+                  }
+                },
+                "base_type": "type/Text"
+              },
+              {
+                "database_type": "numeric",
+                "semantic_type": null,
+                "lib/deduplicated-name": "avg",
+                "lib/original-name": "avg",
+                "name": "avg",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "avg",
+                  {
+                    "base-type": "type/Decimal"
+                  }
+                ],
+                "effective_type": "type/Decimal",
+                "display_name": "avg",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 2,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 10395.960317460316,
+                      "q1": 10395.960317460316,
+                      "q3": 75863.84615384616,
+                      "max": 75863.84615384616,
+                      "sd": 46292.78602485515,
+                      "avg": 43129.90323565323
+                    }
+                  }
+                },
+                "base_type": "type/Decimal"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T00:56:00.879660509Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT order_type, AVG(payment_total) FROM tb_market_order WHERE order_type IS NOT NULL AND payment_total IS NOT NULL GROUP BY order_type",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 2,
+        "running_time": 540
+      }
+    }
+  },
+  {
+    "kpi_name": "Total Test Orders",
+    "sql_query": "SELECT COUNT(order_id) FROM tb_market_order WHERE is_test = TRUE",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[0]],\"cols\":[{\"database_type\":\"int8\",\"lib/deduplicated-name\":\"count\",\"lib/original-name\":\"count\",\"name\":\"count\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"count\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"count\",\"base_type\":\"type/BigInteger\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT COUNT(order_id) FROM tb_market_order WHERE is_test = TRUE\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"int8\",\"semantic_type\":\"type/Quantity\",\"lib/deduplicated-name\":\"count\",\"lib/original-name\":\"count\",\"name\":\"count\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"count\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"count\",\"fingerprint\":{\"global\":{\"distinct-count\":1,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":0.0,\"q1\":0.0,\"q3\":0.0,\"max\":0.0,\"sd\":null,\"avg\":0.0}}},\"base_type\":\"type/BigInteger\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T00:56:02.534450318Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT COUNT(order_id) FROM tb_market_order WHERE is_test = TRUE\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":1,\"running_time\":541}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              0
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "int8",
+              "lib/deduplicated-name": "count",
+              "lib/original-name": "count",
+              "name": "count",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "count",
+                {
+                  "base-type": "type/BigInteger"
+                }
+              ],
+              "effective_type": "type/BigInteger",
+              "display_name": "count",
+              "base_type": "type/BigInteger"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT COUNT(order_id) FROM tb_market_order WHERE is_test = TRUE"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "int8",
+                "semantic_type": "type/Quantity",
+                "lib/deduplicated-name": "count",
+                "lib/original-name": "count",
+                "name": "count",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "count",
+                  {
+                    "base-type": "type/BigInteger"
+                  }
+                ],
+                "effective_type": "type/BigInteger",
+                "display_name": "count",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 1,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 0.0,
+                      "q1": 0.0,
+                      "q3": 0.0,
+                      "max": 0.0,
+                      "sd": null,
+                      "avg": 0.0
+                    }
+                  }
+                },
+                "base_type": "type/BigInteger"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T00:56:02.534450318Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT COUNT(order_id) FROM tb_market_order WHERE is_test = TRUE",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 1,
+        "running_time": 541
+      }
+    }
+  }
+]

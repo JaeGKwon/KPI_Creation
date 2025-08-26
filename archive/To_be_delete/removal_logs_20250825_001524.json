@@ -1,0 +1,38 @@
+[
+  {
+    "kpi_name": "Total Refund Commission per User",
+    "table_name": "tb_payment_root",
+    "reason": "Low business value: While Total Refund Commission per User provides insight into user refund behavior, it may have limited business value. \n1. **Actionability**: Business users may not have clear actions to take based solely on this metric. It lacks specific guidance on how to improve user refund behavior.\n2. **Strategic Impact**: It may not directly align with high-level business objectives unless user refund behavior is a critical focus area.\n3. **Operational Value**: It may not significantly impact day-to-day operations unless there are specific operational processes tied to refund commissions.\n4. **Decision Making**: The metric alone may not provide enough context or depth to support major business decisions.\n5. **Performance Monitoring**: While it can track a specific aspect of user behavior, it may not be a key indicator of overall business performance.",
+    "timestamp": "2025-08-25T00:13:04.804088"
+  },
+  {
+    "kpi_name": "Number of Employees per Partner",
+    "table_name": "tb_partner",
+    "reason": "Low business value: While the Number of Employees per Partner KPI may provide some insights into the size of each partner's business, it has limited business value overall. \n1. **Actionability**: The number of employees per partner may not directly lead to actionable insights or specific actions that can be taken to improve business performance.\n2. **Strategic Impact**: While understanding the size of each partner's business is important, this KPI may not directly align with broader strategic objectives unless specific strategic goals are tied to partner size.\n3. **Operational Value**: This KPI may not significantly impact day-to-day operations as it focuses more on a high-level metric rather than operational efficiency.\n4. **Decision Making**: The number of employees per partner may not be a critical factor in most business decisions unless it is directly linked to specific decision-making processes.\n5. **Performance Monitoring**: While it can provide a snapshot of partner business size, it may not be a key metric for",
+    "timestamp": "2025-08-25T00:13:22.314926"
+  },
+  {
+    "kpi_name": "Number of Partners by CEO",
+    "table_name": "tb_partner",
+    "reason": "Low business value: While the Number of Partners by CEO KPI may provide some insights into the leadership of partner organizations, it lacks direct actionability, strategic impact, operational value, and decision-making support. This metric may not directly align with key business objectives or help in day-to-day operations. Additionally, it may not be a critical factor in monitoring overall business performance. As a result, the business value of this KPI is relatively low compared to other more impactful metrics.",
+    "timestamp": "2025-08-25T00:13:29.687319"
+  },
+  {
+    "kpi_name": "Number of Partners by Contact Cellphone",
+    "table_name": "tb_partner",
+    "reason": "Low business value: While the Number of Partners by Contact Cellphone KPI may provide some insights into the contact information of partners, it has limited business value overall. \n1. **Actionability**: The metric itself does not directly suggest any specific actions that can be taken based on the distribution of partners by contact cellphone.\n2. **Strategic Impact**: It may not directly align with high-level strategic business objectives unless contact cellphone information is a critical factor for the organization.\n3. **Operational Value**: It may have limited impact on day-to-day operations unless there are specific operational processes that rely heavily on contact cellphone information.\n4. **Decision Making**: The KPI may not significantly impact key business decisions unless there are specific scenarios where contact cellphone data plays a crucial role.\n5. **Performance Monitoring**: While it can track a specific aspect of partner data, it may not be a critical performance indicator for overall business performance evaluation. \n\nOverall, the KPI of Number of",
+    "timestamp": "2025-08-25T00:13:36.765883"
+  },
+  {
+    "kpi_name": "Categories With Images",
+    "table_name": "tb_market_category",
+    "reason": "Low business value: While having images associated with categories can enhance the visual appeal of the market, the KPI \"Categories With Images\" itself does not directly provide actionable insights, strategic alignment, operational value, or significant support for decision-making. It may have some value in terms of enhancing user experience, but it does not directly impact key business objectives or performance monitoring.",
+    "timestamp": "2025-08-25T00:14:23.345635"
+  },
+  {
+    "kpi_name": "Average Category Sort Value",
+    "table_name": "tb_market_category",
+    "reason": "Low business value: While understanding the average priority of categories may provide some insights, the Average Category Sort Value KPI lacks significant business value in terms of actionability, strategic impact, operational value, decision making, and performance monitoring. It may not directly lead to actionable insights or strategic decisions, and there are likely more impactful KPIs that can better support business objectives and operations.",
+    "timestamp": "2025-08-25T00:14:24.471239"
+  }
+]

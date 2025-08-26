@@ -1,0 +1,884 @@
+[
+  {
+    "kpi_name": "Average Cart Value",
+    "table_name": "tb_market_cart",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing trends in average cart value and implementing strategies to increase it, such as offering promotions or upselling techniques.\n2. **Strategic Impact**: Aligns with the business objective of maximizing revenue by providing insights into potential revenue per cart and identifying opportunities for growth.\n3. **Operational Value**: Helps in day-to-day operations by guiding pricing strategies, product bundling, and marketing campaigns to optimize cart value.\n4. **Decision Making**: Supports business decisions by providing a clear indicator of customer purchasing behavior and informing decisions on product offerings and pricing.\n5. **Performance Monitoring**: Enables tracking of business performance by monitoring changes in average cart value over time and assessing the effectiveness of implemented strategies.",
+    "timestamp": "2025-08-25T00:22:49.671836"
+  },
+  {
+    "kpi_name": "Cart Completion Time",
+    "table_name": "tb_market_cart",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing the average time taken by customers to make a purchase. They can identify bottlenecks in the purchasing process and implement strategies to streamline the checkout process, improve user experience, and reduce cart abandonment.\n2. **Strategic Impact**: This KPI aligns with the business objective of improving customer experience and increasing conversion rates. By measuring customer decision time, the company can optimize its sales funnel and drive more revenue.\n3. **Operational Value**: It helps with day-to-day operations by providing insights into the efficiency of the checkout process. Operational teams can use this KPI to identify areas for improvement and enhance the overall shopping experience.\n4. **Decision Making**: This KPI supports business decisions by providing data-driven insights into customer behavior. It can help in making informed decisions related to website design, marketing strategies, and product offerings.\n5. **Performance Monitoring**: It",
+    "timestamp": "2025-08-25T00:22:51.365515"
+  },
+  {
+    "kpi_name": "Cart Retention Rate",
+    "table_name": "tb_market_cart",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing the cart retention rate and implementing strategies to improve it, such as targeted marketing campaigns or improving the checkout process.\n2. **Strategic Impact**: This KPI aligns with the business objective of measuring customer retention and engagement, which are crucial for long-term business success.\n3. **Operational Value**: It provides insights into user behavior and helps in understanding how users interact with the cart feature, which can inform operational decisions related to website design and user experience.\n4. **Decision Making**: The Cart Retention Rate can support decisions related to marketing strategies, product offerings, and customer engagement initiatives.\n5. **Performance Monitoring**: This KPI helps track the performance of customer retention efforts and provides a clear metric to monitor over time to assess the effectiveness of retention strategies.",
+    "timestamp": "2025-08-25T00:22:53.533696"
+  },
+  {
+    "kpi_name": "Cart Item Return Rate",
+    "table_name": "tb_market_cart",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying trends in cart item returns and addressing potential product quality issues or customer satisfaction concerns.\n2. **Strategic Impact**: It aligns with the business objective of ensuring product satisfaction and quality, which is crucial for maintaining customer loyalty and retention.\n3. **Operational Value**: It can help in improving day-to-day operations by highlighting areas where product improvements or customer service enhancements are needed.\n4. **Decision Making**: It supports business decisions by providing insights into customer preferences and potential areas for product enhancement.\n5. **Performance Monitoring**: It helps track business performance by indicating how well products are meeting customer expectations and where improvements can be made.",
+    "timestamp": "2025-08-25T00:22:55.133553"
+  },
+  {
+    "kpi_name": "Cart Item Exchange Rate",
+    "table_name": "tb_market_cart",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing the reasons for cart item exchanges and making improvements to product offerings or customer service to enhance satisfaction and fit.\n2. **Strategic Impact**: It aligns with the business objective of measuring product satisfaction and fit, which is crucial for customer retention and loyalty.\n3. **Operational Value**: It provides insights into the effectiveness of products in meeting customer needs, which can inform operational decisions related to inventory management and product development.\n4. **Decision Making**: It supports decision-making by highlighting areas for improvement in product quality or customer experience.\n5. **Performance Monitoring**: It helps track business performance by indicating trends in customer satisfaction and potential issues with product offerings.",
+    "timestamp": "2025-08-25T00:22:56.807356"
+  },
+  {
+    "kpi_name": "Cart Item Refund Rate",
+    "table_name": "tb_market_cart",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying trends in cart item refunds and addressing potential product quality or customer satisfaction issues.\n2. **Strategic Impact**: It aligns with the business objective of ensuring product satisfaction and quality, which can lead to increased customer loyalty and retention.\n3. **Operational Value**: It helps in day-to-day operations by providing insights into the performance of products and customer satisfaction levels.\n4. **Decision Making**: It supports business decisions by highlighting areas that may require improvement to reduce refund rates and enhance overall customer experience.\n5. **Performance Monitoring**: It helps track business performance by measuring the effectiveness of product quality and customer satisfaction initiatives.",
+    "timestamp": "2025-08-25T00:22:58.524888"
+  },
+  {
+    "kpi_name": "Total Deliveries",
+    "table_name": "tb_user_delivery",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing trends in total deliveries, identifying peak periods, optimizing delivery schedules, and allocating resources efficiently.\n2. **Strategic Impact**: Aligns with business objectives as total deliveries directly impact customer satisfaction, operational efficiency, and revenue generation.\n3. **Operational Value**: Helps in day-to-day operations by monitoring delivery performance, identifying bottlenecks, and improving overall delivery processes.\n4. **Decision Making**: Supports decision-making by providing insights into delivery efficiency, resource allocation, and customer demand patterns.\n5. **Performance Monitoring**: Enables tracking of business performance by measuring the volume of deliveries against targets and benchmarks, facilitating continuous improvement efforts.",
+    "timestamp": "2025-08-25T00:22:59.916867"
+  },
+  {
+    "kpi_name": "Total Unique Users",
+    "table_name": "tb_user_delivery",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing user engagement, identifying trends, and targeting specific user segments for marketing or product improvements.\n2. **Strategic Impact**: It aligns with the business objective of understanding and growing the user base, which is crucial for business growth and sustainability.\n3. **Operational Value**: It can help in optimizing delivery processes, improving user experience, and identifying potential issues related to user engagement.\n4. **Decision Making**: It supports decisions related to marketing strategies, product development, and resource allocation based on user behavior and preferences.\n5. **Performance Monitoring**: It helps track the performance of user acquisition efforts, user retention strategies, and overall business growth.\n\nOverall, Total Unique Users is a high-value KPI as it provides valuable insights into the user base, which can drive strategic decisions, operational improvements, and performance monitoring in the business.",
+    "timestamp": "2025-08-25T00:23:01.629674"
+  },
+  {
+    "kpi_name": "Default Delivery Addresses",
+    "table_name": "tb_user_delivery",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing the number of users who have set a default delivery address and identifying trends or patterns. They can use this information to tailor marketing strategies or improve delivery services.\n2. **Strategic Impact**: This KPI aligns with the business objective of understanding user preferences and enhancing customer experience. Knowing the primary delivery location preferred by users can help in strategic decision-making.\n3. **Operational Value**: It can help in optimizing delivery operations by focusing on the most commonly used delivery addresses and streamlining processes accordingly.\n4. **Decision Making**: The data from this KPI can support decisions related to inventory management, logistics planning, and customer segmentation.\n5. **Performance Monitoring**: Tracking the number of users with default delivery addresses can provide insights into the effectiveness of marketing campaigns or the success of initiatives aimed at encouraging users to set a default address.\n\nOverall, this KPI holds high",
+    "timestamp": "2025-08-25T00:23:03.898973"
+  },
+  {
+    "kpi_name": "Deliveries with Refund or Exchange",
+    "table_name": "tb_user_delivery",
+    "rating": "HIGH VALUE",
+    "reason": "This KPI, Deliveries with Refund or Exchange, holds high business value across multiple dimensions. \n\n1. **Actionability**: Business users can take direct action based on this metric by identifying trends in product returns or exchanges, allowing them to address potential product quality issues, customer satisfaction concerns, or operational inefficiencies.\n   \n2. **Strategic Impact**: It aligns with the strategic objective of improving customer experience and product quality, as reducing the number of deliveries associated with refunds or exchanges can lead to higher customer satisfaction and loyalty.\n   \n3. **Operational Value**: It provides valuable insights for day-to-day operations by highlighting areas that may require process improvements, quality control measures, or customer service enhancements.\n   \n4. **Decision Making**: This KPI supports data-driven decision-making by enabling businesses to assess the effectiveness of their product offerings, marketing strategies, and customer service policies.\n   \n5. **Performance Monitoring**: It helps track business performance by monitoring",
+    "timestamp": "2025-08-25T00:23:05.529038"
+  },
+  {
+    "kpi_name": "Average Deliveries per User",
+    "table_name": "tb_user_delivery",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying trends in user delivery frequency and adjusting strategies to increase or maintain user engagement.\n2. **Strategic Impact**: It aligns with the business objective of understanding user behavior and engagement, which is crucial for driving growth and retention.\n3. **Operational Value**: It provides insights into user activity, which can help in optimizing delivery processes and resource allocation.\n4. **Decision Making**: This KPI supports decision-making by providing data on user behavior that can influence marketing campaigns, product offerings, and customer service strategies.\n5. **Performance Monitoring**: It helps track the performance of delivery services and user engagement, enabling the business to measure the effectiveness of its operations.\n\nOverall, the Average Deliveries per User KPI holds high value as it offers actionable insights, aligns with strategic objectives, aids in day-to-day operations, supports decision-making, and facilitates performance monitoring.",
+    "timestamp": "2025-08-25T00:23:08.454270"
+  },
+  {
+    "kpi_name": "Most Common Delivery Zip Code",
+    "table_name": "tb_user_delivery",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by allocating resources efficiently to high-demand delivery areas, optimizing delivery routes, and improving customer service in those areas.\n2. **Strategic Impact**: It aligns with the business objective of maximizing efficiency and customer satisfaction by focusing on high-demand areas.\n3. **Operational Value**: It helps in day-to-day operations by guiding delivery scheduling and resource allocation.\n4. **Decision Making**: It supports business decisions related to logistics, resource allocation, and customer service strategies.\n5. **Performance Monitoring**: It enables tracking of business performance in terms of delivery efficiency and customer satisfaction in different areas.",
+    "timestamp": "2025-08-25T00:23:10.239546"
+  },
+  {
+    "kpi_name": "Latest Delivery Update",
+    "table_name": "tb_user_delivery",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by monitoring the data freshness of delivery records. If there are delays or issues with the latest delivery update, they can investigate and address them promptly.\n2. **Strategic Impact**: Monitoring the latest delivery update aligns with the business objective of ensuring timely and efficient delivery processes, which can impact customer satisfaction and retention.\n3. **Operational Value**: This KPI provides valuable insights for day-to-day operations by indicating the timeliness and accuracy of delivery updates, helping in managing logistics and supply chain operations effectively.\n4. **Decision Making**: Having up-to-date delivery information can support decision-making processes related to inventory management, resource allocation, and customer service improvements.\n5. **Performance Monitoring**: Tracking the latest delivery update helps in monitoring the performance of delivery operations and identifying areas for improvement, contributing to overall business performance.",
+    "timestamp": "2025-08-25T00:23:11.780822"
+  },
+  {
+    "kpi_name": "Deliveries with Multiple Contact Numbers",
+    "table_name": "tb_user_delivery",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing the contact preferences of users with multiple contact numbers and tailoring communication strategies accordingly.\n2. **Strategic Impact**: Understanding user contact preferences aligns with the business objective of enhancing customer experience and engagement.\n3. **Operational Value**: This KPI can help in optimizing delivery processes by ensuring effective communication with customers.\n4. **Decision Making**: Insights from this KPI can support decisions related to customer communication strategies and service improvements.\n5. **Performance Monitoring**: Tracking the number of deliveries with multiple contact numbers can provide a measure of the effectiveness of communication channels and customer engagement strategies.",
+    "timestamp": "2025-08-25T00:23:15.036813"
+  },
+  {
+    "kpi_name": "Deliveries with Missing Contact Numbers",
+    "table_name": "tb_user_delivery",
+    "rating": "HIGH VALUE",
+    "reason": "This KPI holds high value due to the following reasons:\n1. **Actionability**: Business users can take immediate action to rectify missing contact numbers for deliveries, ensuring smooth communication and successful deliveries.\n2. **Strategic Impact**: It aligns with the business objective of providing efficient and reliable delivery services, as accurate contact information is crucial for customer satisfaction.\n3. **Operational Value**: It directly contributes to the day-to-day operations by highlighting potential issues that could impact delivery timelines and customer experience.\n4. **Decision Making**: It supports decision-making processes by providing insights into the quality of contact information management and the need for improvements.\n5. **Performance Monitoring**: This KPI helps in monitoring the performance of the delivery process and identifying areas for optimization to enhance overall business performance.",
+    "timestamp": "2025-08-25T00:23:17.628673"
+  },
+  {
+    "kpi_name": "Deliveries by User with Most Deliveries",
+    "table_name": "tb_user_delivery",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying high-volume users and potentially offering them loyalty rewards or incentives to encourage continued business.\n2. **Strategic Impact**: It aligns with the business objective of understanding customer behavior and preferences, which can help in improving customer satisfaction and retention.\n3. **Operational Value**: It provides insights into the performance of individual users, which can be valuable for optimizing delivery operations and resource allocation.\n4. **Decision Making**: It supports decision-making by highlighting key users who have a significant impact on delivery volume, allowing for targeted strategies to be developed.\n5. **Performance Monitoring**: It helps track business performance by monitoring the delivery volume of the most active users, which can indicate overall business growth and customer engagement.",
+    "timestamp": "2025-08-25T00:23:19.088717"
+  },
+  {
+    "kpi_name": "Deliveries with Detailed Address",
+    "table_name": "tb_user_delivery",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying trends in user address detail preferences and adjusting delivery processes accordingly.\n2. **Strategic Impact**: It aligns with the business objective of improving customer satisfaction through efficient and accurate deliveries.\n3. **Operational Value**: It helps in day-to-day operations by ensuring that deliveries are made to accurate addresses, reducing errors and delays.\n4. **Decision Making**: It supports business decisions by providing insights into user preferences and enabling targeted improvements in delivery services.\n5. **Performance Monitoring**: It helps track business performance by measuring the effectiveness of delivery processes and identifying areas for optimization.",
+    "timestamp": "2025-08-25T00:23:21.719144"
+  },
+  {
+    "kpi_name": "Deliveries without Detailed Address",
+    "table_name": "tb_user_delivery",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying and rectifying delivery address issues promptly, ensuring successful deliveries and customer satisfaction.\n2. **Strategic Impact**: It aligns with the business objective of improving delivery efficiency and customer experience, as accurate address information is crucial for successful deliveries.\n3. **Operational Value**: It directly contributes to day-to-day operations by highlighting areas for address data improvement, leading to smoother delivery processes.\n4. **Decision Making**: It supports decision-making by providing insights into address data quality and enabling proactive measures to enhance delivery performance.\n5. **Performance Monitoring**: It helps track the performance of delivery operations by monitoring the frequency of deliveries without detailed address information, allowing for continuous improvement efforts.",
+    "timestamp": "2025-08-25T00:23:23.240814"
+  },
+  {
+    "kpi_name": "Deliveries with Same Receiver and User",
+    "table_name": "tb_user_delivery",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by understanding user delivery preferences and potentially tailoring services or marketing strategies accordingly.\n2. **Strategic Impact**: It aligns with the business objective of enhancing customer experience and satisfaction by catering to user preferences.\n3. **Operational Value**: It can help optimize delivery processes and resource allocation by focusing on deliveries with the same receiver and user.\n4. **Decision Making**: This KPI supports decision-making by providing insights into user behavior and preferences, which can influence strategic decisions.\n5. **Performance Monitoring**: It helps track the performance of delivery services and user engagement, contributing to overall business performance monitoring.",
+    "timestamp": "2025-08-25T00:23:25.688645"
+  },
+  {
+    "kpi_name": "Deliveries with Different Receiver and User",
+    "table_name": "tb_user_delivery",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing the deliveries where the receiver is different from the user. This insight can help in understanding user preferences and potentially improving delivery processes to better meet customer needs.\n2. **Strategic Impact**: Understanding user delivery preferences aligns with the business objective of enhancing customer satisfaction and loyalty. It can also provide insights into potential areas for service improvement.\n3. **Operational Value**: This KPI can provide valuable information for day-to-day operations by highlighting patterns or trends in user behavior related to deliveries. It can help in optimizing delivery processes and resource allocation.\n4. **Decision Making**: The data from this KPI can support decision-making processes related to delivery strategies, customer service enhancements, and overall business operations.\n5. **Performance Monitoring**: Monitoring deliveries with different receiver and user can help track the performance of delivery services and identify areas for improvement, making it a valuable metric for performance",
+    "timestamp": "2025-08-25T00:23:27.454207"
+  },
+  {
+    "kpi_name": "Deliveries with Missing Receiver",
+    "table_name": "tb_user_delivery",
+    "rating": "HIGH VALUE",
+    "reason": "This KPI holds high value across all evaluation criteria. \n1. **Actionability**: Business users can take action by investigating and rectifying the missing receiver information to ensure successful deliveries.\n2. **Strategic Impact**: It aligns with the business objective of ensuring accurate and timely deliveries, which is crucial for customer satisfaction and retention.\n3. **Operational Value**: It aids in improving day-to-day operations by highlighting potential issues in the delivery process that can be addressed promptly.\n4. **Decision Making**: It supports decision-making by providing insights into the efficiency of the delivery process and the need for improvements.\n5. **Performance Monitoring**: It helps track the performance of the delivery process and enables the business to monitor and improve delivery accuracy.",
+    "timestamp": "2025-08-25T00:23:29.491117"
+  },
+  {
+    "kpi_name": "Deliveries with Missing Address",
+    "table_name": "tb_user_delivery",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take immediate action upon identifying deliveries with missing addresses, such as contacting customers for address verification or updating the address information.\n2. **Strategic Impact**: Ensuring accurate delivery addresses aligns with the business objective of providing efficient and reliable delivery services, which can enhance customer satisfaction and loyalty.\n3. **Operational Value**: This KPI directly contributes to improving day-to-day operations by reducing the number of failed deliveries due to missing address information.\n4. **Decision Making**: It supports decision-making processes by highlighting areas that require attention and potential process improvements to enhance delivery efficiency.\n5. **Performance Monitoring**: Tracking deliveries with missing addresses helps monitor the effectiveness of address collection processes and overall delivery performance. \n\nOverall, this KPI holds high value as it addresses operational efficiency, customer satisfaction, and strategic business objectives.",
+    "timestamp": "2025-08-25T00:23:31.435031"
+  },
+  {
+    "kpi_name": "Deliveries with Missing Zip Code",
+    "table_name": "tb_user_delivery",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying and rectifying missing zip codes in deliveries, which can improve delivery accuracy and customer satisfaction.\n2. **Strategic Impact**: Ensuring accurate delivery zip codes aligns with the business objective of providing efficient and reliable delivery services.\n3. **Operational Value**: It helps in day-to-day operations by highlighting potential issues that can impact delivery efficiency.\n4. **Decision Making**: This KPI supports decision-making by providing insights into the quality of delivery address data and enabling corrective actions to be taken.\n5. **Performance Monitoring**: Tracking deliveries with missing zip codes can help monitor and improve the overall performance of the delivery process.",
+    "timestamp": "2025-08-25T00:23:32.876868"
+  },
+  {
+    "kpi_name": "Deliveries with Missing Contact Number",
+    "table_name": "tb_user_delivery",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take immediate action to rectify missing contact numbers for deliveries, ensuring smooth communication and successful deliveries.\n2. **Strategic Impact**: Ensuring accurate contact information aligns with the business objective of providing excellent customer service and maintaining customer satisfaction.\n3. **Operational Value**: It directly impacts day-to-day operations by reducing the chances of delivery delays or failed deliveries due to missing contact numbers.\n4. **Decision Making**: Having this KPI helps in making informed decisions related to improving delivery processes and customer communication strategies.\n5. **Performance Monitoring**: It helps in tracking the performance of the delivery process and identifying areas for improvement to enhance overall business performance.",
+    "timestamp": "2025-08-25T00:23:34.297813"
+  },
+  {
+    "kpi_name": "Total Equipment Count",
+    "table_name": "tb_partner_equipment",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying equipment shortages or surpluses, optimizing maintenance schedules, or making informed procurement decisions.\n2. **Strategic Impact**: Understanding the total inventory of equipment aligns with the strategic objective of efficient resource management and cost control.\n3. **Operational Value**: It helps in day-to-day operations by ensuring that the right equipment is available when needed, reducing downtime, and improving productivity.\n4. **Decision Making**: The total equipment count supports decisions related to budget allocation, resource planning, and equipment investment.\n5. **Performance Monitoring**: Tracking the total equipment count allows for monitoring of asset utilization, maintenance efficiency, and overall operational performance.\n\nOverall, the Total Equipment Count KPI provides valuable insights that can drive operational efficiency, cost savings, and strategic decision-making, making it a HIGH VALUE metric for the business.",
+    "timestamp": "2025-08-25T00:23:35.803360"
+  },
+  {
+    "kpi_name": "Total Likes Count",
+    "table_name": "tb_partner_equipment",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing trends in likes count and adjusting content or engagement strategies to improve user satisfaction.\n2. **Strategic Impact**: User engagement and satisfaction are key objectives for many businesses, so measuring total likes count aligns well with these strategic goals.\n3. **Operational Value**: While it may not directly impact day-to-day operations, it can provide insights into user preferences and help in refining marketing or product strategies.\n4. **Decision Making**: Total likes count can support decisions related to content creation, marketing campaigns, and product development by indicating what resonates with users.\n5. **Performance Monitoring**: Tracking total likes count can help monitor the effectiveness of engagement efforts and overall user satisfaction, making it a valuable metric for performance monitoring.",
+    "timestamp": "2025-08-25T00:23:37.264380"
+  },
+  {
+    "kpi_name": "Total Comments Count",
+    "table_name": "tb_partner_equipment",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing trends in user engagement and feedback to improve equipment performance or user experience.\n2. **Strategic Impact**: It aligns with the business objective of enhancing user engagement and satisfaction, which can lead to increased customer loyalty and retention.\n3. **Operational Value**: It can help in identifying equipment that may require attention or improvements based on the volume of comments received.\n4. **Decision Making**: The total comments count can support decisions related to resource allocation, product development, or customer service improvements.\n5. **Performance Monitoring**: It provides a clear indicator of how well the equipment is being received by users and can track improvements over time.",
+    "timestamp": "2025-08-25T00:23:39.065357"
+  },
+  {
+    "kpi_name": "Average Likes Per Equipment",
+    "table_name": "tb_partner_equipment",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying equipment that receives low likes and improving them to increase user satisfaction.\n2. **Strategic Impact**: Aligns with the business objective of enhancing user satisfaction, which can lead to increased customer retention and loyalty.\n3. **Operational Value**: Helps in monitoring and improving the quality of equipment on a day-to-day basis, which can directly impact user experience.\n4. **Decision Making**: Supports decisions related to equipment maintenance, upgrades, or removal based on user feedback.\n5. **Performance Monitoring**: Enables tracking of user satisfaction levels over time and assessing the effectiveness of equipment-related initiatives.\n\nOverall, this KPI provides valuable insights into user satisfaction and can drive strategic decisions and operational improvements within the business.",
+    "timestamp": "2025-08-25T00:23:40.615469"
+  },
+  {
+    "kpi_name": "Average Comments Per Equipment",
+    "table_name": "tb_partner_equipment",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying equipment with low engagement and implementing strategies to increase user interaction.\n2. **Strategic Impact**: It aligns with the business objective of enhancing user engagement, which can lead to increased customer satisfaction and loyalty.\n3. **Operational Value**: It can help in optimizing equipment usage and identifying areas for improvement in user experience.\n4. **Decision Making**: This KPI supports decision-making by providing insights into user behavior and preferences, guiding decisions on equipment maintenance, upgrades, or replacements.\n5. **Performance Monitoring**: It helps track the performance of equipment in terms of user engagement, allowing for continuous monitoring and adjustment of strategies.\n\nOverall, this KPI holds high value as it provides actionable insights, aligns with strategic objectives, aids in day-to-day operations, supports decision-making, and enables performance monitoring.",
+    "timestamp": "2025-08-25T00:23:43.114245"
+  },
+  {
+    "kpi_name": "New Equipment Count",
+    "table_name": "tb_partner_equipment",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing trends in equipment additions and making decisions on procurement, maintenance, or disposal.\n2. **Strategic Impact**: Tracking the growth of equipment inventory aligns with the strategic objective of ensuring operational efficiency and meeting demand.\n3. **Operational Value**: This KPI provides valuable insights for day-to-day operations, such as identifying equipment shortages or excesses.\n4. **Decision Making**: The data on new equipment count supports informed decision-making regarding resource allocation and investment in equipment.\n5. **Performance Monitoring**: Monitoring the new equipment count helps track the business's performance in terms of capacity, efficiency, and readiness to meet customer needs.",
+    "timestamp": "2025-08-25T00:23:49.861920"
+  },
+  {
+    "kpi_name": "Updated Equipment Count",
+    "table_name": "tb_partner_equipment",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying equipment that needs maintenance or updates, ensuring smooth operations.\n2. **Strategic Impact**: It aligns with the business objective of maintaining and managing equipment inventory effectively, which is crucial for operational efficiency.\n3. **Operational Value**: It directly contributes to day-to-day operations by providing insights into the status of equipment updates, enabling timely actions.\n4. **Decision Making**: This KPI supports decision-making related to equipment maintenance schedules, resource allocation, and budget planning.\n5. **Performance Monitoring**: It helps track the performance of equipment maintenance processes and overall operational efficiency. \n\nOverall, the \"Updated Equipment Count\" KPI holds high value as it not only aids in operational efficiency but also supports strategic decision-making and performance monitoring in managing equipment inventory effectively.",
+    "timestamp": "2025-08-25T00:23:51.281401"
+  },
+  {
+    "kpi_name": "Engagement Rate",
+    "table_name": "tb_partner_equipment",
+    "rating": "HIGH VALUE",
+    "reason": "The Engagement Rate KPI holds high value across all evaluation criteria. \n\n1. **Actionability**: Business users can take action based on this metric by analyzing the engagement rate to understand how users are interacting with the equipment. They can then adjust their strategies to improve engagement.\n2. **Strategic Impact**: This KPI aligns with the business objective of enhancing user engagement, which is crucial for building brand loyalty and driving business growth.\n3. **Operational Value**: It provides insights into day-to-day operations by indicating how well the equipment is resonating with users and where improvements may be needed.\n4. **Decision Making**: The Engagement Rate KPI supports decision-making processes by offering a quantitative measure of user engagement that can guide strategic decisions on marketing, product development, and customer service.\n5. **Performance Monitoring**: It helps track business performance by monitoring the effectiveness of engagement strategies and identifying trends over time.\n\nOverall, the Engagement Rate KPI is of",
+    "timestamp": "2025-08-25T00:23:53.148343"
+  },
+  {
+    "kpi_name": "Equipment Per Partner",
+    "table_name": "tb_partner_equipment",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying partners with low equipment numbers and providing them with additional resources or support to improve their performance.\n2. **Strategic Impact**: Understanding the distribution of equipment across partners aligns with the strategic objective of optimizing resource allocation and ensuring all partners have the necessary tools to succeed.\n3. **Operational Value**: This KPI can help in day-to-day operations by highlighting any disparities in equipment distribution that may impact partner performance.\n4. **Decision Making**: It supports decision-making by providing insights into how equipment allocation affects partner outcomes, enabling informed decisions on resource allocation.\n5. **Performance Monitoring**: Tracking the average number of equipment per partner helps in monitoring the effectiveness of resource distribution strategies and overall business performance.",
+    "timestamp": "2025-08-25T00:23:54.733109"
+  },
+  {
+    "kpi_name": "Most Active Partner",
+    "table_name": "tb_partner_equipment",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by focusing more on partnerships with the most active partners to potentially increase equipment sales or improve collaboration.\n2. **Strategic Impact**: Identifying the most active partners aligns with the strategic objective of maximizing partnerships' effectiveness and driving business growth.\n3. **Operational Value**: This KPI provides insights into day-to-day operations by highlighting which partners are most engaged and can help in resource allocation and relationship management.\n4. **Decision Making**: It supports decision-making by guiding resource allocation, partnership prioritization, and strategic planning based on the performance of partners.\n5. **Performance Monitoring**: Tracking the most active partners helps in monitoring business performance, identifying trends, and evaluating the effectiveness of partnership strategies.",
+    "timestamp": "2025-08-25T00:23:56.229098"
+  },
+  {
+    "kpi_name": "Total RFQs",
+    "table_name": "tb_statistics_user",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by adjusting their marketing strategies, product offerings, or pricing based on the demand indicated by the number of RFQs.\n2. **Strategic Impact**: Understanding the demand from users aligns with the strategic objective of meeting customer needs and increasing sales.\n3. **Operational Value**: This KPI can help in managing inventory levels, production planning, and resource allocation based on the demand indicated by RFQs.\n4. **Decision Making**: The total number of RFQs can support decisions related to product development, marketing campaigns, and sales strategies.\n5. **Performance Monitoring**: Tracking the total RFQs over time can help in monitoring the effectiveness of marketing efforts and overall business performance.",
+    "timestamp": "2025-08-25T00:23:59.490116"
+  },
+  {
+    "kpi_name": "Total Quotations",
+    "table_name": "tb_statistics_user",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing the total number of quotations received and identifying trends or patterns that may require adjustments in the supply chain or partnership strategies.\n2. **Strategic Impact**: Understanding the supply from partners is crucial for business success, and this KPI directly aligns with the strategic objective of optimizing partnerships and ensuring a steady supply of goods or services.\n3. **Operational Value**: This KPI provides valuable insights for day-to-day operations by indicating the level of engagement with partners and the volume of potential business opportunities.\n4. **Decision Making**: The total number of quotations received can influence decisions related to partner selection, negotiation strategies, and resource allocation, making it a valuable metric for decision-making processes.\n5. **Performance Monitoring**: Tracking the total quotations received over time allows businesses to monitor their performance in engaging partners and assessing the effectiveness of their partnership strategies.",
+    "timestamp": "2025-08-25T00:24:01.833447"
+  },
+  {
+    "kpi_name": "Total POs",
+    "table_name": "tb_statistics_user",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing trends in the total number of Purchase Orders completed. They can identify bottlenecks, optimize processes, and allocate resources accordingly.\n2. **Strategic Impact**: Understanding transaction volume is crucial for operational efficiency and cost management, which aligns with business objectives of improving profitability and customer satisfaction.\n3. **Operational Value**: This KPI directly helps with day-to-day operations by providing insights into the volume of procurement activities, enabling better resource planning and inventory management.\n4. **Decision Making**: The total number of Purchase Orders completed can influence decisions related to supplier relationships, inventory levels, and process improvements, making it a valuable metric for decision-making.\n5. **Performance Monitoring**: Tracking this KPI allows businesses to monitor their procurement performance, identify deviations from targets, and take corrective actions to improve efficiency and effectiveness. \n\nOverall, the Total POs KPI holds high",
+    "timestamp": "2025-08-25T00:24:03.600479"
+  },
+  {
+    "kpi_name": "Total Transaction Amount",
+    "table_name": "tb_statistics_user",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing trends in total transaction amount, identifying anomalies, and making adjustments to improve transaction value.\n2. **Strategic Impact**: Understanding the transaction value aligns with the business objective of maximizing revenue and profitability.\n3. **Operational Value**: It helps in day-to-day operations by providing insights into the financial health of the business and identifying areas for improvement.\n4. **Decision Making**: This KPI supports business decisions by providing a clear picture of the transaction value, which can influence strategic choices.\n5. **Performance Monitoring**: It helps track business performance by monitoring the total transaction amount over time and comparing it against targets or benchmarks.",
+    "timestamp": "2025-08-25T00:24:05.610755"
+  },
+  {
+    "kpi_name": "Total Partners Redealed",
+    "table_name": "tb_statistics_user",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing the trend of redeal occurrences with partners and implementing strategies to improve partner retention.\n2. **Strategic Impact**: Understanding partner retention is crucial for long-term business success and aligns with the strategic objective of maintaining strong partnerships.\n3. **Operational Value**: This KPI provides insights into the day-to-day operations related to partner interactions and can help in optimizing these relationships.\n4. **Decision Making**: The data on total partners redeal can support informed decision-making processes related to partner management and engagement strategies.\n5. **Performance Monitoring**: Tracking the total partners redeal metric allows for monitoring the effectiveness of partner retention efforts and overall business performance in this aspect.",
+    "timestamp": "2025-08-25T00:24:07.472647"
+  },
+  {
+    "kpi_name": "Total Chats",
+    "table_name": "tb_statistics_user",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on the Total Chats metric by analyzing trends in user engagement and adjusting strategies to improve chat interactions.\n2. **Strategic Impact**: Understanding user engagement aligns with the strategic objective of enhancing customer experience and increasing customer satisfaction.\n3. **Operational Value**: Monitoring Total Chats can help in managing chat resources efficiently and optimizing staffing levels based on chat volume.\n4. **Decision Making**: This KPI supports decision-making by providing insights into user behavior and preferences, which can guide product development and marketing strategies.\n5. **Performance Monitoring**: Tracking Total Chats helps in monitoring the effectiveness of chat initiatives and measuring the impact of changes made to chat systems or processes.",
+    "timestamp": "2025-08-25T00:24:09.163035"
+  },
+  {
+    "kpi_name": "Total Points Saved",
+    "table_name": "tb_statistics_user",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing the total points saved by users and adjusting the user reward system accordingly to incentivize desired behaviors.\n2. **Strategic Impact**: It aligns with the business objective of enhancing user engagement and loyalty through a reward system, which can ultimately drive business growth.\n3. **Operational Value**: It provides insights into the effectiveness of the user reward system and can help in optimizing operational processes related to managing rewards.\n4. **Decision Making**: This KPI supports decision-making by providing data on user behavior and the impact of the reward system on user actions.\n5. **Performance Monitoring**: It helps in tracking the performance of the user reward system and evaluating its impact on overall business performance.\n\nOverall, the Total Points Saved KPI holds high value as it not only provides actionable insights for optimizing the user reward system but also aligns with strategic objectives, aids in day-to-day",
+    "timestamp": "2025-08-25T00:24:10.772006"
+  },
+  {
+    "kpi_name": "Total Points Used",
+    "table_name": "tb_statistics_user",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by adjusting the user reward system based on the total points used. For example, they can modify the reward structure to incentivize more points usage.\n2. **Strategic Impact**: Understanding the total points used aligns with the strategic objective of enhancing user engagement and loyalty through the reward system.\n3. **Operational Value**: This KPI provides insights into the effectiveness of the user reward system, which is crucial for day-to-day operations related to user retention and satisfaction.\n4. **Decision Making**: It supports decision-making by providing data on user behavior and preferences, enabling informed decisions on reward program adjustments.\n5. **Performance Monitoring**: Tracking total points used helps monitor the performance of the user reward system and assess its impact on overall business performance. \n\nOverall, the Total Points Used KPI holds high value as it not only provides actionable insights for business users but also aligns",
+    "timestamp": "2025-08-25T00:24:12.507246"
+  },
+  {
+    "kpi_name": "Total Deals Completed",
+    "table_name": "tb_statistics_user",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing the success rate of transactions and identifying areas for improvement.\n2. **Strategic Impact**: It aligns with the business objective of increasing transaction success and revenue generation.\n3. **Operational Value**: It helps in monitoring day-to-day operations related to deal completion and can highlight any operational inefficiencies.\n4. **Decision Making**: This KPI supports decision-making by providing insights into the effectiveness of sales strategies and resource allocation.\n5. **Performance Monitoring**: It helps track business performance by measuring the success rate of deals completed, which is a key indicator of business growth and profitability.",
+    "timestamp": "2025-08-25T00:24:14.129519"
+  },
+  {
+    "kpi_name": "Average Consulting Rate",
+    "table_name": "tb_statistics_user",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by adjusting consulting rates to improve efficiency and competitiveness.\n2. **Strategic Impact**: Aligns with the business objective of optimizing consultation efficiency and potentially increasing revenue.\n3. **Operational Value**: Helps in day-to-day operations by providing insights into the effectiveness of consulting services.\n4. **Decision Making**: Supports decision-making processes related to pricing strategies, resource allocation, and client acquisition.\n5. **Performance Monitoring**: Enables tracking of business performance in terms of consulting rates and overall efficiency.",
+    "timestamp": "2025-08-25T00:24:15.565765"
+  },
+  {
+    "kpi_name": "RFQ to Quotation Conversion Rate",
+    "table_name": "tb_statistics_user",
+    "rating": "HIGH VALUE",
+    "reason": "The RFQ to Quotation Conversion Rate KPI holds high value across all evaluation criteria. \n\n1. **Actionability**: Business users can take direct action based on this metric by identifying bottlenecks in the conversion process and implementing strategies to improve efficiency.\n2. **Strategic Impact**: It aligns with the strategic objective of improving sales effectiveness and revenue generation by focusing on the conversion process.\n3. **Operational Value**: This KPI provides valuable insights for day-to-day operations by highlighting areas for process optimization and resource allocation.\n4. **Decision Making**: It supports informed decision-making by identifying trends and patterns in the conversion rate, enabling proactive adjustments to sales strategies.\n5. **Performance Monitoring**: The KPI helps track business performance by measuring the effectiveness of converting RFQs into actual quotations, providing a clear indicator of sales success.\n\nOverall, the RFQ to Quotation Conversion Rate KPI is of high value as it not only offers actionable",
+    "timestamp": "2025-08-25T00:24:17.488082"
+  },
+  {
+    "kpi_name": "Quotation to PO Conversion Rate",
+    "table_name": "tb_statistics_user",
+    "rating": "HIGH VALUE",
+    "reason": "The Quotation to PO Conversion Rate KPI holds high value across all evaluation criteria. \n\n1. **Actionability**: Business users can take direct action based on this metric by identifying bottlenecks in the conversion process and implementing strategies to improve conversion rates.\n2. **Strategic Impact**: It aligns with the strategic objective of improving efficiency and revenue generation by focusing on converting quotations into purchase orders.\n3. **Operational Value**: This KPI provides insights into the efficiency of the sales process, helping in day-to-day operations by optimizing the quotation-to-PO conversion process.\n4. **Decision Making**: It supports decision-making by highlighting areas that need improvement and guiding resource allocation to enhance conversion rates.\n5. **Performance Monitoring**: By tracking the Quotation to PO Conversion Rate, businesses can monitor their performance in converting leads into actual sales, enabling them to make data-driven decisions to drive growth.\n\nOverall, this KPI is of high value as it",
+    "timestamp": "2025-08-25T00:24:19.478499"
+  },
+  {
+    "kpi_name": "PO to Deal Completion Conversion Rate",
+    "table_name": "tb_statistics_user",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying bottlenecks in the conversion process and implementing strategies to improve efficiency.\n2. **Strategic Impact**: It aligns with the strategic objective of improving conversion rates, which directly impacts revenue generation and business growth.\n3. **Operational Value**: It provides insights into day-to-day operations by highlighting areas that need improvement in the conversion process.\n4. **Decision Making**: This KPI supports informed decision-making by identifying factors that influence deal completions and guiding resource allocation.\n5. **Performance Monitoring**: It helps track business performance by measuring the effectiveness of converting POs into deal completions, enabling continuous monitoring and optimization.",
+    "timestamp": "2025-08-25T00:24:21.097335"
+  },
+  {
+    "kpi_name": "Average RFQs per User",
+    "table_name": "tb_statistics_user",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying trends in user engagement and adjusting strategies to increase RFQs per user.\n2. **Strategic Impact**: This KPI aligns with the business objective of improving user engagement, which is crucial for driving sales and revenue.\n3. **Operational Value**: It provides insights into user behavior that can inform operational decisions related to marketing campaigns, product offerings, and customer service.\n4. **Decision Making**: The data from this KPI can support decisions on resource allocation, product development, and customer targeting.\n5. **Performance Monitoring**: Tracking the average RFQs per user over time helps monitor the effectiveness of user engagement initiatives and overall business performance.",
+    "timestamp": "2025-08-25T00:24:22.541916"
+  },
+  {
+    "kpi_name": "Average Quotations per User",
+    "table_name": "tb_statistics_user",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing user engagement trends and adjusting strategies to improve engagement if needed.\n2. **Strategic Impact**: Understanding user engagement is crucial for achieving business objectives related to customer retention and satisfaction.\n3. **Operational Value**: This KPI can provide insights into the effectiveness of marketing campaigns, product offerings, and overall user experience.\n4. **Decision Making**: It can support decisions related to resource allocation, product development, and customer relationship management.\n5. **Performance Monitoring**: Tracking the average number of quotations per user can help monitor the effectiveness of user engagement initiatives and overall business performance.",
+    "timestamp": "2025-08-25T00:24:24.131713"
+  },
+  {
+    "kpi_name": "Average POs per User",
+    "table_name": "tb_statistics_user",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying users with low POs and implementing strategies to increase engagement.\n2. **Strategic Impact**: Understanding user engagement is crucial for achieving business objectives related to customer retention and satisfaction.\n3. **Operational Value**: It can help in optimizing operations by identifying trends in user behavior and adjusting processes accordingly.\n4. **Decision Making**: This KPI can support decisions related to marketing strategies, product offerings, and user experience improvements.\n5. **Performance Monitoring**: Tracking the average POs per user over time can provide insights into the effectiveness of business initiatives and overall performance.",
+    "timestamp": "2025-08-25T00:24:25.901578"
+  },
+  {
+    "kpi_name": "Average Transaction Amount per User",
+    "table_name": "tb_statistics_user",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying trends in user spending behavior and adjusting marketing strategies or product offerings accordingly.\n2. **Strategic Impact**: Understanding the average transaction amount per user aligns with the strategic objective of maximizing revenue and profitability by targeting high-spending users.\n3. **Operational Value**: This KPI provides valuable insights for day-to-day operations such as optimizing pricing strategies, identifying cross-selling opportunities, and improving customer segmentation.\n4. **Decision Making**: It supports decision-making processes by providing data-driven insights into user behavior, which can inform strategic decisions related to product development, marketing campaigns, and customer retention strategies.\n5. **Performance Monitoring**: Tracking the average transaction amount per user helps monitor the effectiveness of business initiatives aimed at increasing user spending and overall business performance.",
+    "timestamp": "2025-08-25T00:24:27.563743"
+  },
+  {
+    "kpi_name": "Average Chats per User",
+    "table_name": "tb_statistics_user",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying trends in user engagement and adjusting strategies to improve it.\n2. **Strategic Impact**: Understanding user engagement aligns with the strategic objective of enhancing customer experience and retention.\n3. **Operational Value**: It provides insights into day-to-day operations by indicating how users are interacting with the platform.\n4. **Decision Making**: This KPI supports decision-making by helping in resource allocation, feature prioritization, and customer support improvements.\n5. **Performance Monitoring**: It helps track business performance by measuring the effectiveness of user engagement strategies.",
+    "timestamp": "2025-08-25T00:24:28.767516"
+  },
+  {
+    "kpi_name": "Average Points Saved per User",
+    "table_name": "tb_statistics_user",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by adjusting the user reward system to optimize points saved per user.\n2. **Strategic Impact**: Aligns with the business objective of enhancing the user reward system to drive user engagement and loyalty.\n3. **Operational Value**: Helps in optimizing the day-to-day operations related to managing the user reward system efficiently.\n4. **Decision Making**: Supports data-driven decision-making by providing insights into the effectiveness of the user reward system.\n5. **Performance Monitoring**: Enables tracking and monitoring of the business performance related to user engagement and loyalty through points saved per user.",
+    "timestamp": "2025-08-25T00:24:29.988179"
+  },
+  {
+    "kpi_name": "Average Points Used per User",
+    "table_name": "tb_statistics_user",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by adjusting the user reward system to optimize points usage.\n2. **Strategic Impact**: It aligns with the business objective of enhancing user engagement and loyalty through the reward system.\n3. **Operational Value**: It helps in managing and optimizing the reward system on a day-to-day basis.\n4. **Decision Making**: This KPI supports decision-making related to the effectiveness of the reward system and potential adjustments needed.\n5. **Performance Monitoring**: It enables tracking of how well the reward system is performing in terms of user engagement and satisfaction.",
+    "timestamp": "2025-08-25T00:24:31.538380"
+  },
+  {
+    "kpi_name": "Total Tax Invoices Issued",
+    "table_name": "tb_payment_tax_invoice",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing trends in the number of tax invoices issued. For example, if there is a sudden increase in the number of invoices, it may indicate a spike in sales or the need for additional resources to handle the workload.\n2. **Strategic Impact**: Understanding the volume of tax invoices issued aligns with the business objective of monitoring financial transactions and revenue generation.\n3. **Operational Value**: This KPI helps in day-to-day operations by providing insights into the workload of the finance department and ensuring timely issuance of invoices.\n4. **Decision Making**: It supports decision-making processes by providing data on invoicing efficiency, identifying potential bottlenecks, and optimizing invoicing processes.\n5. **Performance Monitoring**: Tracking the total number of tax invoices issued helps in monitoring the efficiency and effectiveness of the invoicing process, contributing to overall business performance.",
+    "timestamp": "2025-08-25T00:24:33.215304"
+  },
+  {
+    "kpi_name": "Total Tax Invoices by Type",
+    "table_name": "tb_payment_tax_invoice",
+    "rating": "HIGH VALUE",
+    "reason": "This KPI holds high value across all evaluation criteria. \n1. Actionability: Business users can take action based on the distribution of tax invoice types to optimize processes, identify trends, and improve efficiency.\n2. Strategic Impact: Understanding the distribution of tax invoice types aligns with the strategic objective of improving financial management and compliance.\n3. Operational Value: This KPI provides insights that can enhance day-to-day operations related to invoicing, tax compliance, and financial reporting.\n4. Decision Making: The data from this KPI can support decision-making processes related to tax planning, resource allocation, and process improvements.\n5. Performance Monitoring: Tracking the total tax invoices by type helps monitor the performance of invoicing processes and compliance with tax regulations.",
+    "timestamp": "2025-08-25T00:24:35.045126"
+  },
+  {
+    "kpi_name": "Total Tax Invoices by Purpose",
+    "table_name": "tb_payment_tax_invoice",
+    "rating": "HIGH VALUE",
+    "reason": "This KPI holds high value across all evaluation criteria. \n1. Actionability: Business users can take action based on the insights derived from the distribution of tax invoice purposes. For example, they can identify trends, anomalies, or areas for improvement.\n2. Strategic Impact: Understanding the distribution of tax invoice purposes aligns with the strategic objective of financial management and compliance.\n3. Operational Value: This KPI can help in day-to-day operations by providing insights into the frequency and types of tax invoices being issued.\n4. Decision Making: The data from this KPI can support decision-making processes related to financial planning, resource allocation, and compliance strategies.\n5. Performance Monitoring: Tracking the total tax invoices by purpose can help monitor the efficiency and effectiveness of invoicing processes and compliance efforts.",
+    "timestamp": "2025-08-25T00:24:37.881658"
+  },
+  {
+    "kpi_name": "Total Tax Invoices by Tax Type",
+    "table_name": "tb_payment_tax_invoice",
+    "rating": "HIGH VALUE",
+    "reason": "This KPI holds high value across all evaluation criteria. \n1. **Actionability**: Business users can take action based on the insights derived from the distribution of tax types. For example, they can identify trends, discrepancies, or areas for improvement in tax invoicing processes.\n2. **Strategic Impact**: Understanding the distribution of tax types aligns with the strategic objective of ensuring compliance and optimizing tax processes.\n3. **Operational Value**: It provides valuable insights for day-to-day operations related to tax invoicing and can help in streamlining processes.\n4. **Decision Making**: The data from this KPI can support decision-making processes related to tax planning, resource allocation, and compliance strategies.\n5. **Performance Monitoring**: Tracking the total tax invoices by tax type helps in monitoring the performance of tax-related activities and identifying areas for improvement.",
+    "timestamp": "2025-08-25T00:24:39.509796"
+  },
+  {
+    "kpi_name": "Total Tax Invoices by Invoicee Type",
+    "table_name": "tb_payment_tax_invoice",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying trends in the distribution of invoicee types and adjusting strategies accordingly.\n2. **Strategic Impact**: Understanding the distribution of invoicee types aligns with the strategic objective of optimizing customer segmentation and targeting.\n3. **Operational Value**: This KPI can provide insights for improving operational efficiency in invoicing processes based on different invoicee types.\n4. **Decision Making**: It supports decision-making by providing data on which types of customers are generating the most tax invoices.\n5. **Performance Monitoring**: Tracking the total tax invoices by invoicee type helps monitor the performance of invoicing activities and identify areas for improvement.",
+    "timestamp": "2025-08-25T00:24:40.877032"
+  },
+  {
+    "kpi_name": "Total Tax Invoices by Status",
+    "table_name": "tb_payment_tax_invoice",
+    "rating": "HIGH VALUE",
+    "reason": "This KPI holds high value across all evaluation criteria. \n1. **Actionability**: Business users can take action based on the distribution of invoice statuses to address any bottlenecks or issues in the invoicing process.\n2. **Strategic Impact**: Understanding the distribution of invoice statuses aligns with the strategic objective of improving financial processes and ensuring timely payments.\n3. **Operational Value**: It provides insights into day-to-day operations by highlighting any delays or discrepancies in invoice processing.\n4. **Decision Making**: This KPI supports decision-making by identifying areas for process improvement and resource allocation.\n5. **Performance Monitoring**: Tracking the total tax invoices by status helps in monitoring the efficiency and effectiveness of the invoicing process, contributing to overall business performance.",
+    "timestamp": "2025-08-25T00:24:42.716733"
+  },
+  {
+    "kpi_name": "Total Tax Invoices by Payment Service Type",
+    "table_name": "tb_payment_tax_invoice",
+    "rating": "HIGH VALUE",
+    "reason": "This KPI holds high value across all evaluation criteria. \n1. **Actionability**: Business users can take action based on the insights derived from the distribution of payment service types. For example, they can optimize resources or tailor marketing strategies based on the preferred payment methods.\n2. **Strategic Impact**: Understanding the distribution of payment service types aligns with the strategic objective of enhancing customer experience and optimizing revenue streams.\n3. **Operational Value**: It provides valuable insights for day-to-day operations, such as identifying trends in payment preferences and ensuring efficient invoicing processes.\n4. **Decision Making**: The data from this KPI can support decisions related to product offerings, partnerships with payment service providers, and customer segmentation strategies.\n5. **Performance Monitoring**: Tracking the total tax invoices by payment service type helps in monitoring the performance of different payment channels and evaluating the effectiveness of marketing campaigns targeting specific payment methods.",
+    "timestamp": "2025-08-25T00:24:44.530753"
+  },
+  {
+    "kpi_name": "Total Tax Invoices by Creation Date",
+    "table_name": "tb_payment_tax_invoice",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing the distribution of invoice creation dates. For example, they can identify peak periods of invoice creation and allocate resources accordingly.\n2. **Strategic Impact**: Understanding the distribution of invoice creation dates aligns with the business objective of optimizing operational efficiency and resource allocation.\n3. **Operational Value**: This KPI provides valuable insights for day-to-day operations, such as managing workload distribution and improving invoice processing efficiency.\n4. **Decision Making**: The data from this KPI can support decisions related to staffing levels, process improvements, and overall operational effectiveness.\n5. **Performance Monitoring**: Tracking the total number of tax invoices by creation date helps monitor the efficiency and effectiveness of invoice processing operations.\n\nOverall, this KPI holds high value as it not only provides actionable insights for day-to-day operations but also aligns with strategic objectives and supports decision-making processes.",
+    "timestamp": "2025-08-25T00:24:46.444795"
+  },
+  {
+    "kpi_name": "Total Tax Invoices by Update Date",
+    "table_name": "tb_payment_tax_invoice",
+    "rating": "HIGH VALUE",
+    "reason": "This KPI holds high value across all evaluation criteria. \n1. **Actionability**: Business users can take action based on this metric by identifying trends in invoice update dates and optimizing processes accordingly.\n2. **Strategic Impact**: Understanding the distribution of invoice update dates aligns with the strategic objective of improving efficiency and cash flow management.\n3. **Operational Value**: It provides insights into day-to-day operations by tracking the issuance of tax invoices and ensuring timely processing.\n4. **Decision Making**: This KPI supports decision-making by highlighting patterns in invoice update dates that can influence resource allocation and customer communication strategies.\n5. **Performance Monitoring**: It helps in monitoring the performance of invoicing processes and identifying areas for improvement.",
+    "timestamp": "2025-08-25T00:24:48.168754"
+  },
+  {
+    "kpi_name": "Average Time Between Creation and Update",
+    "table_name": "tb_payment_tax_invoice",
+    "rating": "HIGH VALUE",
+    "reason": "This KPI, Average Time Between Creation and Update, holds high business value for the following reasons:\n1. **Actionability**: Business users can take action based on this metric by identifying bottlenecks in the invoice processing workflow and implementing process improvements to reduce the average time.\n2. **Strategic Impact**: It aligns with the business objective of optimizing operational efficiency and improving cash flow by streamlining invoice processing.\n3. **Operational Value**: It provides insights into the efficiency of day-to-day operations related to invoice processing, allowing for better resource allocation and workflow management.\n4. **Decision Making**: This KPI supports data-driven decision-making by highlighting areas for improvement and guiding strategic initiatives to enhance overall business performance.\n5. **Performance Monitoring**: It helps track business performance by measuring the efficiency of invoice processing over time and monitoring the impact of process changes on the average time between creation and update.",
+    "timestamp": "2025-08-25T00:24:49.793119"
+  },
+  {
+    "kpi_name": "Total Tax Invoices with NTS Confirmation",
+    "table_name": "tb_payment_tax_invoice",
+    "rating": "HIGH VALUE",
+    "reason": "This KPI holds high value for the following reasons:\n1. **Actionability**: Business users can take action based on this metric by monitoring the volume of confirmed tax invoices and identifying any discrepancies or delays in the confirmation process.\n2. **Strategic Impact**: It aligns with the business objective of ensuring accurate and timely processing of tax invoices, which is crucial for financial compliance and vendor relationships.\n3. **Operational Value**: It helps in day-to-day operations by providing insights into the efficiency of the invoicing process and highlighting any potential issues that need to be addressed.\n4. **Decision Making**: This KPI supports decision-making by providing data on the number of confirmed invoices, which can influence resource allocation and process improvements.\n5. **Performance Monitoring**: It helps track business performance by measuring the success of the invoicing process and identifying areas for optimization.",
+    "timestamp": "2025-08-25T00:24:51.362260"
+  },
+  {
+    "kpi_name": "Total Tax Invoices without NTS Confirmation",
+    "table_name": "tb_payment_tax_invoice",
+    "rating": "HIGH VALUE",
+    "reason": "This KPI holds high value for the following reasons:\n1. **Actionability**: Business users can take action based on this metric by identifying and addressing the unconfirmed invoices, which can help in improving cash flow and compliance.\n2. **Strategic Impact**: It aligns with the business objective of ensuring accurate and timely invoicing, which is crucial for financial health and compliance.\n3. **Operational Value**: It provides insights into day-to-day operations by highlighting potential issues in the invoicing process that need attention.\n4. **Decision Making**: It supports decision-making by providing data on unconfirmed invoices, enabling informed decisions on process improvements or follow-ups with customers.\n5. **Performance Monitoring**: It helps in tracking the performance of the invoicing process and identifying areas for improvement, contributing to overall business performance.",
+    "timestamp": "2025-08-25T00:24:53.737527"
+  },
+  {
+    "kpi_name": "Total Tax Invoices by Target ID",
+    "table_name": "tb_payment_tax_invoice",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying trends in tax invoice issuance by target ID and adjusting strategies accordingly.\n2. **Strategic Impact**: Understanding the distribution of target IDs aligns with the business objective of optimizing revenue generation and customer targeting.\n3. **Operational Value**: This KPI can help in day-to-day operations by providing insights into the performance of different target IDs in terms of tax invoice issuance.\n4. **Decision Making**: It supports business decisions by enabling data-driven decisions related to target ID-specific marketing, sales, or operational strategies.\n5. **Performance Monitoring**: Tracking the total tax invoices by target ID helps in monitoring the effectiveness of efforts aimed at different target segments, contributing to overall business performance.",
+    "timestamp": "2025-08-25T00:24:55.626638"
+  },
+  {
+    "kpi_name": "Total Tax Invoices by Tax Invoice ID",
+    "table_name": "tb_payment_tax_invoice",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying patterns in the distribution of tax invoice IDs, which can help in optimizing invoicing processes or identifying potential issues with specific IDs.\n2. **Strategic Impact**: Understanding the distribution of tax invoice IDs aligns with the objective of improving invoicing efficiency and accuracy, which can contribute to overall financial health and compliance.\n3. **Operational Value**: This KPI can provide insights into day-to-day operations related to invoicing, allowing for better monitoring and management of invoicing processes.\n4. **Decision Making**: The data from this KPI can support decisions related to invoicing strategies, resource allocation, and process improvements.\n5. **Performance Monitoring**: Tracking the total number of tax invoices by ID can help in monitoring the performance of invoicing activities and identifying areas for improvement.",
+    "timestamp": "2025-08-25T00:24:58.349806"
+  },
+  {
+    "kpi_name": "Total Commission Earned",
+    "table_name": "tb_oem_market_payment",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing the total commission earned and identifying areas for improvement in commission generation strategies.\n2. **Strategic Impact**: It aligns with the business objective of maximizing revenue generation through commission earnings, making it strategically important.\n3. **Operational Value**: It provides insights into the financial performance of the business on a day-to-day basis, aiding in operational decision-making.\n4. **Decision Making**: Total Commission Earned supports business decisions by offering a clear picture of the revenue generated through commissions, enabling informed decision-making.\n5. **Performance Monitoring**: It helps track business performance by monitoring the total revenue generated from commission, indicating the effectiveness of sales and marketing efforts.",
+    "timestamp": "2025-08-25T00:25:00.494281"
+  },
+  {
+    "kpi_name": "Total Payout to Partners",
+    "table_name": "tb_oem_market_payment",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing the total amount paid out to partners and making decisions on optimizing partner relationships or negotiating better terms.\n2. **Strategic Impact**: It aligns with business objectives as managing partner expenses is crucial for financial health and profitability.\n3. **Operational Value**: It helps in day-to-day operations by providing insights into partner-related expenses and budgeting.\n4. **Decision Making**: This KPI supports decision-making processes related to partner management, budget allocation, and overall financial planning.\n5. **Performance Monitoring**: It helps track business performance by monitoring the efficiency of partner payouts and assessing the impact on overall financial performance.",
+    "timestamp": "2025-08-25T00:25:02.353663"
+  },
+  {
+    "kpi_name": "Total Payout to Capa",
+    "table_name": "tb_oem_market_payment",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing the total amount paid out to Capa and making decisions on cost management or resource allocation.\n2. **Strategic Impact**: It aligns with the business objective of managing expenses and understanding the financial impact of Capa on the organization.\n3. **Operational Value**: It provides insights into day-to-day operations by tracking the total payout to Capa, which is crucial for financial planning and budgeting.\n4. **Decision Making**: This KPI supports decision-making processes related to financial management, resource allocation, and cost control strategies.\n5. **Performance Monitoring**: It helps in monitoring the performance of the organization in terms of managing expenses related to Capa.\n\nOverall, this KPI holds high value as it provides actionable insights, aligns with strategic objectives, supports operational activities, aids in decision-making, and facilitates performance monitoring.",
+    "timestamp": "2025-08-25T00:25:04.423063"
+  },
+  {
+    "kpi_name": "Total Deduction Amount",
+    "table_name": "tb_oem_market_payment",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing the total deduction amount and identifying trends or patterns that may indicate issues with product quality, customer satisfaction, or operational inefficiencies related to returns.\n2. **Strategic Impact**: It aligns with the business objective of minimizing losses and improving overall profitability by providing insights into the impact of returns on the company's financial performance.\n3. **Operational Value**: It helps with day-to-day operations by highlighting areas that require attention or improvement in the returns process, inventory management, or customer service.\n4. **Decision Making**: This KPI supports business decisions by providing data-driven insights that can guide strategies for reducing returns, optimizing product quality, or enhancing customer experience.\n5. **Performance Monitoring**: It helps track business performance by monitoring the total deduction amount over time and comparing it against targets or benchmarks to assess the effectiveness of return management initiatives.",
+    "timestamp": "2025-08-25T00:25:06.461305"
+  },
+  {
+    "kpi_name": "Average Commission per Order",
+    "table_name": "tb_oem_market_payment",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing the average commission earned per order and making adjustments to sales strategies or commission structures to optimize revenue.\n2. **Strategic Impact**: It aligns with the business objective of maximizing revenue by providing insights into the average revenue per order, which is crucial for profitability.\n3. **Operational Value**: It helps in day-to-day operations by guiding sales teams on how to improve their performance and increase commission earnings.\n4. **Decision Making**: This KPI supports decision-making processes by providing a clear understanding of the revenue generated per order, which can influence pricing strategies or sales tactics.\n5. **Performance Monitoring**: It helps track business performance by monitoring the average commission earned per order over time and comparing it against targets or benchmarks to assess sales effectiveness.",
+    "timestamp": "2025-08-25T00:25:07.950520"
+  },
+  {
+    "kpi_name": "Number of Completed Payouts to Partners",
+    "table_name": "tb_oem_market_payment",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying any bottlenecks or delays in the payout process to partners and implementing improvements to enhance efficiency.\n2. **Strategic Impact**: It aligns with the business objective of maintaining strong partnerships with partners by ensuring timely and accurate payouts.\n3. **Operational Value**: It provides valuable insights into the day-to-day operations related to partner payouts, allowing for better resource allocation and process optimization.\n4. **Decision Making**: This KPI supports decision-making by highlighting areas that require attention or improvement in the payout process, enabling informed decisions to be made.\n5. **Performance Monitoring**: It helps track the performance of the payout process and assess whether it meets the set targets and standards, facilitating continuous monitoring and adjustment.\n\nOverall, the Number of Completed Payouts to Partners KPI holds high value as it offers actionable insights, aligns with strategic objectives, aids in operational efficiency",
+    "timestamp": "2025-08-25T00:25:10.848470"
+  },
+  {
+    "kpi_name": "Number of Completed Payouts to Capa",
+    "table_name": "tb_oem_market_payment",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying bottlenecks or inefficiencies in the payout process to Capa and implementing improvements.\n2. **Strategic Impact**: It aligns with the business objective of improving efficiency in the payout process, which can lead to cost savings and better customer satisfaction.\n3. **Operational Value**: It provides insights into day-to-day operations by monitoring the completion of payouts to Capa, helping in identifying any operational issues.\n4. **Decision Making**: This KPI supports decision-making by providing data on the efficiency of the payout process, enabling informed decisions on process improvements.\n5. **Performance Monitoring**: It helps in tracking the performance of the payout process and evaluating the effectiveness of any changes made.\n\nOverall, this KPI has high value as it not only provides insights into operational efficiency but also supports strategic decision-making and performance monitoring.",
+    "timestamp": "2025-08-25T00:25:13.325737"
+  },
+  {
+    "kpi_name": "Average Payout Time to Partners",
+    "table_name": "tb_oem_market_payment",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying bottlenecks in the payout process and implementing improvements to streamline operations.\n2. **Strategic Impact**: It aligns with the business objective of ensuring efficient and timely payouts to partners, which can enhance partner relationships and overall business performance.\n3. **Operational Value**: It provides valuable insights for day-to-day operations by highlighting areas where operational efficiency can be improved.\n4. **Decision Making**: This KPI supports decision-making by providing data on the efficiency of the payout process, enabling informed decisions on process optimization.\n5. **Performance Monitoring**: It helps track business performance by measuring the effectiveness of the payout process and identifying areas for improvement.",
+    "timestamp": "2025-08-25T00:25:15.003651"
+  },
+  {
+    "kpi_name": "Average Payout Time to Capa",
+    "table_name": "tb_oem_market_payment",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying bottlenecks in the payout process to Capa and implementing improvements to streamline the process.\n2. **Strategic Impact**: It aligns with the business objective of improving operational efficiency and customer satisfaction by ensuring timely payouts.\n3. **Operational Value**: It provides valuable insights for day-to-day operations by highlighting areas for process optimization and resource allocation.\n4. **Decision Making**: This KPI supports informed decision-making by identifying areas of improvement in the payout process and guiding resource allocation.\n5. **Performance Monitoring**: It helps track business performance by measuring the efficiency of the payout process and identifying trends over time.",
+    "timestamp": "2025-08-25T00:25:16.387021"
+  },
+  {
+    "kpi_name": "Number of Payments by Method",
+    "table_name": "tb_oem_market_payment",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying the most popular payment methods and potentially investing more resources in optimizing those methods or promoting them further.\n2. **Strategic Impact**: Understanding the popularity of different payment methods aligns with the strategic objective of improving customer experience and increasing revenue by catering to customer preferences.\n3. **Operational Value**: This KPI provides valuable insights for day-to-day operations, such as managing payment processing systems, optimizing checkout processes, and ensuring smooth payment experiences for customers.\n4. **Decision Making**: The data on the number of payments by method can support decisions related to marketing strategies, product pricing, and partnerships with payment service providers.\n5. **Performance Monitoring**: Tracking the number of payments by method helps monitor the performance of different payment options and assess the effectiveness of any changes or initiatives implemented.\n\nOverall, this KPI holds high value as it provides actionable insights, aligns with strategic",
+    "timestamp": "2025-08-25T00:25:18.032831"
+  },
+  {
+    "kpi_name": "Number of Payments by Strategy Type",
+    "table_name": "tb_oem_market_payment",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying which payment strategy types are more popular and potentially adjusting marketing strategies or incentives to promote certain types.\n2. **Strategic Impact**: It aligns with the business objective of understanding customer preferences and optimizing payment processes to enhance customer experience.\n3. **Operational Value**: It provides insights into day-to-day operations by indicating which payment strategies are being utilized more frequently, allowing for operational adjustments if needed.\n4. **Decision Making**: It supports business decisions by providing data on customer behavior and preferences, which can influence strategic decisions related to product offerings or partnerships.\n5. **Performance Monitoring**: It helps track business performance by monitoring the effectiveness of different payment strategies and identifying trends over time.",
+    "timestamp": "2025-08-25T00:25:19.942555"
+  },
+  {
+    "kpi_name": "Total Commission by Method",
+    "table_name": "tb_oem_market_payment",
+    "rating": "HIGH VALUE",
+    "reason": "This KPI holds high value across all evaluation criteria. \n1. **Actionability**: Business users can take action based on this metric by identifying which payment methods are generating the most commission and potentially focusing on promoting or optimizing those methods.\n2. **Strategic Impact**: It aligns with the business objective of maximizing revenue by providing insights into the performance of different payment methods.\n3. **Operational Value**: It helps in day-to-day operations by guiding decisions on payment method optimization and resource allocation.\n4. **Decision Making**: This KPI supports strategic decision-making by providing data on revenue generation from different payment methods.\n5. **Performance Monitoring**: It helps track business performance by monitoring the contribution of each payment method to the overall commission earned.",
+    "timestamp": "2025-08-25T00:25:21.919123"
+  },
+  {
+    "kpi_name": "Total Commission by Strategy Type",
+    "table_name": "tb_oem_market_payment",
+    "rating": "HIGH VALUE",
+    "reason": "This KPI holds high value across all evaluation criteria. \n1. **Actionability**: Business users can take action based on this metric by identifying which payment strategy types are generating the most commission and potentially adjusting strategies to optimize revenue.\n2. **Strategic Impact**: It aligns with the business objective of maximizing revenue by providing insights into the effectiveness of different payment strategies.\n3. **Operational Value**: It helps in day-to-day operations by guiding operational decisions related to payment strategy management.\n4. **Decision Making**: This KPI supports strategic decision-making by providing data on revenue generation from different payment strategy types.\n5. **Performance Monitoring**: It helps track business performance by monitoring the commission earned from each payment strategy type, allowing for performance evaluation and comparison.",
+    "timestamp": "2025-08-25T00:25:23.992001"
+  },
+  {
+    "kpi_name": "Average Payout to Partners by Method",
+    "table_name": "tb_oem_market_payment",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying which payment methods are more cost-effective for the company and potentially renegotiating terms with partners or adjusting payment methods.\n2. **Strategic Impact**: It aligns with the business objective of optimizing expenses and improving profitability by providing insights into partner payout efficiency.\n3. **Operational Value**: It helps in day-to-day operations by guiding decisions on payment method selection and partner management.\n4. **Decision Making**: This KPI supports decision-making by providing data on the cost-effectiveness of different payment methods, enabling informed choices.\n5. **Performance Monitoring**: It helps track business performance by monitoring partner payout efficiency and cost management.",
+    "timestamp": "2025-08-25T00:25:25.422042"
+  },
+  {
+    "kpi_name": "Average Payout to Capa by Method",
+    "table_name": "tb_oem_market_payment",
+    "rating": "HIGH VALUE",
+    "reason": "This KPI holds high value due to the following reasons:\n1. **Actionability**: Business users can take action based on this metric by identifying which payment methods are more cost-effective in terms of Capa payouts and optimizing their payment strategies accordingly.\n2. **Strategic Impact**: It aligns with the business objective of cost optimization and efficiency by providing insights into expenses related to different payment methods.\n3. **Operational Value**: It helps in day-to-day operations by guiding decisions on payment method selection and resource allocation.\n4. **Decision Making**: This KPI supports strategic decision-making by providing data on the average payout to Capa for each payment method, enabling informed choices.\n5. **Performance Monitoring**: It aids in tracking business performance by monitoring expenses towards Capa and evaluating the effectiveness of different payment methods in managing costs.",
+    "timestamp": "2025-08-25T00:25:27.382301"
+  },
+  {
+    "kpi_name": "Total Orders",
+    "table_name": "tb_market_order_address",
+    "rating": "HIGH VALUE",
+    "reason": "Total Orders is a high-value KPI for the following reasons:\n1. **Actionability**: Business users can take action based on this metric by analyzing trends in order volume, identifying peak periods, and adjusting inventory or staffing levels accordingly.\n2. **Strategic Impact**: Understanding the volume of business aligns with the strategic objective of increasing sales and revenue.\n3. **Operational Value**: It helps with day-to-day operations by providing insights into demand patterns, allowing for better resource allocation and planning.\n4. **Decision Making**: Total Orders supports decision-making processes such as inventory management, marketing strategies, and production planning.\n5. **Performance Monitoring**: Tracking total orders helps monitor business performance, identify growth opportunities, and measure the effectiveness of sales initiatives.",
+    "timestamp": "2025-08-25T00:25:29.058481"
+  },
+  {
+    "kpi_name": "Unique Receivers",
+    "table_name": "tb_market_order_address",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing the diversity of the customer base and tailoring marketing strategies or product offerings accordingly to cater to different segments.\n2. **Strategic Impact**: Understanding the diversity of the customer base aligns with the strategic objective of customer-centricity and market segmentation, which can lead to improved customer satisfaction and retention.\n3. **Operational Value**: This KPI can help in day-to-day operations by providing insights into customer preferences and behavior, enabling better targeting and personalized communication.\n4. **Decision Making**: The count of unique receivers can support decisions related to product development, marketing campaigns, and customer relationship management strategies.\n5. **Performance Monitoring**: Tracking the number of unique receivers over time can help monitor the effectiveness of marketing efforts and customer engagement strategies.\n\nOverall, the Unique Receivers KPI holds high value as it provides actionable insights, aligns with strategic objectives, aids in day",
+    "timestamp": "2025-08-25T00:25:30.828549"
+  },
+  {
+    "kpi_name": "Orders Per Receiver",
+    "table_name": "tb_market_order_address",
+    "rating": "HIGH VALUE",
+    "reason": "This KPI, Orders Per Receiver, holds high business value for the following reasons:\n1. **Actionability**: Business users can take action based on this metric by identifying loyal customers and implementing targeted strategies to increase repeat business.\n2. **Strategic Impact**: It aligns with the business objective of measuring customer loyalty and repeat business, which are crucial for long-term success.\n3. **Operational Value**: It can help in optimizing operations by focusing on retaining existing customers and increasing their order frequency.\n4. **Decision Making**: This KPI supports decision-making by providing insights into customer behavior and preferences, enabling data-driven decisions.\n5. **Performance Monitoring**: It helps in tracking business performance by indicating the effectiveness of customer retention strategies and overall business growth.",
+    "timestamp": "2025-08-25T00:25:33.767200"
+  },
+  {
+    "kpi_name": "Unique Delivery Locations",
+    "table_name": "tb_market_order_address",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying areas with high or low delivery locations and adjusting their delivery strategies accordingly.\n2. **Strategic Impact**: Understanding the geographical spread of deliveries aligns with the business objective of optimizing delivery efficiency and customer satisfaction.\n3. **Operational Value**: This KPI can help in optimizing delivery routes, managing inventory levels at different locations, and improving overall logistics operations.\n4. **Decision Making**: The data on unique delivery locations can support decisions related to expanding into new markets, targeting specific regions for marketing campaigns, or optimizing supply chain networks.\n5. **Performance Monitoring**: Tracking the number of unique delivery locations can provide insights into the growth of the business, market penetration, and customer reach, thus aiding in monitoring business performance effectively.",
+    "timestamp": "2025-08-25T00:25:35.339988"
+  },
+  {
+    "kpi_name": "Orders Per Delivery Location",
+    "table_name": "tb_market_order_address",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying delivery locations with high order volumes and optimizing delivery routes or resources accordingly.\n2. **Strategic Impact**: It aligns with the business objective of improving delivery efficiency by focusing on hotspot locations.\n3. **Operational Value**: It provides valuable insights for day-to-day operations by helping in resource allocation and planning.\n4. **Decision Making**: This KPI supports decision-making processes related to delivery operations, such as expanding delivery services in high-demand areas or adjusting delivery schedules.\n5. **Performance Monitoring**: It helps track the performance of delivery operations by monitoring the average number of orders per delivery location, enabling continuous improvement efforts.\n\nOverall, the KPI of Orders Per Delivery Location holds high value as it provides actionable insights, aligns with strategic objectives, supports operational efficiency, aids in decision-making, and facilitates performance monitoring in delivery operations.",
+    "timestamp": "2025-08-25T00:25:38.410000"
+  },
+  {
+    "kpi_name": "Unique Zipcodes",
+    "table_name": "tb_market_order_address",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying areas with high or low concentration of deliveries and adjusting marketing or operational strategies accordingly.\n2. **Strategic Impact**: Understanding the geographical spread of deliveries aligns with the business objective of optimizing delivery routes and expanding market reach.\n3. **Operational Value**: This KPI provides valuable insights for day-to-day operations such as resource allocation, inventory management, and customer service.\n4. **Decision Making**: The data on unique zip codes can support decisions related to market expansion, targeting specific regions for promotions, or adjusting pricing based on demand in different areas.\n5. **Performance Monitoring**: Tracking the count of unique zip codes can help monitor the effectiveness of marketing campaigns, sales growth in different regions, and overall business performance.",
+    "timestamp": "2025-08-25T00:25:39.812910"
+  },
+  {
+    "kpi_name": "Orders Per Zipcode",
+    "table_name": "tb_market_order_address",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying areas with high order volumes and optimizing delivery routes or resources accordingly.\n2. **Strategic Impact**: It aligns with the business objective of improving delivery efficiency and identifying hotspot locations for potential business expansion or marketing efforts.\n3. **Operational Value**: It provides valuable insights for day-to-day operations by helping in resource allocation and logistics planning.\n4. **Decision Making**: It supports business decisions related to market expansion, targeted marketing campaigns, and operational improvements.\n5. **Performance Monitoring**: It helps track business performance by measuring the effectiveness of delivery operations and identifying areas for improvement.",
+    "timestamp": "2025-08-25T00:25:42.982957"
+  },
+  {
+    "kpi_name": "Unique Delivery Names",
+    "table_name": "tb_market_order_address",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing the diversity of delivery methods and potentially optimizing or expanding delivery options to cater to different customer preferences.\n2. **Strategic Impact**: Understanding the diversity of delivery methods aligns with the strategic objective of enhancing customer satisfaction and loyalty through improved delivery services.\n3. **Operational Value**: This KPI can provide insights into the effectiveness and efficiency of current delivery methods, helping in operational decision-making and process improvements.\n4. **Decision Making**: The count of unique delivery names can support decisions related to resource allocation, logistics planning, and customer service enhancements.\n5. **Performance Monitoring**: Tracking the diversity of delivery methods can help monitor the performance of delivery operations and identify areas for improvement, making it a valuable KPI for performance monitoring.",
+    "timestamp": "2025-08-25T00:25:45.334860"
+  },
+  {
+    "kpi_name": "Orders Per Delivery Name",
+    "table_name": "tb_market_order_address",
+    "rating": "HIGH VALUE",
+    "reason": "This KPI, Orders Per Delivery Name, holds high business value across multiple dimensions. \n\n1. **Actionability**: Business users can take action based on this metric by analyzing the popularity and efficiency of different delivery methods. They can make informed decisions on optimizing delivery processes, improving customer satisfaction, and reducing costs.\n   \n2. **Strategic Impact**: It aligns with the strategic objective of enhancing delivery services and customer experience. By measuring the average number of orders per delivery name, the organization can identify trends, preferences, and areas for improvement in their delivery methods.\n\n3. **Operational Value**: This KPI provides valuable insights for day-to-day operations by helping in monitoring and evaluating the performance of various delivery methods. It can assist in identifying bottlenecks, optimizing routes, and streamlining delivery processes.\n\n4. **Decision Making**: The KPI supports data-driven decision-making by providing a clear indication of the effectiveness of different delivery methods. It enables",
+    "timestamp": "2025-08-25T00:25:48.923387"
+  },
+  {
+    "kpi_name": "Unique Cellphone Numbers",
+    "table_name": "tb_market_order_address",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing the diversity of customer contact points. For example, they can tailor marketing strategies based on the distribution of unique cellphone numbers.\n2. **Strategic Impact**: Understanding the diversity of customer contact points aligns with the business objective of improving customer engagement and targeting specific customer segments effectively.\n3. **Operational Value**: This KPI can help in day-to-day operations by providing insights into the reach and penetration of the customer base.\n4. **Decision Making**: It supports business decisions by enabling data-driven strategies for customer communication and engagement.\n5. **Performance Monitoring**: Tracking the count of unique cellphone numbers can help monitor the effectiveness of marketing campaigns and customer outreach efforts.\n\nOverall, the Unique Cellphone Numbers KPI holds high value as it provides actionable insights, aligns with strategic objectives, aids in operational decisions, supports decision-making processes, and helps in monitoring business performance effectively",
+    "timestamp": "2025-08-25T00:25:50.725645"
+  },
+  {
+    "kpi_name": "Orders Per Cellphone Number",
+    "table_name": "tb_market_order_address",
+    "rating": "HIGH VALUE",
+    "reason": "This KPI of Orders Per Cellphone Number holds high business value for the following reasons:\n1. **Actionability**: Business users can take action based on this metric by identifying loyal customers and targeting them for personalized marketing campaigns to increase repeat business.\n2. **Strategic Impact**: It aligns with the business objective of measuring customer loyalty and repeat business, which are crucial for long-term success and profitability.\n3. **Operational Value**: It can help in understanding customer behavior patterns and preferences, which can inform operational decisions related to inventory management, product offerings, and customer service.\n4. **Decision Making**: This KPI supports decision-making by providing insights into customer retention strategies, identifying high-value customers, and optimizing marketing efforts.\n5. **Performance Monitoring**: It helps track business performance by measuring the effectiveness of customer retention initiatives and overall customer satisfaction levels.",
+    "timestamp": "2025-08-25T00:25:54.454855"
+  },
+  {
+    "kpi_name": "Unique Receiver-Cellphone Combinations",
+    "table_name": "tb_market_order_address",
+    "rating": "HIGH VALUE",
+    "reason": "This KPI of Unique Receiver-Cellphone Combinations holds high value across multiple aspects. \n\n1. **Actionability**: Business users can take action based on this metric by understanding the diversity of customer contact points. They can tailor their communication strategies and customer engagement efforts accordingly.\n   \n2. **Strategic Impact**: It aligns with the business objective of enhancing customer experience and engagement by providing insights into the variety of contact points used by customers.\n\n3. **Operational Value**: This KPI can help in day-to-day operations by identifying trends in customer communication preferences and optimizing resources to cater to these preferences effectively.\n\n4. **Decision Making**: It supports business decisions by providing valuable information on customer behavior and preferences, enabling data-driven decision-making in marketing and customer relationship management.\n\n5. **Performance Monitoring**: This KPI helps track business performance by measuring the diversity and reach of customer contact points, which is crucial in evaluating the effectiveness of customer engagement strategies.",
+    "timestamp": "2025-08-25T00:25:56.241792"
+  },
+  {
+    "kpi_name": "Orders Per Receiver-Cellphone Combination",
+    "table_name": "tb_market_order_address",
+    "rating": "HIGH VALUE",
+    "reason": "This KPI of Orders Per Receiver-Cellphone Combination holds high value for the business based on the evaluation criteria provided. \n\n1. **Actionability**: Business users can take action based on this metric by identifying loyal customers with high repeat orders and implementing targeted marketing strategies to retain them.\n2. **Strategic Impact**: It aligns with the business objective of measuring customer loyalty and repeat business, which are crucial for long-term success and profitability.\n3. **Operational Value**: It can help in optimizing inventory management, forecasting demand, and improving customer service based on the ordering patterns of specific receiver-cellphone combinations.\n4. **Decision Making**: This KPI supports business decisions by providing insights into customer behavior and preferences, enabling data-driven decision-making for marketing and sales strategies.\n5. **Performance Monitoring**: It helps track business performance by indicating the effectiveness of customer retention efforts and the overall health of customer relationships.\n\nOverall, this KPI provides valuable insights into",
+    "timestamp": "2025-08-25T00:25:59.362969"
+  },
+  {
+    "kpi_name": "Unique Receiver-Delivery Name Combinations",
+    "table_name": "tb_market_order_address",
+    "rating": "HIGH VALUE",
+    "reason": "This KPI of Unique Receiver-Delivery Name Combinations holds high value across multiple dimensions. \n\n1. **Actionability**: Business users can take action based on this metric by tailoring delivery options to meet the diverse preferences of customers. For example, they can optimize delivery routes, offer personalized delivery options, or improve customer satisfaction by understanding and meeting individual preferences.\n\n2. **Strategic Impact**: Understanding the diversity of customer delivery preferences aligns with the strategic objective of enhancing customer experience and loyalty. By catering to individual preferences, the business can differentiate itself in the market and gain a competitive edge.\n\n3. **Operational Value**: This KPI provides valuable insights for day-to-day operations such as inventory management, resource allocation, and logistics planning. It can help streamline operations by optimizing delivery processes based on customer preferences.\n\n4. **Decision Making**: The data from this KPI can support various business decisions related to marketing strategies, product offerings, and customer service",
+    "timestamp": "2025-08-25T00:26:01.386780"
+  },
+  {
+    "kpi_name": "Orders Per Receiver-Delivery Name Combination",
+    "table_name": "tb_market_order_address",
+    "rating": "HIGH VALUE",
+    "reason": "This KPI of Orders Per Receiver-Delivery Name Combination holds high value for the following reasons:\n1. **Actionability**: Business users can take action based on this metric by analyzing customer loyalty trends and delivery preferences to tailor marketing strategies or improve delivery services.\n2. **Strategic Impact**: It aligns with business objectives by providing insights into customer behavior and preferences, which can help in enhancing customer satisfaction and retention.\n3. **Operational Value**: It aids in day-to-day operations by identifying popular receiver-delivery name combinations, optimizing delivery routes, and improving order fulfillment processes.\n4. **Decision Making**: This KPI supports business decisions by guiding resource allocation, inventory management, and customer segmentation strategies based on delivery preferences.\n5. **Performance Monitoring**: It helps track business performance by monitoring changes in orders per receiver-delivery name combination over time, indicating the effectiveness of customer engagement initiatives and delivery services.",
+    "timestamp": "2025-08-25T00:26:04.284963"
+  },
+  {
+    "kpi_name": "Total RFQ Files",
+    "table_name": "tb_rfq_file",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing the volume of RFQ files to identify trends, patterns, and potential areas for improvement in the RFQ process.\n2. **Strategic Impact**: Understanding the volume of RFQ files aligns with the strategic objective of optimizing the RFQ process, improving efficiency, and potentially increasing sales opportunities.\n3. **Operational Value**: This KPI provides operational value by helping in resource allocation, capacity planning, and workload management related to handling RFQs.\n4. **Decision Making**: The total number of RFQ files can support decision-making processes such as prioritizing RFQs, identifying bottlenecks, and improving response times.\n5. **Performance Monitoring**: Tracking the total RFQ files over time can help monitor the performance of the RFQ process, identify deviations from expected volumes, and assess the effectiveness of any process improvements implemented.\n\nOverall, the Total RF",
+    "timestamp": "2025-08-25T00:26:06.164039"
+  },
+  {
+    "kpi_name": "Total Unique RFQs",
+    "table_name": "tb_rfq_file",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing trends in the total number of unique RFQs. They can identify potential areas for improvement in the RFQ process or target specific customers for increased engagement.\n2. **Strategic Impact**: Understanding the volume of unique RFQs aligns with the strategic objective of increasing sales and revenue. It provides insights into market demand and customer interest.\n3. **Operational Value**: This KPI can help in optimizing operational processes related to handling RFQs, such as resource allocation and response time management.\n4. **Decision Making**: The total number of unique RFQs can support decision-making related to sales forecasting, inventory management, and resource planning.\n5. **Performance Monitoring**: Tracking the total unique RFQs over time can help monitor the effectiveness of marketing campaigns, sales efforts, and overall business performance.\n\nOverall, the Total Unique RFQs KPI holds",
+    "timestamp": "2025-08-25T00:26:08.512885"
+  },
+  {
+    "kpi_name": "Average File Count per RFQ",
+    "table_name": "tb_rfq_file",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying trends in the number of files per RFQ and optimizing processes accordingly.\n2. **Strategic Impact**: This KPI aligns with the business objective of improving efficiency and streamlining operations by understanding the file requirements for each RFQ.\n3. **Operational Value**: It provides insights into day-to-day operations by highlighting potential bottlenecks or areas for improvement in the RFQ process.\n4. **Decision Making**: The average file count per RFQ can support decision-making processes related to resource allocation, workflow optimization, and customer service improvements.\n5. **Performance Monitoring**: This KPI helps track business performance by measuring the efficiency and effectiveness of the RFQ process in handling files.",
+    "timestamp": "2025-08-25T00:26:09.951255"
+  },
+  {
+    "kpi_name": "Total Processed Files",
+    "table_name": "tb_rfq_file",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying trends in the volume of processed files, optimizing processes, and allocating resources accordingly.\n2. **Strategic Impact**: Understanding the volume of processed files aligns with the business objective of efficiency and productivity.\n3. **Operational Value**: This KPI provides valuable insights for day-to-day operations, such as monitoring workflow efficiency and identifying bottlenecks.\n4. **Decision Making**: The total number of processed files can support decision-making processes related to resource allocation, process improvements, and capacity planning.\n5. **Performance Monitoring**: Tracking the total processed files helps in monitoring business performance, identifying deviations from expected volumes, and evaluating the effectiveness of operational processes.",
+    "timestamp": "2025-08-25T00:26:11.477966"
+  },
+  {
+    "kpi_name": "RFQs by File Type",
+    "table_name": "tb_rfq_file",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying trends in RFQ file types and adjusting strategies accordingly. For example, if a certain file type is more prevalent, they can optimize processes for handling that type more efficiently.\n2. **Strategic Impact**: Understanding the distribution of RFQs by file type aligns with the strategic objective of improving operational efficiency and customer service. It can also help in identifying potential areas for innovation or improvement.\n3. **Operational Value**: This KPI provides valuable insights for day-to-day operations by allowing teams to prioritize resources based on the volume and type of RFQs received.\n4. **Decision Making**: It supports decision-making processes by providing data-driven insights into RFQ trends, which can inform strategic decisions related to resource allocation, process improvements, and customer engagement.\n5. **Performance Monitoring**: Tracking RFQs by file type helps in monitoring the performance of different file",
+    "timestamp": "2025-08-25T00:26:15.473468"
+  },
+  {
+    "kpi_name": "Files Created Over Time",
+    "table_name": "tb_rfq_file",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying patterns in file creation, adjusting resource allocation, or implementing process improvements to optimize file creation efficiency.\n2. **Strategic Impact**: Understanding the trend of file creation aligns with the business objective of improving operational efficiency and productivity.\n3. **Operational Value**: This KPI provides valuable insights for day-to-day operations by monitoring the volume of files created and identifying any potential bottlenecks or inefficiencies.\n4. **Decision Making**: It supports business decisions by providing data-driven insights into file creation trends, which can inform resource planning, project prioritization, and process optimization.\n5. **Performance Monitoring**: Tracking the number of files created over time helps in monitoring business performance, identifying growth opportunities, and evaluating the effectiveness of operational processes.",
+    "timestamp": "2025-08-25T00:26:17.008575"
+  },
+  {
+    "kpi_name": "RFQs with Post Processing",
+    "table_name": "tb_rfq_file",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying trends in RFQs that require post processing and implementing process improvements to reduce the volume.\n2. **Strategic Impact**: It aligns with the business objective of improving operational efficiency and customer satisfaction by streamlining the RFQ process.\n3. **Operational Value**: It provides valuable insights for day-to-day operations by highlighting areas that may need attention or improvement in the post-processing stage.\n4. **Decision Making**: This KPI supports decision-making by helping management allocate resources effectively to address post-processing requirements and optimize the RFQ process.\n5. **Performance Monitoring**: It helps track business performance by measuring the volume of RFQs that undergo post processing, enabling the organization to monitor progress over time and set targets for improvement.",
+    "timestamp": "2025-08-25T00:26:19.029226"
+  },
+  {
+    "kpi_name": "Average File Count per Material Type",
+    "table_name": "tb_rfq_file",
+    "rating": "HIGH VALUE",
+    "reason": "This KPI holds high value across all evaluation criteria. \n1. **Actionability**: Business users can take action based on this metric by identifying material types with high or low file counts and adjusting their strategies accordingly.\n2. **Strategic Impact**: Understanding the distribution of files across material types aligns with the strategic objective of optimizing resource allocation and improving efficiency.\n3. **Operational Value**: It provides insights that can enhance day-to-day operations by helping in resource planning, prioritization, and process improvements.\n4. **Decision Making**: This KPI supports decision-making by providing data-driven insights into file distribution, enabling informed decisions on resource allocation and process optimization.\n5. **Performance Monitoring**: It helps in tracking business performance by monitoring how files are distributed across different material types, allowing for continuous improvement and adjustment of strategies.",
+    "timestamp": "2025-08-25T00:26:20.489315"
+  },
+  {
+    "kpi_name": "RFQs with Multiple Files",
+    "table_name": "tb_rfq_file",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying trends in RFQs with multiple files and optimizing the process to reduce the number of multiple files, which can improve efficiency and streamline operations.\n2. **Strategic Impact**: This KPI aligns with the business objective of optimizing RFQ processes and improving operational efficiency by providing insights into the volume of RFQs with multiple files.\n3. **Operational Value**: It helps in day-to-day operations by highlighting potential bottlenecks or inefficiencies in the RFQ process that can be addressed to enhance productivity.\n4. **Decision Making**: The data from this KPI can support decision-making by identifying areas for process improvement or resource allocation based on the volume of RFQs with multiple files.\n5. **Performance Monitoring**: It aids in tracking business performance by monitoring the frequency of RFQs with multiple files over time and assessing the impact of process improvements on",
+    "timestamp": "2025-08-25T00:26:23.635158"
+  },
+  {
+    "kpi_name": "RFQs by Creation Date",
+    "table_name": "tb_rfq_file",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying trends in RFQ creation over time and adjusting their strategies accordingly. For example, if there is a sudden drop in RFQs, they can investigate the cause and make necessary changes.\n2. **Strategic Impact**: Understanding the distribution of RFQs over time aligns with the strategic objective of optimizing the RFQ process and improving overall efficiency.\n3. **Operational Value**: This KPI provides valuable insights for day-to-day operations by helping in resource allocation, capacity planning, and identifying potential bottlenecks in the RFQ process.\n4. **Decision Making**: It supports decision-making by providing data on the volume and timing of RFQs, which can influence procurement strategies, supplier relationships, and pricing decisions.\n5. **Performance Monitoring**: Tracking RFQs by creation date helps in monitoring the performance of the RFQ process and evaluating the effectiveness of",
+    "timestamp": "2025-08-25T00:26:25.530555"
+  },
+  {
+    "kpi_name": "RFQs with Thickness Over Average",
+    "table_name": "tb_rfq_file",
+    "rating": "HIGH VALUE",
+    "reason": "This KPI holds high value for the following reasons:\n1. **Actionability**: Business users can take action based on this metric by identifying trends in RFQs with above-average thickness and adjusting production or procurement strategies accordingly.\n2. **Strategic Impact**: It aligns with the business objective of optimizing production processes and resource allocation by focusing on RFQs with higher thickness, which may have different requirements or implications.\n3. **Operational Value**: It provides insights into the volume of RFQs that may require special attention or resources, aiding in day-to-day operational planning and execution.\n4. **Decision Making**: This KPI supports decision-making by highlighting areas where operational adjustments or investments may be needed to meet customer demands or improve efficiency.\n5. **Performance Monitoring**: It helps track the performance of the production process in handling RFQs with varying thickness levels, enabling continuous improvement and benchmarking against industry standards.",
+    "timestamp": "2025-08-25T00:26:28.857296"
+  },
+  {
+    "kpi_name": "RFQs with Post Processing Over Time",
+    "table_name": "tb_rfq_file",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying patterns or trends in RFQs requiring post processing and implementing process improvements to reduce the number of RFQs needing post processing.\n2. **Strategic Impact**: This KPI aligns with the business objective of improving operational efficiency and streamlining processes by focusing on reducing post-processing requirements.\n3. **Operational Value**: It provides valuable insights for day-to-day operations by highlighting areas that may need attention or improvement in the RFQ process.\n4. **Decision Making**: The data from this KPI can support decision-making processes by helping management allocate resources effectively to address post-processing issues.\n5. **Performance Monitoring**: It helps track the performance of the RFQ process over time and assess the effectiveness of any implemented changes in reducing the need for post processing.\n\nOverall, this KPI holds high value as it provides actionable insights, aligns with strategic objectives, supports",
+    "timestamp": "2025-08-25T00:26:30.739283"
+  },
+  {
+    "kpi_name": "RFQs with Processed Files",
+    "table_name": "tb_rfq_file",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying trends in the volume of RFQs with processed files. They can investigate reasons for fluctuations and optimize processes accordingly.\n2. **Strategic Impact**: This KPI aligns with the business objective of ensuring efficient processing of RFQs, which can lead to improved customer satisfaction and operational efficiency.\n3. **Operational Value**: It provides insights into the day-to-day operations by tracking the number of RFQs with processed files, helping in monitoring workflow efficiency.\n4. **Decision Making**: The data from this KPI can support decision-making processes related to resource allocation, process improvements, and overall operational effectiveness.\n5. **Performance Monitoring**: It helps in tracking the performance of the RFQ processing system and identifying areas for improvement, making it valuable for monitoring business performance overall.",
+    "timestamp": "2025-08-25T00:26:32.673742"
+  },
+  {
+    "kpi_name": "Total Products",
+    "table_name": "tb_partner_product",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing the growth or decline in the total number of products. They can make decisions on expanding or optimizing the product portfolio.\n2. **Strategic Impact**: Understanding the size of the product portfolio directly aligns with the business objective of product diversification and market competitiveness.\n3. **Operational Value**: It helps in managing inventory, forecasting demand, and optimizing production based on the total number of products.\n4. **Decision Making**: This KPI supports decisions related to product development, marketing strategies, and resource allocation.\n5. **Performance Monitoring**: Tracking the total number of products over time helps in monitoring the business performance and evaluating the effectiveness of product strategies.",
+    "timestamp": "2025-08-25T00:26:34.420993"
+  },
+  {
+    "kpi_name": "Unique Partners",
+    "table_name": "tb_partner_product",
+    "rating": "HIGH VALUE",
+    "reason": "The KPI \"Unique Partners\" holds high business value across multiple dimensions. \n\n1. **Actionability**: Business users can take action based on this metric by identifying the effectiveness of partner relationships and making informed decisions on how to optimize and expand the partner network.\n2. **Strategic Impact**: It aligns with the strategic objective of understanding the size and reach of the partner network, which is crucial for partnerships, collaborations, and business growth.\n3. **Operational Value**: Knowing the number of unique partners can help in managing and nurturing partner relationships effectively on a day-to-day basis.\n4. **Decision Making**: This KPI supports decision-making processes related to partner selection, investment in partner programs, and resource allocation for partner management.\n5. **Performance Monitoring**: It helps in tracking the performance of the partner network over time and evaluating the impact of partner-related initiatives on overall business performance.\n\nOverall, the \"Unique Partners\" KPI provides valuable insights",
+    "timestamp": "2025-08-25T00:26:36.591224"
+  },
+  {
+    "kpi_name": "Products per Partner",
+    "table_name": "tb_partner_product",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying partners with low product numbers and strategizing ways to increase product offerings to them.\n2. **Strategic Impact**: Understanding the product distribution across partners aligns with the strategic objective of optimizing partner relationships and maximizing product reach.\n3. **Operational Value**: It provides insights into day-to-day operations by highlighting product distribution patterns and potential areas for improvement.\n4. **Decision Making**: This KPI supports decision-making processes by guiding resource allocation, product development strategies, and partner engagement initiatives.\n5. **Performance Monitoring**: It helps track business performance by measuring the effectiveness of product distribution strategies and partner engagement efforts.",
+    "timestamp": "2025-08-25T00:26:39.102495"
+  },
+  {
+    "kpi_name": "New Products per Month",
+    "table_name": "tb_partner_product",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing the trend of new products added per month. They can adjust their product development strategies, marketing efforts, and inventory management based on this data.\n2. **Strategic Impact**: Tracking the growth of the product portfolio aligns with the strategic objective of expanding the product offerings and staying competitive in the market.\n3. **Operational Value**: This KPI provides valuable insights for day-to-day operations such as production planning, resource allocation, and sales forecasting.\n4. **Decision Making**: The number of new products added per month can influence decisions related to investment in R&D, marketing budget allocation, and product lifecycle management.\n5. **Performance Monitoring**: This KPI helps in monitoring the performance of the product development team and assessing the effectiveness of new product launches in driving business growth.",
+    "timestamp": "2025-08-25T00:26:40.839541"
+  },
+  {
+    "kpi_name": "New Partners per Month",
+    "table_name": "tb_partner_product",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying trends in partner acquisition and adjusting strategies to attract more partners.\n2. **Strategic Impact**: It aligns with the business objective of expanding the partner network, which can lead to increased sales and market reach.\n3. **Operational Value**: It helps in monitoring the effectiveness of partner acquisition efforts and can guide operational decisions related to resource allocation for partner onboarding.\n4. **Decision Making**: The data on new partners per month can support decisions on partnership strategies, marketing campaigns, and resource allocation.\n5. **Performance Monitoring**: It provides a clear measure of how well the company is growing its partner network, which is crucial for tracking business performance and growth.",
+    "timestamp": "2025-08-25T00:26:42.182606"
+  },
+  {
+    "kpi_name": "Product Lifespan",
+    "table_name": "tb_partner_product",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by analyzing the average lifespan of products and making decisions on product development, marketing strategies, inventory management, etc.\n2. **Strategic Impact**: Understanding the longevity of products aligns with strategic objectives such as product lifecycle management, market positioning, and innovation.\n3. **Operational Value**: It can help in optimizing production schedules, forecasting demand, and managing inventory effectively.\n4. **Decision Making**: This KPI supports decision-making processes related to product portfolio management, pricing strategies, and resource allocation.\n5. **Performance Monitoring**: Tracking the average lifespan of products can provide insights into the success of product launches, customer satisfaction, and overall business performance.",
+    "timestamp": "2025-08-25T00:26:43.640883"
+  },
+  {
+    "kpi_name": "Partner Lifespan",
+    "table_name": "tb_partner_product",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying trends in partner lifespan and adjusting strategies to improve partner retention.\n2. **Strategic Impact**: Understanding the longevity of partner relationships aligns with the strategic objective of building strong and lasting partnerships.\n3. **Operational Value**: It can help in day-to-day operations by providing insights into partner engagement and loyalty.\n4. **Decision Making**: This KPI supports business decisions related to partner management, investment in partner programs, and resource allocation.\n5. **Performance Monitoring**: It helps track the performance of partner relationships over time, allowing for adjustments to be made to improve overall business performance.",
+    "timestamp": "2025-08-25T00:26:46.203861"
+  },
+  {
+    "kpi_name": "Product Diversity per Partner",
+    "table_name": "tb_partner_product",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying partners with a low product diversity and potentially working with them to expand their product offerings.\n2. **Strategic Impact**: Understanding the diversity of products offered aligns with the strategic objective of expanding product range and catering to a wider customer base.\n3. **Operational Value**: It can help in managing partner relationships and optimizing product offerings to meet customer demands.\n4. **Decision Making**: This KPI supports decision-making by providing insights into partner performance and product portfolio management.\n5. **Performance Monitoring**: It helps track the performance of partners in terms of product diversity and can be used to set benchmarks for improvement.",
+    "timestamp": "2025-08-25T00:26:48.737175"
+  },
+  {
+    "kpi_name": "Partner Diversity per Product",
+    "table_name": "tb_partner_product",
+    "rating": "HIGH VALUE",
+    "reason": "This KPI provides valuable insights into the diversity of partners offering each product, which can help in understanding the market reach, competitiveness, and potential collaboration opportunities. It is actionable as it can guide decisions related to partner selection, product distribution, and strategic partnerships. It aligns with business objectives by supporting market expansion and product diversification. Additionally, it aids in day-to-day operations by identifying gaps in partner coverage and can be used for performance monitoring to track the effectiveness of partner relationships. Overall, this KPI offers significant business value across various aspects of the organization.",
+    "timestamp": "2025-08-25T00:26:50.905051"
+  },
+  {
+    "kpi_name": "Most Popular Products",
+    "table_name": "tb_partner_product",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by focusing on promoting or optimizing the most popular products to drive sales.\n2. **Strategic Impact**: Identifying the most popular products aligns with the strategic objective of increasing revenue and market share by understanding customer preferences.\n3. **Operational Value**: Knowing the top 10 most common products can help in inventory management, production planning, and marketing strategies.\n4. **Decision Making**: This KPI supports decision-making processes related to product development, pricing strategies, and marketing campaigns.\n5. **Performance Monitoring**: Tracking the popularity of products helps in monitoring sales performance and adjusting strategies accordingly. \n\nOverall, the \"Most Popular Products\" KPI provides valuable insights that can drive business growth and improve operational efficiency, making it a high-value metric.",
+    "timestamp": "2025-08-25T00:26:52.653575"
+  },
+  {
+    "kpi_name": "Most Active Partners",
+    "table_name": "tb_partner_product",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by focusing on building stronger relationships with the most active partners, offering them incentives, or collaborating on new product development.\n2. **Strategic Impact**: Identifying the most active partners aligns with the strategic objective of maximizing partnerships' value and driving revenue growth.\n3. **Operational Value**: This KPI helps in day-to-day operations by highlighting key partners that contribute significantly to product sales and overall business performance.\n4. **Decision Making**: It supports decision-making processes by providing insights into which partners to prioritize, invest resources in, or potentially expand partnerships with.\n5. **Performance Monitoring**: Tracking the most active partners allows for monitoring business performance in terms of partner engagement, product distribution, and revenue generation.",
+    "timestamp": "2025-08-25T00:26:54.498464"
+  },
+  {
+    "kpi_name": "Product Creation Trend",
+    "table_name": "tb_partner_product",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by adjusting product development strategies, resource allocation, and timelines to optimize the pace of product creation.\n2. **Strategic Impact**: Tracking the trend of product creation aligns with the strategic objective of innovation and growth, as it provides insights into the organization's ability to introduce new products to the market.\n3. **Operational Value**: This KPI can help in managing operational efficiency by identifying bottlenecks in the product creation process and improving overall productivity.\n4. **Decision Making**: The trend of product creation can support decision-making processes related to product portfolio management, resource planning, and market positioning.\n5. **Performance Monitoring**: Monitoring the pace of product creation allows for tracking business performance in terms of product development timelines and market competitiveness.",
+    "timestamp": "2025-08-25T00:26:55.924581"
+  },
+  {
+    "kpi_name": "Partner Creation Trend",
+    "table_name": "tb_partner_product",
+    "rating": "HIGH VALUE",
+    "reason": "The Partner Creation Trend KPI holds high value across all evaluation criteria. \n1. **Actionability**: Business users can take action based on this metric by identifying trends in partner creation and adjusting strategies to optimize partner acquisition.\n2. **Strategic Impact**: It aligns with the strategic objective of expanding partnerships and can provide insights into the effectiveness of partnership programs.\n3. **Operational Value**: It helps in day-to-day operations by monitoring the pace of partner creation and identifying any deviations from expected trends.\n4. **Decision Making**: This KPI supports decision-making processes by providing data on partner growth trends, enabling informed decisions on resource allocation and partnership strategies.\n5. **Performance Monitoring**: It aids in tracking business performance by measuring the success of partner acquisition efforts and assessing the impact on overall business growth.",
+    "timestamp": "2025-08-25T00:26:57.911682"
+  },
+  {
+    "kpi_name": "Product Churn Rate",
+    "table_name": "tb_partner_product",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying underperforming products and making decisions on whether to discontinue, improve, or replace them.\n2. **Strategic Impact**: Understanding the rate of product turnover aligns with business objectives related to product lifecycle management and profitability.\n3. **Operational Value**: It helps in day-to-day operations by providing insights into product performance and market demand.\n4. **Decision Making**: This KPI supports decision-making processes related to product portfolio management and resource allocation.\n5. **Performance Monitoring**: It helps track business performance by indicating the effectiveness of product strategies and market responsiveness.\n\nOverall, the Product Churn Rate KPI holds high value as it provides actionable insights, aligns with strategic objectives, aids in operational decision-making, and supports performance monitoring.",
+    "timestamp": "2025-08-25T00:26:59.740780"
+  },
+  {
+    "kpi_name": "Partner Churn Rate",
+    "table_name": "tb_partner_product",
+    "rating": "HIGH VALUE",
+    "reason": "1. **Actionability**: Business users can take action based on this metric by identifying reasons for partner churn and implementing strategies to retain partners.\n2. **Strategic Impact**: Understanding partner churn rate aligns with the strategic objective of maintaining strong partnerships and potentially increasing revenue.\n3. **Operational Value**: It helps in day-to-day operations by providing insights into partner retention efforts and identifying areas for improvement.\n4. **Decision Making**: This KPI supports business decisions by guiding resource allocation towards partner retention initiatives.\n5. **Performance Monitoring**: It helps track business performance by monitoring the effectiveness of partner retention strategies and overall partner relationship management.",
+    "timestamp": "2025-08-25T00:27:01.354197"
+  }
+]

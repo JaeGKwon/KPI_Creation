@@ -287,20 +287,20 @@ openai>=0.28.1            # OpenAI API client
 ### **Key Deliverables**
 
 #### **Core Scripts**
-- **`metabase_kpi_extractor.py`**: Main KPI generation engine
-- **`register_kpis_enhanced.py`**: Enhanced registration with validation
-- **`requirements.txt`**: Python dependencies
-- **`.env.example`**: Configuration template
+- **`src/kpi_extractor.py`**: Main KPI generation engine
+- **`src/kpi_registrar.py`**: Enhanced registration with validation
+- **`config/requirements.txt`**: Python dependencies
+- **`config/env_example.txt`**: Configuration template
 
 #### **Data Outputs**
-- **`tb_tables_kpis_clean.json`**: 496 validated KPIs with SQL
-- **`working_kpis_summary_report.md`**: Analysis of 395 working KPIs
-- **`invalid_sqls_analysis.md`**: Error pattern analysis and recommendations
+- **`data/kpis_clean.json`**: 496 validated KPIs with SQL
+- **`docs/WORKING_KPIS_REPORT.md`**: Analysis of 395 working KPIs
+- **`docs/INVALID_SQLS_ANALYSIS.md`**: Error pattern analysis and recommendations
 
 #### **Documentation**
 - **`README.md`**: Project overview and setup instructions
-- **`PROJECT_SUMMARY.md`**: Complete project history and achievements
-- **`CLEANUP_SUMMARY.md`**: Project organization and file structure
+- **`docs/PROJECT_SUMMARY.md`**: Complete project history and achievements
+- **`docs/CLEANUP_SUMMARY.md**:** Project organization and file structure
 
 ## 🔮 Future Enhancements
 

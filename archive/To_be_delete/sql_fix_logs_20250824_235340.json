@@ -1,0 +1,12 @@
+[
+  {
+    "kpi_name": "User Engagement Rate",
+    "table_name": "tb_user",
+    "original_sql": "SELECT DATE_TRUNC('month', log_date) AS month, COUNT(DISTINCT user_id) / (SELECT COUNT(DISTINCT user_id) FROM tb_user WHERE user_id IS NOT NULL) AS engagement_rate FROM tb_user WHERE log_date IS NOT NULL AND user_id IS NOT NULL GROUP BY month",
+    "fixed_sql": "SELECT DATE_TRUNC('month', u.log_date) AS month, COUNT(DISTINCT u.user_id) / t.total_users AS engagement_rate\nFROM tb_user u\nCROSS JOIN (SELECT COUNT(DISTINCT user_id) AS total_users FROM tb_user WHERE user_id IS NOT NULL) t\nWHERE u.log_date IS NOT NULL AND u.user_id IS NOT NULL\nGROUP BY month",
+    "fixes_applied": [
+      "Applied LLM-based SQL fixes"
+    ],
+    "timestamp": "2025-08-24T23:52:56.657817"
+  }
+]

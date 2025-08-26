@@ -1,0 +1,20 @@
+[
+  {
+    "kpi_name": "Most Used Card",
+    "table_name": "tb_payment",
+    "reason": "Low business value: While knowing the most used card for transactions may provide some insights into customer behavior, it has limited actionable value for the business. It may not directly align with strategic objectives, offer significant operational value, or greatly impact decision-making processes. Additionally, it may not be a critical metric for monitoring overall business performance. Consider focusing on KPIs that offer more actionable insights and strategic value to drive business growth and decision-making.",
+    "timestamp": "2025-08-24T23:53:37.809345"
+  },
+  {
+    "kpi_name": "Least Used Card",
+    "table_name": "tb_payment",
+    "reason": "Low business value: While tracking the least used card for transactions may provide some insights into customer behavior, it has limited business value in terms of actionability, strategic impact, operational value, decision making, and performance monitoring. Business users may not be able to take meaningful actions based solely on this metric, and it may not directly align with key business objectives or aid in day-to-day operations. Additionally, the least used card may not significantly impact overall business performance or decision-making processes. Therefore, this KPI is considered to have low value in driving business success.",
+    "timestamp": "2025-08-24T23:53:38.728903"
+  },
+  {
+    "kpi_name": "Average Card Quota",
+    "table_name": "tb_payment",
+    "reason": "Low business value: The KPI \"Average Card Quota\" has limited business value based on the evaluation criteria provided. \n\n1. Actionability: While knowing the average quota of cards used for transactions can provide some insights, it may not directly lead to actionable steps for business users to improve performance or address issues.\n2. Strategic Impact: This KPI may not directly align with high-level strategic business objectives unless there are specific strategic goals related to card usage quotas.\n3. Operational Value: It may not significantly contribute to day-to-day operations unless there are specific operational processes tied to card quotas that need monitoring.\n4. Decision Making: The average card quota alone may not provide sufficient information to support critical business decisions without additional context or related KPIs.\n5. Performance Monitoring: While tracking the average card quota can help monitor a specific aspect of business performance, it may not be a comprehensive or critical metric for overall performance evaluation.\n\nOverall, the \"Average Card Quota\"",
+    "timestamp": "2025-08-24T23:53:40.283901"
+  }
+]

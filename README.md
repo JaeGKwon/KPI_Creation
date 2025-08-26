@@ -23,7 +23,7 @@ A Python tool that extracts table metadata from Metabase API and generates usefu
 1. **Clone or download the project files**
 2. **Install dependencies**:
    ```bash
-   pip install -r requirements.txt
+   pip install -r config/requirements.txt
    ```
 
 3. **Set up environment variables**:
@@ -44,7 +44,7 @@ A Python tool that extracts table metadata from Metabase API and generates usefu
 
 Run the main script with default table names:
 ```bash
-python metabase_kpi_extractor.py
+python src/kpi_extractor.py
 ```
 
 ### Custom Table Names
@@ -61,7 +61,7 @@ table_names = [
 ### Programmatic Usage
 
 ```python
-from metabase_kpi_extractor import MetabaseKPIExtractor
+from src.kpi_extractor import MetabaseKPIExtractor
 
 # Initialize
 extractor = MetabaseKPIExtractor()
@@ -182,13 +182,29 @@ Built-in delays (2 seconds) between API calls to respect Metabase rate limits.
 
 Enable verbose logging by modifying the print statements in the code.
 
-## Contributing
+## 📁 Project Structure
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
+```
+KPI_Creation/
+├── 📚 docs/                           # Documentation
+│   ├── ARCHITECTURE.md                # Technical architecture
+│   ├── PROJECT_SUMMARY.md             # Project overview
+│   ├── WORKING_KPIS_REPORT.md         # Working KPIs analysis
+│   ├── INVALID_SQLS_ANALYSIS.md       # Error analysis
+│   └── CLEANUP_SUMMARY.md             # Cleanup documentation
+├── 🐍 src/                            # Source code
+│   ├── kpi_extractor.py               # Core KPI generation
+│   └── kpi_registrar.py               # KPI registration
+├── 📊 data/                           # Data files
+│   └── kpis_clean.json                # Clean KPI dataset
+├── ⚙️  config/                         # Configuration
+│   ├── requirements.txt                # Python dependencies
+│   └── env_example.txt                # Environment template
+├── 📖 README.md                       # Main project documentation
+└── 🗑️  archive/                       # Archived files
+```
+
+## Contributing
 
 ## License
 

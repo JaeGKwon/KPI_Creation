@@ -1,0 +1,714 @@
+[
+  {
+    "kpi_name": "Certified Products",
+    "table_name": "tb_oem_market_product",
+    "sql_query": "SELECT COUNT(*) FROM tb_oem_market_product WHERE kc_value \u2192 certificate_number IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:12:20.186851"
+  },
+  {
+    "kpi_name": "Average Product Price",
+    "table_name": "tb_oem_market_product",
+    "sql_query": "SELECT AVG(max_price_info \u2192 price) FROM tb_oem_market_product WHERE max_price_info \u2192 price IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:12:21.728136"
+  },
+  {
+    "kpi_name": "Discounted Products",
+    "table_name": "tb_oem_market_product",
+    "sql_query": "SELECT COUNT(*) FROM tb_oem_market_product WHERE min_price_info \u2192 discount_rate > 0",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:12:23.989542"
+  },
+  {
+    "kpi_name": "Average Discount Rate",
+    "table_name": "tb_oem_market_product",
+    "sql_query": "SELECT AVG(min_price_info \u2192 discount_rate) FROM tb_oem_market_product WHERE min_price_info \u2192 discount_rate > 0",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:12:25.380901"
+  },
+  {
+    "kpi_name": "Products without KC Mark",
+    "table_name": "tb_oem_market_product",
+    "sql_query": "SELECT COUNT(*) FROM tb_oem_market_product WHERE kc_value \u2192 use_kc_mark = false",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:12:27.716864"
+  },
+  {
+    "kpi_name": "Certification Authorities",
+    "table_name": "tb_oem_market_product",
+    "sql_query": "SELECT COUNT(DISTINCT kc_value \u2192 certification_authority) FROM tb_oem_market_product WHERE kc_value \u2192 certification_authority IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:12:29.634322"
+  },
+  {
+    "kpi_name": "Certified Companies",
+    "table_name": "tb_oem_market_product",
+    "sql_query": "SELECT COUNT(DISTINCT kc_value \u2192 certified_company_name) FROM tb_oem_market_product WHERE kc_value \u2192 certified_company_name IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:12:31.249496"
+  },
+  {
+    "kpi_name": "Imported Products",
+    "table_name": "tb_oem_market_product",
+    "sql_query": "SELECT COUNT(*) FROM tb_oem_market_product WHERE kc_value \u2192 import_type = 'imported'",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:12:33.265636"
+  },
+  {
+    "kpi_name": "Domestic Products",
+    "table_name": "tb_oem_market_product",
+    "sql_query": "SELECT COUNT(*) FROM tb_oem_market_product WHERE kc_value \u2192 import_type = 'domestic'",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:12:35.017072"
+  },
+  {
+    "kpi_name": "Products with Consumer Dispute Resolution Details",
+    "table_name": "tb_oem_market_product",
+    "sql_query": "SELECT COUNT(*) FROM tb_oem_market_product WHERE product_notice \u2192 consumer_dispute_resolution_details \u2192 custom_input IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:12:36.663097"
+  },
+  {
+    "kpi_name": "Products with Exchange Return Warranty Terms",
+    "table_name": "tb_oem_market_product",
+    "sql_query": "SELECT COUNT(*) FROM tb_oem_market_product WHERE product_notice \u2192 exchange_return_warranty_terms \u2192 custom_input IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:12:38.187519"
+  },
+  {
+    "kpi_name": "Average Discount Amount",
+    "table_name": "tb_oem_market_product",
+    "sql_query": "SELECT AVG(min_price_info \u2192 discount_amount) FROM tb_oem_market_product WHERE min_price_info \u2192 discount_amount > 0",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:12:39.414006"
+  },
+  {
+    "kpi_name": "Products with No KC Reason",
+    "table_name": "tb_oem_market_product",
+    "sql_query": "SELECT COUNT(*) FROM tb_oem_market_product WHERE kc_value \u2192 no_kc_reason IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:12:41.443580"
+  },
+  {
+    "kpi_name": "Average Discounted Price",
+    "table_name": "tb_oem_market_product",
+    "sql_query": "SELECT AVG(min_price_info \u2192 discounted_price) FROM tb_oem_market_product WHERE min_price_info \u2192 discounted_price > 0",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:12:43.326070"
+  },
+  {
+    "kpi_name": "Total Payments",
+    "table_name": "tb_payment_root",
+    "sql_query": "SELECT COUNT(payment_root_id) FROM tb_payment_root WHERE payment_root_id IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:12:45.071624"
+  },
+  {
+    "kpi_name": "Total Payment Amount",
+    "table_name": "tb_payment_root",
+    "sql_query": "SELECT SUM(total_amount) FROM tb_payment_root WHERE total_amount IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:12:46.846192"
+  },
+  {
+    "kpi_name": "Average Payment Amount",
+    "table_name": "tb_payment_root",
+    "sql_query": "SELECT AVG(total_amount) FROM tb_payment_root WHERE total_amount IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:12:49.041752"
+  },
+  {
+    "kpi_name": "Total Payments per User",
+    "table_name": "tb_payment_root",
+    "sql_query": "SELECT user_id, COUNT(payment_root_id) FROM tb_payment_root WHERE user_id IS NOT NULL GROUP BY user_id",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:12:50.493247"
+  },
+  {
+    "kpi_name": "Total Payments per Partner",
+    "table_name": "tb_payment_root",
+    "sql_query": "SELECT partner_id, COUNT(payment_root_id) FROM tb_payment_root WHERE partner_id IS NOT NULL GROUP BY partner_id",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:12:52.335989"
+  },
+  {
+    "kpi_name": "Total Payment Amount per User",
+    "table_name": "tb_payment_root",
+    "sql_query": "SELECT user_id, SUM(total_amount) FROM tb_payment_root WHERE user_id IS NOT NULL AND total_amount IS NOT NULL GROUP BY user_id",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:12:53.871604"
+  },
+  {
+    "kpi_name": "Total Payment Amount per Partner",
+    "table_name": "tb_payment_root",
+    "sql_query": "SELECT partner_id, SUM(total_amount) FROM tb_payment_root WHERE partner_id IS NOT NULL AND total_amount IS NOT NULL GROUP BY partner_id",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:12:55.820716"
+  },
+  {
+    "kpi_name": "Average Payment Amount per User",
+    "table_name": "tb_payment_root",
+    "sql_query": "SELECT user_id, AVG(total_amount) FROM tb_payment_root WHERE user_id IS NOT NULL AND total_amount IS NOT NULL GROUP BY user_id",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:12:57.429742"
+  },
+  {
+    "kpi_name": "Average Payment Amount per Partner",
+    "table_name": "tb_payment_root",
+    "sql_query": "SELECT partner_id, AVG(total_amount) FROM tb_payment_root WHERE partner_id IS NOT NULL AND total_amount IS NOT NULL GROUP BY partner_id",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:12:59.412817"
+  },
+  {
+    "kpi_name": "Total Refund Commission",
+    "table_name": "tb_payment_root",
+    "sql_query": "SELECT SUM(refund_commission) FROM tb_payment_root WHERE refund_commission IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:01.376312"
+  },
+  {
+    "kpi_name": "Average Refund Commission",
+    "table_name": "tb_payment_root",
+    "sql_query": "SELECT AVG(refund_commission) FROM tb_payment_root WHERE refund_commission IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:03.170916"
+  },
+  {
+    "kpi_name": "Total Refund Commission per Partner",
+    "table_name": "tb_payment_root",
+    "sql_query": "SELECT partner_id, SUM(refund_commission) FROM tb_payment_root WHERE partner_id IS NOT NULL AND refund_commission IS NOT NULL GROUP BY partner_id",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:06.771120"
+  },
+  {
+    "kpi_name": "Average Refund Commission per User",
+    "table_name": "tb_payment_root",
+    "sql_query": "SELECT user_id, AVG(refund_commission) FROM tb_payment_root WHERE user_id IS NOT NULL AND refund_commission IS NOT NULL GROUP BY user_id",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:08.154901"
+  },
+  {
+    "kpi_name": "Average Refund Commission per Partner",
+    "table_name": "tb_payment_root",
+    "sql_query": "SELECT partner_id, AVG(refund_commission) FROM tb_payment_root WHERE partner_id IS NOT NULL AND refund_commission IS NOT NULL GROUP BY partner_id",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:09.652345"
+  },
+  {
+    "kpi_name": "Total Payments by Service Type",
+    "table_name": "tb_payment_root",
+    "sql_query": "SELECT payment_service_type_id, COUNT(payment_root_id) FROM tb_payment_root WHERE payment_service_type_id IS NOT NULL GROUP BY payment_service_type_id",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:11.493912"
+  },
+  {
+    "kpi_name": "Total Payment Amount by Service Type",
+    "table_name": "tb_payment_root",
+    "sql_query": "SELECT payment_service_type_id, SUM(total_amount) FROM tb_payment_root WHERE payment_service_type_id IS NOT NULL AND total_amount IS NOT NULL GROUP BY payment_service_type_id",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:13.234435"
+  },
+  {
+    "kpi_name": "Average Payment Amount by Service Type",
+    "table_name": "tb_payment_root",
+    "sql_query": "SELECT payment_service_type_id, AVG(total_amount) FROM tb_payment_root WHERE payment_service_type_id IS NOT NULL AND total_amount IS NOT NULL GROUP BY payment_service_type_id",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:15.223730"
+  },
+  {
+    "kpi_name": "Total Refund Commission by Service Type",
+    "table_name": "tb_payment_root",
+    "sql_query": "SELECT payment_service_type_id, SUM(refund_commission) FROM tb_payment_root WHERE payment_service_type_id IS NOT NULL AND refund_commission IS NOT NULL GROUP BY payment_service_type_id",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:16.654289"
+  },
+  {
+    "kpi_name": "Average Refund Commission by Service Type",
+    "table_name": "tb_payment_root",
+    "sql_query": "SELECT payment_service_type_id, AVG(refund_commission) FROM tb_payment_root WHERE payment_service_type_id IS NOT NULL AND refund_commission IS NOT NULL GROUP BY payment_service_type_id",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:18.145308"
+  },
+  {
+    "kpi_name": "Total Number of Partners",
+    "table_name": "tb_partner",
+    "sql_query": "SELECT COUNT(*) FROM tb_partner WHERE partner_id IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:20.504670"
+  },
+  {
+    "kpi_name": "Number of Partners by Industry",
+    "table_name": "tb_partner",
+    "sql_query": "SELECT industry_name, COUNT(partner_id) FROM tb_partner GROUP BY industry_name",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:23.668868"
+  },
+  {
+    "kpi_name": "Number of Partners by Status",
+    "table_name": "tb_partner",
+    "sql_query": "SELECT status_type_id, COUNT(partner_id) FROM tb_partner GROUP BY status_type_id",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:25.317612"
+  },
+  {
+    "kpi_name": "Average Age of Partnerships",
+    "table_name": "tb_partner",
+    "sql_query": "SELECT AVG(DATEDIFF(CURRENT_DATE, create_date)) FROM tb_partner WHERE create_date IS NOT NULL AND create_date > '1900-01-01'",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:27.057107"
+  },
+  {
+    "kpi_name": "Number of New Partners per Month",
+    "table_name": "tb_partner",
+    "sql_query": "SELECT DATE_TRUNC('month', create_date) AS month, COUNT(partner_id) FROM tb_partner WHERE create_date IS NOT NULL AND create_date > '1900-01-01' GROUP BY month",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:28.769747"
+  },
+  {
+    "kpi_name": "Number of Partners by Zip Code",
+    "table_name": "tb_partner",
+    "sql_query": "SELECT zip_code, COUNT(partner_id) FROM tb_partner GROUP BY zip_code",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:31.575032"
+  },
+  {
+    "kpi_name": "Number of Partners by Year Founded",
+    "table_name": "tb_partner",
+    "sql_query": "SELECT founded_in, COUNT(partner_id) FROM tb_partner GROUP BY founded_in",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:33.010676"
+  },
+  {
+    "kpi_name": "Number of Partners by Business Name",
+    "table_name": "tb_partner",
+    "sql_query": "SELECT business_name, COUNT(partner_id) FROM tb_partner GROUP BY business_name",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:34.805031"
+  },
+  {
+    "kpi_name": "Number of Partners by Address",
+    "table_name": "tb_partner",
+    "sql_query": "SELECT address, COUNT(partner_id) FROM tb_partner GROUP BY address",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:38.315910"
+  },
+  {
+    "kpi_name": "Number of Partners by Factory Address",
+    "table_name": "tb_partner",
+    "sql_query": "SELECT factory_address, COUNT(partner_id) FROM tb_partner GROUP BY factory_address",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:40.161089"
+  },
+  {
+    "kpi_name": "Number of Partners by Approval Date",
+    "table_name": "tb_partner",
+    "sql_query": "SELECT DATE_TRUNC('month', approve_date) AS month, COUNT(partner_id) FROM tb_partner WHERE approve_date IS NOT NULL AND approve_date > '1900-01-01' GROUP BY month",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:41.889254"
+  },
+  {
+    "kpi_name": "Number of Partners by BO User ID",
+    "table_name": "tb_partner",
+    "sql_query": "SELECT bo_user_id, COUNT(partner_id) FROM tb_partner GROUP BY bo_user_id",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:43.293868"
+  },
+  {
+    "kpi_name": "Total Users",
+    "table_name": "tb_user_info",
+    "sql_query": "SELECT COUNT(user_id) FROM tb_user_info WHERE user_id IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:45.496534"
+  },
+  {
+    "kpi_name": "New Users",
+    "table_name": "tb_user_info",
+    "sql_query": "SELECT COUNT(user_id) FROM tb_user_info WHERE create_date > NOW() - INTERVAL '30 days'",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:48.032990"
+  },
+  {
+    "kpi_name": "Active Users",
+    "table_name": "tb_user_info",
+    "sql_query": "SELECT COUNT(user_id) FROM tb_user_info WHERE last_login_date > NOW() - INTERVAL '30 days'",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:50.312388"
+  },
+  {
+    "kpi_name": "User Churn Rate",
+    "table_name": "tb_user_info",
+    "sql_query": "SELECT COUNT(CASE WHEN last_login_date < NOW() - INTERVAL '90 days' THEN 1 END) / COUNT(*) FROM tb_user_info",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:51.934477"
+  },
+  {
+    "kpi_name": "User Area Distribution",
+    "table_name": "tb_user_info",
+    "sql_query": "SELECT area_code, COUNT(user_id) FROM tb_user_info GROUP BY area_code",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:53.779489"
+  },
+  {
+    "kpi_name": "Average User Lifespan",
+    "table_name": "tb_user_info",
+    "sql_query": "SELECT AVG(DATEDIFF(last_login_date, create_date)) FROM tb_user_info WHERE last_login_date IS NOT NULL AND create_date IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:55.232033"
+  },
+  {
+    "kpi_name": "User Update Frequency",
+    "table_name": "tb_user_info",
+    "sql_query": "SELECT AVG(DATEDIFF(update_date, create_date)) FROM tb_user_info WHERE update_date IS NOT NULL AND create_date IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:57.156043"
+  },
+  {
+    "kpi_name": "User Login Frequency",
+    "table_name": "tb_user_info",
+    "sql_query": "SELECT AVG(DATEDIFF(last_login_date, create_date)) FROM tb_user_info WHERE last_login_date IS NOT NULL AND create_date IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:13:58.608835"
+  },
+  {
+    "kpi_name": "User Login Recency",
+    "table_name": "tb_user_info",
+    "sql_query": "SELECT user_id, DATEDIFF(NOW(), last_login_date) FROM tb_user_info WHERE last_login_date IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:14:00.448567"
+  },
+  {
+    "kpi_name": "User Address Completeness",
+    "table_name": "tb_user_info",
+    "sql_query": "SELECT COUNT(CASE WHEN address IS NOT NULL AND address_detail IS NOT NULL THEN 1 END) / COUNT(*) FROM tb_user_info",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:14:02.154584"
+  },
+  {
+    "kpi_name": "User Zip Code Completeness",
+    "table_name": "tb_user_info",
+    "sql_query": "SELECT COUNT(CASE WHEN zip_code IS NOT NULL THEN 1 END) / COUNT(*) FROM tb_user_info",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:14:03.814704"
+  },
+  {
+    "kpi_name": "User Area Code Completeness",
+    "table_name": "tb_user_info",
+    "sql_query": "SELECT COUNT(CASE WHEN area_code IS NOT NULL THEN 1 END) / COUNT(*) FROM tb_user_info",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:14:05.659185"
+  },
+  {
+    "kpi_name": "User Data Update Recency",
+    "table_name": "tb_user_info",
+    "sql_query": "SELECT user_id, DATEDIFF(NOW(), update_date) FROM tb_user_info WHERE update_date IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:14:07.602582"
+  },
+  {
+    "kpi_name": "User Data Update Frequency",
+    "table_name": "tb_user_info",
+    "sql_query": "SELECT user_id, AVG(DATEDIFF(update_date, create_date)) FROM tb_user_info WHERE update_date IS NOT NULL AND create_date IS NOT NULL GROUP BY user_id",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:14:09.043774"
+  },
+  {
+    "kpi_name": "User Account Age",
+    "table_name": "tb_user_info",
+    "sql_query": "SELECT user_id, DATEDIFF(NOW(), create_date) FROM tb_user_info WHERE create_date IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:14:11.200026"
+  },
+  {
+    "kpi_name": "Total Categories",
+    "table_name": "tb_market_category",
+    "sql_query": "SELECT COUNT(*) FROM tb_market_category WHERE category_id IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:14:13.307681"
+  },
+  {
+    "kpi_name": "Total Displayed Categories",
+    "table_name": "tb_market_category",
+    "sql_query": "SELECT COUNT(*) FROM tb_market_category WHERE is_display = TRUE",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:14:15.155792"
+  },
+  {
+    "kpi_name": "Total Hidden Categories",
+    "table_name": "tb_market_category",
+    "sql_query": "SELECT COUNT(*) FROM tb_market_category WHERE is_display = FALSE",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:14:16.932507"
+  },
+  {
+    "kpi_name": "Top Parent Categories",
+    "table_name": "tb_market_category",
+    "sql_query": "SELECT parent_category_id, COUNT(*) FROM tb_market_category GROUP BY parent_category_id ORDER BY COUNT(*) DESC",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:14:18.847890"
+  },
+  {
+    "kpi_name": "Orphan Categories",
+    "table_name": "tb_market_category",
+    "sql_query": "SELECT COUNT(*) FROM tb_market_category WHERE parent_category_id IS NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:14:20.708270"
+  },
+  {
+    "kpi_name": "Categories Without Images",
+    "table_name": "tb_market_category",
+    "sql_query": "SELECT COUNT(*) FROM tb_market_category WHERE img_url IS NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:14:22.631258"
+  },
+  {
+    "kpi_name": "Unique Slugs",
+    "table_name": "tb_market_category",
+    "sql_query": "SELECT COUNT(DISTINCT slug) FROM tb_market_category WHERE slug IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:14:32.917092"
+  },
+  {
+    "kpi_name": "Duplicate Slugs",
+    "table_name": "tb_market_category",
+    "sql_query": "SELECT COUNT(*) - COUNT(DISTINCT slug) FROM tb_market_category WHERE slug IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:14:34.750116"
+  },
+  {
+    "kpi_name": "Categories Without Slugs",
+    "table_name": "tb_market_category",
+    "sql_query": "SELECT COUNT(*) FROM tb_market_category WHERE slug IS NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:14:36.691794"
+  },
+  {
+    "kpi_name": "Categories With Slugs",
+    "table_name": "tb_market_category",
+    "sql_query": "SELECT COUNT(*) FROM tb_market_category WHERE slug IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:14:38.420537"
+  },
+  {
+    "kpi_name": "Categories Without Parent",
+    "table_name": "tb_market_category",
+    "sql_query": "SELECT COUNT(*) FROM tb_market_category WHERE parent_category_id IS NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:14:39.973121"
+  },
+  {
+    "kpi_name": "Categories With Parent",
+    "table_name": "tb_market_category",
+    "sql_query": "SELECT COUNT(*) FROM tb_market_category WHERE parent_category_id IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:14:41.748614"
+  },
+  {
+    "kpi_name": "Top Categories By Sort Value",
+    "table_name": "tb_market_category",
+    "sql_query": "SELECT category_name, sort FROM tb_market_category ORDER BY sort DESC LIMIT 5",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:14:53.128998"
+  },
+  {
+    "kpi_name": "Total Deals",
+    "table_name": "tb_statistics_partner",
+    "sql_query": "SELECT partner_id, SUM(total_deal_cnt) FROM tb_statistics_partner GROUP BY partner_id;",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:14:55.429495"
+  },
+  {
+    "kpi_name": "Average Deal Amount",
+    "table_name": "tb_statistics_partner",
+    "sql_query": "SELECT partner_id, AVG(avg_deal_amount) FROM tb_statistics_partner GROUP BY partner_id;",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:14:56.815185"
+  },
+  {
+    "kpi_name": "Redeal Rate",
+    "table_name": "tb_statistics_partner",
+    "sql_query": "SELECT partner_id, (SUM(user_redeal_cnt) / SUM(total_deal_cnt)) * 100 as redeal_rate FROM tb_statistics_partner GROUP BY partner_id;",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:14:58.780191"
+  },
+  {
+    "kpi_name": "Quotation to Purchase Order Conversion Rate",
+    "table_name": "tb_statistics_partner",
+    "sql_query": "SELECT partner_id, (SUM(po_complete_cnt) / SUM(quot_cnt)) * 100 as po_conversion_rate FROM tb_statistics_partner GROUP BY partner_id;",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:15:01.409865"
+  },
+  {
+    "kpi_name": "Profile View Count",
+    "table_name": "tb_statistics_partner",
+    "sql_query": "SELECT partner_id, SUM(profile_view_cnt) FROM tb_statistics_partner GROUP BY partner_id;",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:15:03.433325"
+  },
+  {
+    "kpi_name": "Average Review Score",
+    "table_name": "tb_statistics_partner",
+    "sql_query": "SELECT partner_id, AVG(avg_review_score) FROM tb_statistics_partner GROUP BY partner_id;",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:15:06.176988"
+  },
+  {
+    "kpi_name": "Chat Count",
+    "table_name": "tb_statistics_partner",
+    "sql_query": "SELECT partner_id, SUM(chat_cnt) FROM tb_statistics_partner GROUP BY partner_id;",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:15:08.196062"
+  },
+  {
+    "kpi_name": "Average Chat Response Time",
+    "table_name": "tb_statistics_partner",
+    "sql_query": "SELECT partner_id, AVG(avg_chat_response_second) FROM tb_statistics_partner GROUP BY partner_id;",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:15:09.917987"
+  },
+  {
+    "kpi_name": "Total Portfolio Count",
+    "table_name": "tb_statistics_partner",
+    "sql_query": "SELECT partner_id, SUM(total_portfolio_cnt) FROM tb_statistics_partner GROUP BY partner_id;",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:15:12.111161"
+  },
+  {
+    "kpi_name": "Total Review Count",
+    "table_name": "tb_statistics_partner",
+    "sql_query": "SELECT partner_id, SUM(total_review_cnt) FROM tb_statistics_partner GROUP BY partner_id;",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:15:13.744603"
+  },
+  {
+    "kpi_name": "Dibs Count",
+    "table_name": "tb_statistics_partner",
+    "sql_query": "SELECT partner_id, SUM(dibs_cnt) FROM tb_statistics_partner GROUP BY partner_id;",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:15:15.303158"
+  },
+  {
+    "kpi_name": "Profile Completion Rate",
+    "table_name": "tb_statistics_partner",
+    "sql_query": "SELECT partner_id, AVG(profile_complete) FROM tb_statistics_partner GROUP BY partner_id;",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:15:16.909116"
+  },
+  {
+    "kpi_name": "Total Deal Amount",
+    "table_name": "tb_statistics_partner",
+    "sql_query": "SELECT partner_id, SUM(total_deal_amount) FROM tb_statistics_partner GROUP BY partner_id;",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:15:18.561254"
+  },
+  {
+    "kpi_name": "Purchase Order Completion Rate",
+    "table_name": "tb_statistics_partner",
+    "sql_query": "SELECT partner_id, (SUM(po_complete_cnt) / SUM(total_deal_cnt)) * 100 as po_completion_rate FROM tb_statistics_partner GROUP BY partner_id;",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:15:20.414069"
+  },
+  {
+    "kpi_name": "Average Review Score per Deal",
+    "table_name": "tb_statistics_partner",
+    "sql_query": "SELECT partner_id, (SUM(total_review_score) / SUM(total_deal_cnt)) as avg_review_score_per_deal FROM tb_statistics_partner GROUP BY partner_id;",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:15:22.054818"
+  },
+  {
+    "kpi_name": "Total Number of Sellers",
+    "table_name": "tb_market_seller",
+    "sql_query": "SELECT COUNT(*) FROM tb_market_seller WHERE seller_id IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-25T00:15:23.956901"
+  }
+]

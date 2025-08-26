@@ -1,0 +1,62 @@
+[
+  {
+    "kpi_name": "Sellers Per User",
+    "table_name": "tb_market_seller",
+    "original_sql": "SELECT AVG(count) FROM (SELECT user_id, COUNT(*) as count FROM tb_market_seller WHERE user_id IS NOT NULL GROUP BY user_id) as subquery",
+    "fixed_sql": "SELECT AVG(count) \nFROM (\n    SELECT user_id, COUNT(*) as count \n    FROM tb_market_seller \n    WHERE user_id IS NOT NULL \n    GROUP BY user_id\n) as subquery;",
+    "fixes_applied": [
+      "Applied LLM-based SQL fixes"
+    ],
+    "timestamp": "2025-08-25T00:18:40.225686"
+  },
+  {
+    "kpi_name": "Sellers Per Partner",
+    "table_name": "tb_market_seller",
+    "original_sql": "SELECT AVG(count) FROM (SELECT partner_id, COUNT(*) as count FROM tb_market_seller WHERE partner_id IS NOT NULL GROUP BY partner_id) as subquery",
+    "fixed_sql": "SELECT AVG(count) \nFROM (SELECT partner_id, COUNT(*) as count \n      FROM tb_market_seller \n      WHERE partner_id IS NOT NULL \n      GROUP BY partner_id) subquery;",
+    "fixes_applied": [
+      "Applied LLM-based SQL fixes"
+    ],
+    "timestamp": "2025-08-25T00:18:43.140707"
+  },
+  {
+    "kpi_name": "Average Orders per Customer",
+    "table_name": "tb_oem_market_order",
+    "original_sql": "SELECT AVG(order_count) FROM (SELECT client_info, COUNT(*) as order_count FROM tb_oem_market_order GROUP BY client_info)",
+    "fixed_sql": "SELECT AVG(order_count) \nFROM (SELECT client_info, COUNT(*) as order_count \n      FROM tb_oem_market_order \n      GROUP BY client_info) AS subquery;",
+    "fixes_applied": [
+      "Applied LLM-based SQL fixes"
+    ],
+    "timestamp": "2025-08-25T00:19:01.471578"
+  },
+  {
+    "kpi_name": "Total Selected Deliveries",
+    "table_name": "tb_oem_market_order",
+    "original_sql": "SELECT COUNT(*) FROM tb_oem_market_order WHERE delivery_info ->> 'selected' = 'true'",
+    "fixed_sql": "SELECT COUNT(*) FROM tb_oem_market_order WHERE delivery_info ->> 'selected' = 'true';",
+    "fixes_applied": [
+      "Applied LLM-based SQL fixes"
+    ],
+    "timestamp": "2025-08-25T00:19:15.704161"
+  },
+  {
+    "kpi_name": "Average Deliveries per Customer",
+    "table_name": "tb_oem_market_order",
+    "original_sql": "SELECT AVG(delivery_count) FROM (SELECT client_info, COUNT(*) as delivery_count FROM tb_oem_market_order WHERE delivery_info IS NOT NULL GROUP BY client_info)",
+    "fixed_sql": "SELECT AVG(delivery_count) \nFROM (\n    SELECT client_info, COUNT(*) as delivery_count \n    FROM tb_oem_market_order \n    WHERE delivery_info IS NOT NULL \n    GROUP BY client_info\n) AS subquery;",
+    "fixes_applied": [
+      "Applied LLM-based SQL fixes"
+    ],
+    "timestamp": "2025-08-25T00:19:20.211127"
+  },
+  {
+    "kpi_name": "Cart Item Diversity",
+    "table_name": "tb_market_cart",
+    "original_sql": "SELECT AVG(cnt) FROM (SELECT COUNT(DISTINCT product_id) as cnt FROM tb_market_cart WHERE product_id IS NOT NULL GROUP BY user_id) as subquery",
+    "fixed_sql": "SELECT AVG(cnt) \nFROM (\n    SELECT COUNT(DISTINCT product_id) as cnt \n    FROM tb_market_cart \n    WHERE product_id IS NOT NULL \n    GROUP BY user_id\n) subquery;",
+    "fixes_applied": [
+      "Applied LLM-based SQL fixes"
+    ],
+    "timestamp": "2025-08-25T00:21:26.007637"
+  }
+]

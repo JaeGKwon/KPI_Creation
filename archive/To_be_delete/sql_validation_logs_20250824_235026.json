@@ -1,0 +1,82 @@
+[
+  {
+    "kpi_name": "Total Orders",
+    "table_name": "tb_market_order",
+    "sql_query": "SELECT COUNT(order_id) FROM tb_market_order WHERE order_id IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-24T23:50:09.390980"
+  },
+  {
+    "kpi_name": "Total Sales",
+    "table_name": "tb_market_order",
+    "sql_query": "SELECT SUM(payment_total) FROM tb_market_order WHERE payment_total IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-24T23:50:11.158903"
+  },
+  {
+    "kpi_name": "Average Order Value",
+    "table_name": "tb_market_order",
+    "sql_query": "SELECT AVG(payment_total) FROM tb_market_order WHERE payment_total IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-24T23:50:12.803932"
+  },
+  {
+    "kpi_name": "Total Shipping Cost",
+    "table_name": "tb_market_order",
+    "sql_query": "SELECT SUM(total_shipping_cost) FROM tb_market_order WHERE total_shipping_cost IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-24T23:50:14.638303"
+  },
+  {
+    "kpi_name": "Average Shipping Cost per Order",
+    "table_name": "tb_market_order",
+    "sql_query": "SELECT AVG(total_shipping_cost) FROM tb_market_order WHERE total_shipping_cost IS NOT NULL",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-24T23:50:16.220014"
+  },
+  {
+    "kpi_name": "Total Tax Invoices Issued",
+    "table_name": "tb_market_order",
+    "sql_query": "SELECT COUNT(order_id) FROM tb_market_order WHERE is_issued_tax_invoice = TRUE",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-24T23:50:17.954603"
+  },
+  {
+    "kpi_name": "Total Cash Receipts Issued",
+    "table_name": "tb_market_order",
+    "sql_query": "SELECT COUNT(order_id) FROM tb_market_order WHERE is_issued_cash_receipt = TRUE",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-24T23:50:19.359775"
+  },
+  {
+    "kpi_name": "Total Orders by Status",
+    "table_name": "tb_market_order",
+    "sql_query": "SELECT status, COUNT(order_id) FROM tb_market_order WHERE status IS NOT NULL GROUP BY status",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-24T23:50:21.176192"
+  },
+  {
+    "kpi_name": "Total Orders by Partner",
+    "table_name": "tb_market_order",
+    "sql_query": "SELECT partner_id, COUNT(order_id) FROM tb_market_order WHERE partner_id IS NOT NULL GROUP BY partner_id",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-24T23:50:23.345058"
+  },
+  {
+    "kpi_name": "Total Orders by User",
+    "table_name": "tb_market_order",
+    "sql_query": "SELECT user_id, COUNT(order_id) FROM tb_market_order WHERE user_id IS NOT NULL GROUP BY user_id",
+    "issues": [],
+    "status": "passed",
+    "timestamp": "2025-08-24T23:50:26.062232"
+  }
+]

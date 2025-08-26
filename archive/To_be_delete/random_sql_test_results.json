@@ -1,0 +1,1790 @@
+[
+  {
+    "table_name": "tb_payment_tax_invoice",
+    "kpi_name": "Total Tax Invoices by Invoicee Type",
+    "sql_query": "SELECT invoicee_type, COUNT(*) FROM tb_payment_tax_invoice WHERE invoicee_type IS NOT NULL GROUP BY invoicee_type",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[\"사업자\",29]],\"cols\":[{\"database_type\":\"varchar\",\"lib/deduplicated-name\":\"invoicee_type\",\"lib/original-name\":\"invoicee_type\",\"name\":\"invoicee_type\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"invoicee_type\",{\"base-type\":\"type/Text\"}],\"effective_type\":\"type/Text\",\"display_name\":\"invoicee_type\",\"base_type\":\"type/Text\"},{\"database_type\":\"int8\",\"lib/deduplicated-name\":\"count\",\"lib/original-name\":\"count\",\"name\":\"count\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"count\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"count\",\"base_type\":\"type/BigInteger\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT invoicee_type, COUNT(*) FROM tb_payment_tax_invoice WHERE invoicee_type IS NOT NULL GROUP BY invoicee_type\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"varchar\",\"semantic_type\":\"type/Category\",\"lib/deduplicated-name\":\"invoicee_type\",\"lib/original-name\":\"invoicee_type\",\"name\":\"invoicee_type\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"invoicee_type\",{\"base-type\":\"type/Text\"}],\"effective_type\":\"type/Text\",\"display_name\":\"invoicee_type\",\"fingerprint\":{\"global\":{\"distinct-count\":1,\"nil%\":0.0},\"type\":{\"type/Text\":{\"percent-json\":0.0,\"percent-url\":0.0,\"percent-email\":0.0,\"percent-state\":0.0,\"average-length\":3.0}}},\"base_type\":\"type/Text\"},{\"database_type\":\"int8\",\"semantic_type\":\"type/Quantity\",\"lib/deduplicated-name\":\"count\",\"lib/original-name\":\"count\",\"name\":\"count\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"count\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"count\",\"fingerprint\":{\"global\":{\"distinct-count\":1,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":29.0,\"q1\":29.0,\"q3\":29.0,\"max\":29.0,\"sd\":null,\"avg\":29.0}}},\"base_type\":\"type/BigInteger\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T02:05:44.84136648Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT invoicee_type, COUNT(*) FROM tb_payment_tax_invoice WHERE invoicee_type IS NOT NULL GROUP BY invoicee_type\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":1,\"running_time\":717}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              "사업자",
+              29
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "varchar",
+              "lib/deduplicated-name": "invoicee_type",
+              "lib/original-name": "invoicee_type",
+              "name": "invoicee_type",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "invoicee_type",
+                {
+                  "base-type": "type/Text"
+                }
+              ],
+              "effective_type": "type/Text",
+              "display_name": "invoicee_type",
+              "base_type": "type/Text"
+            },
+            {
+              "database_type": "int8",
+              "lib/deduplicated-name": "count",
+              "lib/original-name": "count",
+              "name": "count",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "count",
+                {
+                  "base-type": "type/BigInteger"
+                }
+              ],
+              "effective_type": "type/BigInteger",
+              "display_name": "count",
+              "base_type": "type/BigInteger"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT invoicee_type, COUNT(*) FROM tb_payment_tax_invoice WHERE invoicee_type IS NOT NULL GROUP BY invoicee_type"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "varchar",
+                "semantic_type": "type/Category",
+                "lib/deduplicated-name": "invoicee_type",
+                "lib/original-name": "invoicee_type",
+                "name": "invoicee_type",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "invoicee_type",
+                  {
+                    "base-type": "type/Text"
+                  }
+                ],
+                "effective_type": "type/Text",
+                "display_name": "invoicee_type",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 1,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Text": {
+                      "percent-json": 0.0,
+                      "percent-url": 0.0,
+                      "percent-email": 0.0,
+                      "percent-state": 0.0,
+                      "average-length": 3.0
+                    }
+                  }
+                },
+                "base_type": "type/Text"
+              },
+              {
+                "database_type": "int8",
+                "semantic_type": "type/Quantity",
+                "lib/deduplicated-name": "count",
+                "lib/original-name": "count",
+                "name": "count",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "count",
+                  {
+                    "base-type": "type/BigInteger"
+                  }
+                ],
+                "effective_type": "type/BigInteger",
+                "display_name": "count",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 1,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 29.0,
+                      "q1": 29.0,
+                      "q3": 29.0,
+                      "max": 29.0,
+                      "sd": null,
+                      "avg": 29.0
+                    }
+                  }
+                },
+                "base_type": "type/BigInteger"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T02:05:44.84136648Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT invoicee_type, COUNT(*) FROM tb_payment_tax_invoice WHERE invoicee_type IS NOT NULL GROUP BY invoicee_type",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 1,
+        "running_time": 717
+      }
+    }
+  },
+  {
+    "table_name": "tb_user",
+    "kpi_name": "Peak User Activity Month",
+    "sql_query": "SELECT DATE_TRUNC('month', log_date) AS month, COUNT(*) AS activity FROM tb_user WHERE log_date IS NOT NULL AND user_id IS NOT NULL GROUP BY month ORDER BY activity DESC LIMIT 1",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"database_id\":2,\"parameterized\":false,\"started_at\":\"2025-08-25T02:05:46.742834265Z\",\"via\":[{\"status\":\"failed\",\"class\":\"class clojure.lang.ExceptionInfo\",\"error\":\"Error executing query: ERROR: column \\\"log_date\\\" does not exist\\n  Position: 146\",\"stacktrace\":[\"--> driver.sql_jdbc.execute$execute_reducible_query$fn__93339$fn__93340.invoke(execute.clj:771)\",\"driver.sql_jdbc.execute$execute_reducible_query$fn__93339.invoke(execute.clj:768)\",\"driver.sql_jdbc.execute$fn__93132$fn__93133.invoke(execute.clj:419)\",\"driver.sql_jdbc.execute$do_with_resolved_connection.invokeStatic(execute.clj:347)\",\"driver.sql_jdbc.execute$do_with_resolved_connection.invoke(execute.clj:330)\",\"driver.sql_jdbc.execute$fn__93132.invokeStatic(execute.clj:413)\",\"driver.sql_jdbc.execute$fn__93132.invoke(execute.clj:411)\",\"driver.sql_jdbc.execute$execute_reducible_query.invokeStatic(execute.clj:761)\",\"driver.sql_jdbc.execute$execute_reducible_query.invoke(execute.clj:750)\",\"driver.sql_jdbc$fn__98077.invokeStatic(sql_jdbc.clj:81)\",\"driver.sql_jdbc$fn__98077.invoke(sql_jdbc.clj:79)\",\"query_processor.pipeline$_STAR_execute_STAR_.invokeStatic(pipeline.clj:58)\",\"query_processor.pipeline$_STAR_execute_STAR_.invoke(pipeline.clj:43)\",\"query_processor.pipeline$_STAR_run_STAR_.invokeStatic(pipeline.clj:116)\",\"query_processor.pipeline$_STAR_run_STAR_.invoke(pipeline.clj:105)\",\"query_processor.execute$run.invokeStatic(execute.clj:64)\",\"query_processor.execute$run.invoke(execute.clj:58)\",\"query_processor.middleware.enterprise$swap_destination_db_middleware$fn__77119.invoke(enterprise.clj:73)\",\"query_processor.middleware.enterprise$apply_impersonation_postprocessing_middleware$fn__77102.invoke(enterprise.clj:48)\",\"query_processor.middleware.update_used_cards$update_used_cards_BANG_$fn__77318.invoke(update_used_cards.clj:67)\",\"query_processor.execute$add_native_form_to_result_metadata$fn__77407.invoke(execute.clj:25)\",\"query_processor.execute$add_preprocessed_query_to_result_metadata_for_userland_query$fn__77413.invoke(execute.clj:36)\",\"query_processor.middleware.cache$maybe_return_cached_results$maybe_return_cached_results_STAR___77260.invoke(cache.clj:241)\",\"query_processor.middleware.permissions$check_query_permissions$fn__72418.invoke(permissions.clj:163)\",\"query_processor.middleware.enterprise$check_download_permissions_middleware$fn__77129.invoke(enterprise.clj:90)\",\"query_processor.middleware.enterprise$maybe_apply_column_level_perms_check_middleware$fn__77139.invoke(enterprise.clj:103)\",\"query_processor.execute$execute$fn__77441.invoke(execute.clj:96)\",\"query_processor.setup$do_with_qp_setup.invokeStatic(setup.clj:225)\",\"query_processor.setup$do_with_qp_setup.invoke(setup.clj:216)\",\"query_processor.execute$execute.invokeStatic(execute.clj:95)\",\"query_processor.execute$execute.invoke(execute.clj:91)\",\"query_processor$process_query_STAR__STAR_.invokeStatic(query_processor.clj:50)\",\"query_processor$process_query_STAR__STAR_.invoke(query_processor.clj:45)\",\"query_processor.middleware.enterprise$fn__77156$handle_audit_app_internal_queries__77157$fn__77159.invoke(enterprise.clj:135)\",\"query_processor.middleware.enterprise$handle_audit_app_internal_queries_middleware$fn__77167.invoke(enterprise.clj:142)\",\"query_processor.middleware.process_userland_query$process_userland_query_middleware$fn__84959.invoke(process_userland_query.clj:179)\",\"query_processor.middleware.catch_exceptions$catch_exceptions$fn__85019.invoke(catch_exceptions.clj:137)\",\"query_processor$process_query$fn__85084.invoke(query_processor.clj:81)\",\"query_processor.setup$do_with_canceled_chan$fn__77391.invoke(setup.clj:187)\",\"query_processor.setup$do_with_database_local_settings$fn__77385.invoke(setup.clj:181)\",\"query_processor.setup$do_with_driver$fn__77379$fn__77380.invoke(setup.clj:166)\",\"driver$do_with_driver.invokeStatic(driver.clj:49)\",\"driver$do_with_driver.invoke(driver.clj:44)\",\"query_processor.setup$do_with_driver$fn__77379.invoke(setup.clj:165)\",\"query_processor.setup$do_with_metadata_provider$fn__77371$fn__77374.invoke(setup.clj:151)\",\"query_processor.store$do_with_metadata_provider.invokeStatic(store.clj:185)\",\"query_processor.store$do_with_metadata_provider.invoke(store.clj:171)\",\"query_processor.store$do_with_metadata_provider.invokeStatic(store.clj:178)\",\"query_processor.store$do_with_metadata_provider.invoke(store.clj:171)\",\"query_processor.setup$do_with_metadata_provider$fn__77371.invoke(setup.clj:150)\",\"query_processor.setup$do_with_resolved_database$fn__77363.invoke(setup.clj:128)\",\"query_processor.setup$do_with_qp_setup.invokeStatic(setup.clj:232)\",\"query_processor.setup$do_with_qp_setup.invoke(setup.clj:216)\",\"query_processor$process_query.invokeStatic(query_processor.clj:79)\",\"query_processor$process_query.invoke(query_processor.clj:72)\",\"query_processor.api$run_streaming_query$fn__96312.invoke(api.clj:87)\",\"query_processor.streaming$_streaming_response$fn__65071$fn__65072$fn__65073.invoke(streaming.clj:213)\",\"query_processor.streaming$_streaming_response$fn__65071$fn__65072.invoke(streaming.clj:211)\",\"query_processor.streaming$do_with_streaming_rff.invokeStatic(streaming.clj:202)\",\"query_processor.streaming$do_with_streaming_rff.invoke(streaming.clj:189)\",\"query_processor.streaming$_streaming_response$fn__65071.invoke(streaming.clj:208)\",\"server.streaming_response$do_f_STAR_.invokeStatic(streaming_response.clj:79)\",\"server.streaming_response$do_f_STAR_.invoke(streaming_response.clj:77)\",\"server.streaming_response$do_f_async$task__56654.invoke(streaming_response.clj:94)\"],\"error_type\":\"invalid-query\",\"ex-data\":{\"driver\":\"postgres\",\"sql\":[\"-- Metabase:: userID: 1 queryType: native queryHash: 71f454fe2f1c22341bf4ad61af881afb3e1da6672366ff4969adcbfc90ed8062\",\"SELECT\",\"  DATE_TRUNC('month', log_date) AS month,\",\"  COUNT(*) AS activity\",\"FROM\",\"  tb_user\",\"WHERE\",\"  log_date IS NOT NULL\",\"  AND user_id IS NOT NULL\",\"GROUP BY\",\"  month\",\"ORDER BY\",\"  activity DESC\",\"LIMIT\",\"  1\"],\"params\":null,\"type\":\"invalid-query\"}}],\"action_id\":null,\"state\":\"42703\",\"error_type\":\"invalid-query\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT DATE_TRUNC('month', log_date) AS month, COUNT(*) AS activity FROM tb_user WHERE log_date IS NOT NULL AND user_id IS NOT NULL GROUP BY month ORDER BY activity DESC LIMIT 1\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"status\":\"failed\",\"class\":\"class org.postgresql.util.PSQLException\",\"stacktrace\":[\"org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2734)\",\"org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2421)\",\"org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)\",\"org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:518)\",\"org.postgresql.jdbc.PgStatement.execute(PgStatement.java:435)\",\"org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:357)\",\"org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:342)\",\"org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:318)\",\"org.postgresql.jdbc.PgStatement.execute(PgStatement.java:313)\",\"com.mchange.v2.c3p0.impl.NewProxyStatement.execute(NewProxyStatement.java:1341)\",\"--> driver.sql_jdbc.execute$fn__93249.invokeStatic(execute.clj:584)\",\"driver.sql_jdbc.execute$fn__93249.invoke(execute.clj:582)\",\"driver.sql_jdbc.execute$execute_statement_or_prepared_statement_BANG_.invokeStatic(execute.clj:592)\",\"driver.sql_jdbc.execute$execute_statement_or_prepared_statement_BANG_.invoke(execute.clj:589)\",\"driver.sql_jdbc.execute$execute_reducible_query$fn__93339$fn__93340.invoke(execute.clj:769)\",\"driver.sql_jdbc.execute$execute_reducible_query$fn__93339.invoke(execute.clj:768)\",\"driver.sql_jdbc.execute$fn__93132$fn__93133.invoke(execute.clj:419)\",\"driver.sql_jdbc.execute$do_with_resolved_connection.invokeStatic(execute.clj:347)\",\"driver.sql_jdbc.execute$do_with_resolved_connection.invoke(execute.clj:330)\",\"driver.sql_jdbc.execute$fn__93132.invokeStatic(execute.clj:413)\",\"driver.sql_jdbc.execute$fn__93132.invoke(execute.clj:411)\",\"driver.sql_jdbc.execute$execute_reducible_query.invokeStatic(execute.clj:761)\",\"driver.sql_jdbc.execute$execute_reducible_query.invoke(execute.clj:750)\",\"driver.sql_jdbc$fn__98077.invokeStatic(sql_jdbc.clj:81)\",\"driver.sql_jdbc$fn__98077.invoke(sql_jdbc.clj:79)\",\"query_processor.pipeline$_STAR_execute_STAR_.invokeStatic(pipeline.clj:58)\",\"query_processor.pipeline$_STAR_execute_STAR_.invoke(pipeline.clj:43)\",\"query_processor.pipeline$_STAR_run_STAR_.invokeStatic(pipeline.clj:116)\",\"query_processor.pipeline$_STAR_run_STAR_.invoke(pipeline.clj:105)\",\"query_processor.execute$run.invokeStatic(execute.clj:64)\",\"query_processor.execute$run.invoke(execute.clj:58)\",\"query_processor.middleware.enterprise$swap_destination_db_middleware$fn__77119.invoke(enterprise.clj:73)\",\"query_processor.middleware.enterprise$apply_impersonation_postprocessing_middleware$fn__77102.invoke(enterprise.clj:48)\",\"query_processor.middleware.update_used_cards$update_used_cards_BANG_$fn__77318.invoke(update_used_cards.clj:67)\",\"query_processor.execute$add_native_form_to_result_metadata$fn__77407.invoke(execute.clj:25)\",\"query_processor.execute$add_preprocessed_query_to_result_metadata_for_userland_query$fn__77413.invoke(execute.clj:36)\",\"query_processor.middleware.cache$maybe_return_cached_results$maybe_return_cached_results_STAR___77260.invoke(cache.clj:241)\",\"query_processor.middleware.permissions$check_query_permissions$fn__72418.invoke(permissions.clj:163)\",\"query_processor.middleware.enterprise$check_download_permissions_middleware$fn__77129.invoke(enterprise.clj:90)\",\"query_processor.middleware.enterprise$maybe_apply_column_level_perms_check_middleware$fn__77139.invoke(enterprise.clj:103)\",\"query_processor.execute$execute$fn__77441.invoke(execute.clj:96)\",\"query_processor.setup$do_with_qp_setup.invokeStatic(setup.clj:225)\",\"query_processor.setup$do_with_qp_setup.invoke(setup.clj:216)\",\"query_processor.execute$execute.invokeStatic(execute.clj:95)\",\"query_processor.execute$execute.invoke(execute.clj:91)\",\"query_processor$process_query_STAR__STAR_.invokeStatic(query_processor.clj:50)\",\"query_processor$process_query_STAR__STAR_.invoke(query_processor.clj:45)\",\"query_processor.middleware.enterprise$fn__77156$handle_audit_app_internal_queries__77157$fn__77159.invoke(enterprise.clj:135)\",\"query_processor.middleware.enterprise$handle_audit_app_internal_queries_middleware$fn__77167.invoke(enterprise.clj:142)\",\"query_processor.middleware.process_userland_query$process_userland_query_middleware$fn__84959.invoke(process_userland_query.clj:179)\",\"query_processor.middleware.catch_exceptions$catch_exceptions$fn__85019.invoke(catch_exceptions.clj:137)\",\"query_processor$process_query$fn__85084.invoke(query_processor.clj:81)\",\"query_processor.setup$do_with_canceled_chan$fn__77391.invoke(setup.clj:187)\",\"query_processor.setup$do_with_database_local_settings$fn__77385.invoke(setup.clj:181)\",\"query_processor.setup$do_with_driver$fn__77379$fn__77380.invoke(setup.clj:166)\",\"driver$do_with_driver.invokeStatic(driver.clj:49)\",\"driver$do_with_driver.invoke(driver.clj:44)\",\"query_processor.setup$do_with_driver$fn__77379.invoke(setup.clj:165)\",\"query_processor.setup$do_with_metadata_provider$fn__77371$fn__77374.invoke(setup.clj:151)\",\"query_processor.store$do_with_metadata_provider.invokeStatic(store.clj:185)\",\"query_processor.store$do_with_metadata_provider.invoke(store.clj:171)\",\"query_processor.store$do_with_metadata_provider.invokeStatic(store.clj:178)\",\"query_processor.store$do_with_metadata_provider.invoke(store.clj:171)\",\"query_processor.setup$do_with_metadata_provider$fn__77371.invoke(setup.clj:150)\",\"query_processor.setup$do_with_resolved_database$fn__77363.invoke(setup.clj:128)\",\"query_processor.setup$do_with_qp_setup.invokeStatic(setup.clj:232)\",\"query_processor.setup$do_with_qp_setup.invoke(setup.clj:216)\",\"query_processor$process_query.invokeStatic(query_processor.clj:79)\",\"query_processor$process_query.invoke(query_processor.clj:72)\",\"query_processor.api$run_streaming_query$fn__96312.invoke(api.clj:87)\",\"query_processor.streaming$_streaming_response$fn__65071$fn__65072$fn__65073.invoke(streaming.clj:213)\",\"query_processor.streaming$_streaming_response$fn__65071$fn__65072.invoke(streaming.clj:211)\",\"query_processor.streaming$do_with_streaming_rff.invokeStatic(streaming.clj:202)\",\"query_processor.streaming$do_with_streaming_rff.invoke(streaming.clj:189)\",\"query_processor.streaming$_streaming_response$fn__65071.invoke(streaming.clj:208)\",\"server.streaming_response$do_f_STAR_.invokeStatic(streaming_response.clj:79)\",\"server.streaming_response$do_f_STAR_.invoke(streaming_response.clj:77)\",\"server.streaming_response$do_f_async$task__56654.invoke(streaming_response.clj:94)\"],\"card_id\":null,\"context\":\"ad-hoc\",\"error\":\"ERROR: column \\\"log_date\\\" does not exist\\n  Position: 146\",\"row_count\":0,\"running_time\":0,\"data\":{\"rows\":[],\"cols\":[]}}",
+      "error_details": {
+        "database_id": 2,
+        "parameterized": false,
+        "started_at": "2025-08-25T02:05:46.742834265Z",
+        "via": [
+          {
+            "status": "failed",
+            "class": "class clojure.lang.ExceptionInfo",
+            "error": "Error executing query: ERROR: column \"log_date\" does not exist\n  Position: 146",
+            "stacktrace": [
+              "--> driver.sql_jdbc.execute$execute_reducible_query$fn__93339$fn__93340.invoke(execute.clj:771)",
+              "driver.sql_jdbc.execute$execute_reducible_query$fn__93339.invoke(execute.clj:768)",
+              "driver.sql_jdbc.execute$fn__93132$fn__93133.invoke(execute.clj:419)",
+              "driver.sql_jdbc.execute$do_with_resolved_connection.invokeStatic(execute.clj:347)",
+              "driver.sql_jdbc.execute$do_with_resolved_connection.invoke(execute.clj:330)",
+              "driver.sql_jdbc.execute$fn__93132.invokeStatic(execute.clj:413)",
+              "driver.sql_jdbc.execute$fn__93132.invoke(execute.clj:411)",
+              "driver.sql_jdbc.execute$execute_reducible_query.invokeStatic(execute.clj:761)",
+              "driver.sql_jdbc.execute$execute_reducible_query.invoke(execute.clj:750)",
+              "driver.sql_jdbc$fn__98077.invokeStatic(sql_jdbc.clj:81)",
+              "driver.sql_jdbc$fn__98077.invoke(sql_jdbc.clj:79)",
+              "query_processor.pipeline$_STAR_execute_STAR_.invokeStatic(pipeline.clj:58)",
+              "query_processor.pipeline$_STAR_execute_STAR_.invoke(pipeline.clj:43)",
+              "query_processor.pipeline$_STAR_run_STAR_.invokeStatic(pipeline.clj:116)",
+              "query_processor.pipeline$_STAR_run_STAR_.invoke(pipeline.clj:105)",
+              "query_processor.execute$run.invokeStatic(execute.clj:64)",
+              "query_processor.execute$run.invoke(execute.clj:58)",
+              "query_processor.middleware.enterprise$swap_destination_db_middleware$fn__77119.invoke(enterprise.clj:73)",
+              "query_processor.middleware.enterprise$apply_impersonation_postprocessing_middleware$fn__77102.invoke(enterprise.clj:48)",
+              "query_processor.middleware.update_used_cards$update_used_cards_BANG_$fn__77318.invoke(update_used_cards.clj:67)",
+              "query_processor.execute$add_native_form_to_result_metadata$fn__77407.invoke(execute.clj:25)",
+              "query_processor.execute$add_preprocessed_query_to_result_metadata_for_userland_query$fn__77413.invoke(execute.clj:36)",
+              "query_processor.middleware.cache$maybe_return_cached_results$maybe_return_cached_results_STAR___77260.invoke(cache.clj:241)",
+              "query_processor.middleware.permissions$check_query_permissions$fn__72418.invoke(permissions.clj:163)",
+              "query_processor.middleware.enterprise$check_download_permissions_middleware$fn__77129.invoke(enterprise.clj:90)",
+              "query_processor.middleware.enterprise$maybe_apply_column_level_perms_check_middleware$fn__77139.invoke(enterprise.clj:103)",
+              "query_processor.execute$execute$fn__77441.invoke(execute.clj:96)",
+              "query_processor.setup$do_with_qp_setup.invokeStatic(setup.clj:225)",
+              "query_processor.setup$do_with_qp_setup.invoke(setup.clj:216)",
+              "query_processor.execute$execute.invokeStatic(execute.clj:95)",
+              "query_processor.execute$execute.invoke(execute.clj:91)",
+              "query_processor$process_query_STAR__STAR_.invokeStatic(query_processor.clj:50)",
+              "query_processor$process_query_STAR__STAR_.invoke(query_processor.clj:45)",
+              "query_processor.middleware.enterprise$fn__77156$handle_audit_app_internal_queries__77157$fn__77159.invoke(enterprise.clj:135)",
+              "query_processor.middleware.enterprise$handle_audit_app_internal_queries_middleware$fn__77167.invoke(enterprise.clj:142)",
+              "query_processor.middleware.process_userland_query$process_userland_query_middleware$fn__84959.invoke(process_userland_query.clj:179)",
+              "query_processor.middleware.catch_exceptions$catch_exceptions$fn__85019.invoke(catch_exceptions.clj:137)",
+              "query_processor$process_query$fn__85084.invoke(query_processor.clj:81)",
+              "query_processor.setup$do_with_canceled_chan$fn__77391.invoke(setup.clj:187)",
+              "query_processor.setup$do_with_database_local_settings$fn__77385.invoke(setup.clj:181)",
+              "query_processor.setup$do_with_driver$fn__77379$fn__77380.invoke(setup.clj:166)",
+              "driver$do_with_driver.invokeStatic(driver.clj:49)",
+              "driver$do_with_driver.invoke(driver.clj:44)",
+              "query_processor.setup$do_with_driver$fn__77379.invoke(setup.clj:165)",
+              "query_processor.setup$do_with_metadata_provider$fn__77371$fn__77374.invoke(setup.clj:151)",
+              "query_processor.store$do_with_metadata_provider.invokeStatic(store.clj:185)",
+              "query_processor.store$do_with_metadata_provider.invoke(store.clj:171)",
+              "query_processor.store$do_with_metadata_provider.invokeStatic(store.clj:178)",
+              "query_processor.store$do_with_metadata_provider.invoke(store.clj:171)",
+              "query_processor.setup$do_with_metadata_provider$fn__77371.invoke(setup.clj:150)",
+              "query_processor.setup$do_with_resolved_database$fn__77363.invoke(setup.clj:128)",
+              "query_processor.setup$do_with_qp_setup.invokeStatic(setup.clj:232)",
+              "query_processor.setup$do_with_qp_setup.invoke(setup.clj:216)",
+              "query_processor$process_query.invokeStatic(query_processor.clj:79)",
+              "query_processor$process_query.invoke(query_processor.clj:72)",
+              "query_processor.api$run_streaming_query$fn__96312.invoke(api.clj:87)",
+              "query_processor.streaming$_streaming_response$fn__65071$fn__65072$fn__65073.invoke(streaming.clj:213)",
+              "query_processor.streaming$_streaming_response$fn__65071$fn__65072.invoke(streaming.clj:211)",
+              "query_processor.streaming$do_with_streaming_rff.invokeStatic(streaming.clj:202)",
+              "query_processor.streaming$do_with_streaming_rff.invoke(streaming.clj:189)",
+              "query_processor.streaming$_streaming_response$fn__65071.invoke(streaming.clj:208)",
+              "server.streaming_response$do_f_STAR_.invokeStatic(streaming_response.clj:79)",
+              "server.streaming_response$do_f_STAR_.invoke(streaming_response.clj:77)",
+              "server.streaming_response$do_f_async$task__56654.invoke(streaming_response.clj:94)"
+            ],
+            "error_type": "invalid-query",
+            "ex-data": {
+              "driver": "postgres",
+              "sql": [
+                "-- Metabase:: userID: 1 queryType: native queryHash: 71f454fe2f1c22341bf4ad61af881afb3e1da6672366ff4969adcbfc90ed8062",
+                "SELECT",
+                "  DATE_TRUNC('month', log_date) AS month,",
+                "  COUNT(*) AS activity",
+                "FROM",
+                "  tb_user",
+                "WHERE",
+                "  log_date IS NOT NULL",
+                "  AND user_id IS NOT NULL",
+                "GROUP BY",
+                "  month",
+                "ORDER BY",
+                "  activity DESC",
+                "LIMIT",
+                "  1"
+              ],
+              "params": null,
+              "type": "invalid-query"
+            }
+          }
+        ],
+        "action_id": null,
+        "state": "42703",
+        "error_type": "invalid-query",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT DATE_TRUNC('month', log_date) AS month, COUNT(*) AS activity FROM tb_user WHERE log_date IS NOT NULL AND user_id IS NOT NULL GROUP BY month ORDER BY activity DESC LIMIT 1",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "status": "failed",
+        "class": "class org.postgresql.util.PSQLException",
+        "stacktrace": [
+          "org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2734)",
+          "org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2421)",
+          "org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)",
+          "org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:518)",
+          "org.postgresql.jdbc.PgStatement.execute(PgStatement.java:435)",
+          "org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:357)",
+          "org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:342)",
+          "org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:318)",
+          "org.postgresql.jdbc.PgStatement.execute(PgStatement.java:313)",
+          "com.mchange.v2.c3p0.impl.NewProxyStatement.execute(NewProxyStatement.java:1341)",
+          "--> driver.sql_jdbc.execute$fn__93249.invokeStatic(execute.clj:584)",
+          "driver.sql_jdbc.execute$fn__93249.invoke(execute.clj:582)",
+          "driver.sql_jdbc.execute$execute_statement_or_prepared_statement_BANG_.invokeStatic(execute.clj:592)",
+          "driver.sql_jdbc.execute$execute_statement_or_prepared_statement_BANG_.invoke(execute.clj:589)",
+          "driver.sql_jdbc.execute$execute_reducible_query$fn__93339$fn__93340.invoke(execute.clj:769)",
+          "driver.sql_jdbc.execute$execute_reducible_query$fn__93339.invoke(execute.clj:768)",
+          "driver.sql_jdbc.execute$fn__93132$fn__93133.invoke(execute.clj:419)",
+          "driver.sql_jdbc.execute$do_with_resolved_connection.invokeStatic(execute.clj:347)",
+          "driver.sql_jdbc.execute$do_with_resolved_connection.invoke(execute.clj:330)",
+          "driver.sql_jdbc.execute$fn__93132.invokeStatic(execute.clj:413)",
+          "driver.sql_jdbc.execute$fn__93132.invoke(execute.clj:411)",
+          "driver.sql_jdbc.execute$execute_reducible_query.invokeStatic(execute.clj:761)",
+          "driver.sql_jdbc.execute$execute_reducible_query.invoke(execute.clj:750)",
+          "driver.sql_jdbc$fn__98077.invokeStatic(sql_jdbc.clj:81)",
+          "driver.sql_jdbc$fn__98077.invoke(sql_jdbc.clj:79)",
+          "query_processor.pipeline$_STAR_execute_STAR_.invokeStatic(pipeline.clj:58)",
+          "query_processor.pipeline$_STAR_execute_STAR_.invoke(pipeline.clj:43)",
+          "query_processor.pipeline$_STAR_run_STAR_.invokeStatic(pipeline.clj:116)",
+          "query_processor.pipeline$_STAR_run_STAR_.invoke(pipeline.clj:105)",
+          "query_processor.execute$run.invokeStatic(execute.clj:64)",
+          "query_processor.execute$run.invoke(execute.clj:58)",
+          "query_processor.middleware.enterprise$swap_destination_db_middleware$fn__77119.invoke(enterprise.clj:73)",
+          "query_processor.middleware.enterprise$apply_impersonation_postprocessing_middleware$fn__77102.invoke(enterprise.clj:48)",
+          "query_processor.middleware.update_used_cards$update_used_cards_BANG_$fn__77318.invoke(update_used_cards.clj:67)",
+          "query_processor.execute$add_native_form_to_result_metadata$fn__77407.invoke(execute.clj:25)",
+          "query_processor.execute$add_preprocessed_query_to_result_metadata_for_userland_query$fn__77413.invoke(execute.clj:36)",
+          "query_processor.middleware.cache$maybe_return_cached_results$maybe_return_cached_results_STAR___77260.invoke(cache.clj:241)",
+          "query_processor.middleware.permissions$check_query_permissions$fn__72418.invoke(permissions.clj:163)",
+          "query_processor.middleware.enterprise$check_download_permissions_middleware$fn__77129.invoke(enterprise.clj:90)",
+          "query_processor.middleware.enterprise$maybe_apply_column_level_perms_check_middleware$fn__77139.invoke(enterprise.clj:103)",
+          "query_processor.execute$execute$fn__77441.invoke(execute.clj:96)",
+          "query_processor.setup$do_with_qp_setup.invokeStatic(setup.clj:225)",
+          "query_processor.setup$do_with_qp_setup.invoke(setup.clj:216)",
+          "query_processor.execute$execute.invokeStatic(execute.clj:95)",
+          "query_processor.execute$execute.invoke(execute.clj:91)",
+          "query_processor$process_query_STAR__STAR_.invokeStatic(query_processor.clj:50)",
+          "query_processor$process_query_STAR__STAR_.invoke(query_processor.clj:45)",
+          "query_processor.middleware.enterprise$fn__77156$handle_audit_app_internal_queries__77157$fn__77159.invoke(enterprise.clj:135)",
+          "query_processor.middleware.enterprise$handle_audit_app_internal_queries_middleware$fn__77167.invoke(enterprise.clj:142)",
+          "query_processor.middleware.process_userland_query$process_userland_query_middleware$fn__84959.invoke(process_userland_query.clj:179)",
+          "query_processor.middleware.catch_exceptions$catch_exceptions$fn__85019.invoke(catch_exceptions.clj:137)",
+          "query_processor$process_query$fn__85084.invoke(query_processor.clj:81)",
+          "query_processor.setup$do_with_canceled_chan$fn__77391.invoke(setup.clj:187)",
+          "query_processor.setup$do_with_database_local_settings$fn__77385.invoke(setup.clj:181)",
+          "query_processor.setup$do_with_driver$fn__77379$fn__77380.invoke(setup.clj:166)",
+          "driver$do_with_driver.invokeStatic(driver.clj:49)",
+          "driver$do_with_driver.invoke(driver.clj:44)",
+          "query_processor.setup$do_with_driver$fn__77379.invoke(setup.clj:165)",
+          "query_processor.setup$do_with_metadata_provider$fn__77371$fn__77374.invoke(setup.clj:151)",
+          "query_processor.store$do_with_metadata_provider.invokeStatic(store.clj:185)",
+          "query_processor.store$do_with_metadata_provider.invoke(store.clj:171)",
+          "query_processor.store$do_with_metadata_provider.invokeStatic(store.clj:178)",
+          "query_processor.store$do_with_metadata_provider.invoke(store.clj:171)",
+          "query_processor.setup$do_with_metadata_provider$fn__77371.invoke(setup.clj:150)",
+          "query_processor.setup$do_with_resolved_database$fn__77363.invoke(setup.clj:128)",
+          "query_processor.setup$do_with_qp_setup.invokeStatic(setup.clj:232)",
+          "query_processor.setup$do_with_qp_setup.invoke(setup.clj:216)",
+          "query_processor$process_query.invokeStatic(query_processor.clj:79)",
+          "query_processor$process_query.invoke(query_processor.clj:72)",
+          "query_processor.api$run_streaming_query$fn__96312.invoke(api.clj:87)",
+          "query_processor.streaming$_streaming_response$fn__65071$fn__65072$fn__65073.invoke(streaming.clj:213)",
+          "query_processor.streaming$_streaming_response$fn__65071$fn__65072.invoke(streaming.clj:211)",
+          "query_processor.streaming$do_with_streaming_rff.invokeStatic(streaming.clj:202)",
+          "query_processor.streaming$do_with_streaming_rff.invoke(streaming.clj:189)",
+          "query_processor.streaming$_streaming_response$fn__65071.invoke(streaming.clj:208)",
+          "server.streaming_response$do_f_STAR_.invokeStatic(streaming_response.clj:79)",
+          "server.streaming_response$do_f_STAR_.invoke(streaming_response.clj:77)",
+          "server.streaming_response$do_f_async$task__56654.invoke(streaming_response.clj:94)"
+        ],
+        "card_id": null,
+        "context": "ad-hoc",
+        "error": "ERROR: column \"log_date\" does not exist\n  Position: 146",
+        "row_count": 0,
+        "running_time": 0,
+        "data": {
+          "rows": [],
+          "cols": []
+        }
+      }
+    }
+  },
+  {
+    "table_name": "tb_oem_market_order",
+    "kpi_name": "Average Delivery Time",
+    "sql_query": "SELECT AVG(DATEDIFF(delivery_info ->> 'update_date', delivery_info ->> 'create_date')) FROM tb_oem_market_order WHERE delivery_info ->> 'create_date' IS NOT NULL AND delivery_info ->> 'update_date' IS NOT NULL",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"database_id\":2,\"parameterized\":false,\"started_at\":\"2025-08-25T02:05:48.969104247Z\",\"via\":[{\"status\":\"failed\",\"class\":\"class clojure.lang.ExceptionInfo\",\"error\":\"Error executing query: ERROR: function datediff(text, text) does not exist\\n  Hint: No function matches the given name and argument types. You might need to add explicit type casts.\\n  Position: 130\",\"stacktrace\":[\"--> driver.sql_jdbc.execute$execute_reducible_query$fn__93339$fn__93340.invoke(execute.clj:771)\",\"driver.sql_jdbc.execute$execute_reducible_query$fn__93339.invoke(execute.clj:768)\",\"driver.sql_jdbc.execute$fn__93132$fn__93133.invoke(execute.clj:419)\",\"driver.sql_jdbc.execute$do_with_resolved_connection.invokeStatic(execute.clj:347)\",\"driver.sql_jdbc.execute$do_with_resolved_connection.invoke(execute.clj:330)\",\"driver.sql_jdbc.execute$fn__93132.invokeStatic(execute.clj:413)\",\"driver.sql_jdbc.execute$fn__93132.invoke(execute.clj:411)\",\"driver.sql_jdbc.execute$execute_reducible_query.invokeStatic(execute.clj:761)\",\"driver.sql_jdbc.execute$execute_reducible_query.invoke(execute.clj:750)\",\"driver.sql_jdbc$fn__98077.invokeStatic(sql_jdbc.clj:81)\",\"driver.sql_jdbc$fn__98077.invoke(sql_jdbc.clj:79)\",\"query_processor.pipeline$_STAR_execute_STAR_.invokeStatic(pipeline.clj:58)\",\"query_processor.pipeline$_STAR_execute_STAR_.invoke(pipeline.clj:43)\",\"query_processor.pipeline$_STAR_run_STAR_.invokeStatic(pipeline.clj:116)\",\"query_processor.pipeline$_STAR_run_STAR_.invoke(pipeline.clj:105)\",\"query_processor.execute$run.invokeStatic(execute.clj:64)\",\"query_processor.execute$run.invoke(execute.clj:58)\",\"query_processor.middleware.enterprise$swap_destination_db_middleware$fn__77119.invoke(enterprise.clj:73)\",\"query_processor.middleware.enterprise$apply_impersonation_postprocessing_middleware$fn__77102.invoke(enterprise.clj:48)\",\"query_processor.middleware.update_used_cards$update_used_cards_BANG_$fn__77318.invoke(update_used_cards.clj:67)\",\"query_processor.execute$add_native_form_to_result_metadata$fn__77407.invoke(execute.clj:25)\",\"query_processor.execute$add_preprocessed_query_to_result_metadata_for_userland_query$fn__77413.invoke(execute.clj:36)\",\"query_processor.middleware.cache$maybe_return_cached_results$maybe_return_cached_results_STAR___77260.invoke(cache.clj:241)\",\"query_processor.middleware.permissions$check_query_permissions$fn__72418.invoke(permissions.clj:163)\",\"query_processor.middleware.enterprise$check_download_permissions_middleware$fn__77129.invoke(enterprise.clj:90)\",\"query_processor.middleware.enterprise$maybe_apply_column_level_perms_check_middleware$fn__77139.invoke(enterprise.clj:103)\",\"query_processor.execute$execute$fn__77441.invoke(execute.clj:96)\",\"query_processor.setup$do_with_qp_setup.invokeStatic(setup.clj:225)\",\"query_processor.setup$do_with_qp_setup.invoke(setup.clj:216)\",\"query_processor.execute$execute.invokeStatic(execute.clj:95)\",\"query_processor.execute$execute.invoke(execute.clj:91)\",\"query_processor$process_query_STAR__STAR_.invokeStatic(query_processor.clj:50)\",\"query_processor$process_query_STAR__STAR_.invoke(query_processor.clj:45)\",\"query_processor.middleware.enterprise$fn__77156$handle_audit_app_internal_queries__77157$fn__77159.invoke(enterprise.clj:135)\",\"query_processor.middleware.enterprise$handle_audit_app_internal_queries_middleware$fn__77167.invoke(enterprise.clj:142)\",\"query_processor.middleware.process_userland_query$process_userland_query_middleware$fn__84959.invoke(process_userland_query.clj:179)\",\"query_processor.middleware.catch_exceptions$catch_exceptions$fn__85019.invoke(catch_exceptions.clj:137)\",\"query_processor$process_query$fn__85084.invoke(query_processor.clj:81)\",\"query_processor.setup$do_with_canceled_chan$fn__77391.invoke(setup.clj:187)\",\"query_processor.setup$do_with_database_local_settings$fn__77385.invoke(setup.clj:181)\",\"query_processor.setup$do_with_driver$fn__77379$fn__77380.invoke(setup.clj:166)\",\"driver$do_with_driver.invokeStatic(driver.clj:49)\",\"driver$do_with_driver.invoke(driver.clj:44)\",\"query_processor.setup$do_with_driver$fn__77379.invoke(setup.clj:165)\",\"query_processor.setup$do_with_metadata_provider$fn__77371$fn__77374.invoke(setup.clj:151)\",\"query_processor.store$do_with_metadata_provider.invokeStatic(store.clj:185)\",\"query_processor.store$do_with_metadata_provider.invoke(store.clj:171)\",\"query_processor.store$do_with_metadata_provider.invokeStatic(store.clj:178)\",\"query_processor.store$do_with_metadata_provider.invoke(store.clj:171)\",\"query_processor.setup$do_with_metadata_provider$fn__77371.invoke(setup.clj:150)\",\"query_processor.setup$do_with_resolved_database$fn__77363.invoke(setup.clj:128)\",\"query_processor.setup$do_with_qp_setup.invokeStatic(setup.clj:232)\",\"query_processor.setup$do_with_qp_setup.invoke(setup.clj:216)\",\"query_processor$process_query.invokeStatic(query_processor.clj:79)\",\"query_processor$process_query.invoke(query_processor.clj:72)\",\"query_processor.api$run_streaming_query$fn__96312.invoke(api.clj:87)\",\"query_processor.streaming$_streaming_response$fn__65071$fn__65072$fn__65073.invoke(streaming.clj:213)\",\"query_processor.streaming$_streaming_response$fn__65071$fn__65072.invoke(streaming.clj:211)\",\"query_processor.streaming$do_with_streaming_rff.invokeStatic(streaming.clj:202)\",\"query_processor.streaming$do_with_streaming_rff.invoke(streaming.clj:189)\",\"query_processor.streaming$_streaming_response$fn__65071.invoke(streaming.clj:208)\",\"server.streaming_response$do_f_STAR_.invokeStatic(streaming_response.clj:79)\",\"server.streaming_response$do_f_STAR_.invoke(streaming_response.clj:77)\",\"server.streaming_response$do_f_async$task__56654.invoke(streaming_response.clj:94)\"],\"error_type\":\"invalid-query\",\"ex-data\":{\"driver\":\"postgres\",\"sql\":[\"-- Metabase:: userID: 1 queryType: native queryHash: feba7c406ecc41b6e30c921a8b4fc3cddbe2bf9f43cbe15dd9582723ba16ac89\",\"SELECT\",\"  AVG(\",\"    DATEDIFF(\",\"      delivery_info ->> 'update_date',\",\"      delivery_info ->> 'create_date'\",\"    )\",\"  )\",\"FROM\",\"  tb_oem_market_order\",\"WHERE\",\"  delivery_info ->> 'create_date' IS NOT NULL\",\"  AND delivery_info ->> 'update_date' IS NOT NULL\"],\"params\":null,\"type\":\"invalid-query\"}}],\"action_id\":null,\"state\":\"42883\",\"error_type\":\"invalid-query\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT AVG(DATEDIFF(delivery_info ->> 'update_date', delivery_info ->> 'create_date')) FROM tb_oem_market_order WHERE delivery_info ->> 'create_date' IS NOT NULL AND delivery_info ->> 'update_date' IS NOT NULL\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"status\":\"failed\",\"class\":\"class org.postgresql.util.PSQLException\",\"stacktrace\":[\"org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2734)\",\"org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2421)\",\"org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)\",\"org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:518)\",\"org.postgresql.jdbc.PgStatement.execute(PgStatement.java:435)\",\"org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:357)\",\"org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:342)\",\"org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:318)\",\"org.postgresql.jdbc.PgStatement.execute(PgStatement.java:313)\",\"com.mchange.v2.c3p0.impl.NewProxyStatement.execute(NewProxyStatement.java:1341)\",\"--> driver.sql_jdbc.execute$fn__93249.invokeStatic(execute.clj:584)\",\"driver.sql_jdbc.execute$fn__93249.invoke(execute.clj:582)\",\"driver.sql_jdbc.execute$execute_statement_or_prepared_statement_BANG_.invokeStatic(execute.clj:592)\",\"driver.sql_jdbc.execute$execute_statement_or_prepared_statement_BANG_.invoke(execute.clj:589)\",\"driver.sql_jdbc.execute$execute_reducible_query$fn__93339$fn__93340.invoke(execute.clj:769)\",\"driver.sql_jdbc.execute$execute_reducible_query$fn__93339.invoke(execute.clj:768)\",\"driver.sql_jdbc.execute$fn__93132$fn__93133.invoke(execute.clj:419)\",\"driver.sql_jdbc.execute$do_with_resolved_connection.invokeStatic(execute.clj:347)\",\"driver.sql_jdbc.execute$do_with_resolved_connection.invoke(execute.clj:330)\",\"driver.sql_jdbc.execute$fn__93132.invokeStatic(execute.clj:413)\",\"driver.sql_jdbc.execute$fn__93132.invoke(execute.clj:411)\",\"driver.sql_jdbc.execute$execute_reducible_query.invokeStatic(execute.clj:761)\",\"driver.sql_jdbc.execute$execute_reducible_query.invoke(execute.clj:750)\",\"driver.sql_jdbc$fn__98077.invokeStatic(sql_jdbc.clj:81)\",\"driver.sql_jdbc$fn__98077.invoke(sql_jdbc.clj:79)\",\"query_processor.pipeline$_STAR_execute_STAR_.invokeStatic(pipeline.clj:58)\",\"query_processor.pipeline$_STAR_execute_STAR_.invoke(pipeline.clj:43)\",\"query_processor.pipeline$_STAR_run_STAR_.invokeStatic(pipeline.clj:116)\",\"query_processor.pipeline$_STAR_run_STAR_.invoke(pipeline.clj:105)\",\"query_processor.execute$run.invokeStatic(execute.clj:64)\",\"query_processor.execute$run.invoke(execute.clj:58)\",\"query_processor.middleware.enterprise$swap_destination_db_middleware$fn__77119.invoke(enterprise.clj:73)\",\"query_processor.middleware.enterprise$apply_impersonation_postprocessing_middleware$fn__77102.invoke(enterprise.clj:48)\",\"query_processor.middleware.update_used_cards$update_used_cards_BANG_$fn__77318.invoke(update_used_cards.clj:67)\",\"query_processor.execute$add_native_form_to_result_metadata$fn__77407.invoke(execute.clj:25)\",\"query_processor.execute$add_preprocessed_query_to_result_metadata_for_userland_query$fn__77413.invoke(execute.clj:36)\",\"query_processor.middleware.cache$maybe_return_cached_results$maybe_return_cached_results_STAR___77260.invoke(cache.clj:241)\",\"query_processor.middleware.permissions$check_query_permissions$fn__72418.invoke(permissions.clj:163)\",\"query_processor.middleware.enterprise$check_download_permissions_middleware$fn__77129.invoke(enterprise.clj:90)\",\"query_processor.middleware.enterprise$maybe_apply_column_level_perms_check_middleware$fn__77139.invoke(enterprise.clj:103)\",\"query_processor.execute$execute$fn__77441.invoke(execute.clj:96)\",\"query_processor.setup$do_with_qp_setup.invokeStatic(setup.clj:225)\",\"query_processor.setup$do_with_qp_setup.invoke(setup.clj:216)\",\"query_processor.execute$execute.invokeStatic(execute.clj:95)\",\"query_processor.execute$execute.invoke(execute.clj:91)\",\"query_processor$process_query_STAR__STAR_.invokeStatic(query_processor.clj:50)\",\"query_processor$process_query_STAR__STAR_.invoke(query_processor.clj:45)\",\"query_processor.middleware.enterprise$fn__77156$handle_audit_app_internal_queries__77157$fn__77159.invoke(enterprise.clj:135)\",\"query_processor.middleware.enterprise$handle_audit_app_internal_queries_middleware$fn__77167.invoke(enterprise.clj:142)\",\"query_processor.middleware.process_userland_query$process_userland_query_middleware$fn__84959.invoke(process_userland_query.clj:179)\",\"query_processor.middleware.catch_exceptions$catch_exceptions$fn__85019.invoke(catch_exceptions.clj:137)\",\"query_processor$process_query$fn__85084.invoke(query_processor.clj:81)\",\"query_processor.setup$do_with_canceled_chan$fn__77391.invoke(setup.clj:187)\",\"query_processor.setup$do_with_database_local_settings$fn__77385.invoke(setup.clj:181)\",\"query_processor.setup$do_with_driver$fn__77379$fn__77380.invoke(setup.clj:166)\",\"driver$do_with_driver.invokeStatic(driver.clj:49)\",\"driver$do_with_driver.invoke(driver.clj:44)\",\"query_processor.setup$do_with_driver$fn__77379.invoke(setup.clj:165)\",\"query_processor.setup$do_with_metadata_provider$fn__77371$fn__77374.invoke(setup.clj:151)\",\"query_processor.store$do_with_metadata_provider.invokeStatic(store.clj:185)\",\"query_processor.store$do_with_metadata_provider.invoke(store.clj:171)\",\"query_processor.store$do_with_metadata_provider.invokeStatic(store.clj:178)\",\"query_processor.store$do_with_metadata_provider.invoke(store.clj:171)\",\"query_processor.setup$do_with_metadata_provider$fn__77371.invoke(setup.clj:150)\",\"query_processor.setup$do_with_resolved_database$fn__77363.invoke(setup.clj:128)\",\"query_processor.setup$do_with_qp_setup.invokeStatic(setup.clj:232)\",\"query_processor.setup$do_with_qp_setup.invoke(setup.clj:216)\",\"query_processor$process_query.invokeStatic(query_processor.clj:79)\",\"query_processor$process_query.invoke(query_processor.clj:72)\",\"query_processor.api$run_streaming_query$fn__96312.invoke(api.clj:87)\",\"query_processor.streaming$_streaming_response$fn__65071$fn__65072$fn__65073.invoke(streaming.clj:213)\",\"query_processor.streaming$_streaming_response$fn__65071$fn__65072.invoke(streaming.clj:211)\",\"query_processor.streaming$do_with_streaming_rff.invokeStatic(streaming.clj:202)\",\"query_processor.streaming$do_with_streaming_rff.invoke(streaming.clj:189)\",\"query_processor.streaming$_streaming_response$fn__65071.invoke(streaming.clj:208)\",\"server.streaming_response$do_f_STAR_.invokeStatic(streaming_response.clj:79)\",\"server.streaming_response$do_f_STAR_.invoke(streaming_response.clj:77)\",\"server.streaming_response$do_f_async$task__56654.invoke(streaming_response.clj:94)\"],\"card_id\":null,\"context\":\"ad-hoc\",\"error\":\"ERROR: function datediff(text, text) does not exist\\n  Hint: No function matches the given name and argument types. You might need to add explicit type casts.\\n  Position: 130\",\"row_count\":0,\"running_time\":0,\"data\":{\"rows\":[],\"cols\":[]}}",
+      "error_details": {
+        "database_id": 2,
+        "parameterized": false,
+        "started_at": "2025-08-25T02:05:48.969104247Z",
+        "via": [
+          {
+            "status": "failed",
+            "class": "class clojure.lang.ExceptionInfo",
+            "error": "Error executing query: ERROR: function datediff(text, text) does not exist\n  Hint: No function matches the given name and argument types. You might need to add explicit type casts.\n  Position: 130",
+            "stacktrace": [
+              "--> driver.sql_jdbc.execute$execute_reducible_query$fn__93339$fn__93340.invoke(execute.clj:771)",
+              "driver.sql_jdbc.execute$execute_reducible_query$fn__93339.invoke(execute.clj:768)",
+              "driver.sql_jdbc.execute$fn__93132$fn__93133.invoke(execute.clj:419)",
+              "driver.sql_jdbc.execute$do_with_resolved_connection.invokeStatic(execute.clj:347)",
+              "driver.sql_jdbc.execute$do_with_resolved_connection.invoke(execute.clj:330)",
+              "driver.sql_jdbc.execute$fn__93132.invokeStatic(execute.clj:413)",
+              "driver.sql_jdbc.execute$fn__93132.invoke(execute.clj:411)",
+              "driver.sql_jdbc.execute$execute_reducible_query.invokeStatic(execute.clj:761)",
+              "driver.sql_jdbc.execute$execute_reducible_query.invoke(execute.clj:750)",
+              "driver.sql_jdbc$fn__98077.invokeStatic(sql_jdbc.clj:81)",
+              "driver.sql_jdbc$fn__98077.invoke(sql_jdbc.clj:79)",
+              "query_processor.pipeline$_STAR_execute_STAR_.invokeStatic(pipeline.clj:58)",
+              "query_processor.pipeline$_STAR_execute_STAR_.invoke(pipeline.clj:43)",
+              "query_processor.pipeline$_STAR_run_STAR_.invokeStatic(pipeline.clj:116)",
+              "query_processor.pipeline$_STAR_run_STAR_.invoke(pipeline.clj:105)",
+              "query_processor.execute$run.invokeStatic(execute.clj:64)",
+              "query_processor.execute$run.invoke(execute.clj:58)",
+              "query_processor.middleware.enterprise$swap_destination_db_middleware$fn__77119.invoke(enterprise.clj:73)",
+              "query_processor.middleware.enterprise$apply_impersonation_postprocessing_middleware$fn__77102.invoke(enterprise.clj:48)",
+              "query_processor.middleware.update_used_cards$update_used_cards_BANG_$fn__77318.invoke(update_used_cards.clj:67)",
+              "query_processor.execute$add_native_form_to_result_metadata$fn__77407.invoke(execute.clj:25)",
+              "query_processor.execute$add_preprocessed_query_to_result_metadata_for_userland_query$fn__77413.invoke(execute.clj:36)",
+              "query_processor.middleware.cache$maybe_return_cached_results$maybe_return_cached_results_STAR___77260.invoke(cache.clj:241)",
+              "query_processor.middleware.permissions$check_query_permissions$fn__72418.invoke(permissions.clj:163)",
+              "query_processor.middleware.enterprise$check_download_permissions_middleware$fn__77129.invoke(enterprise.clj:90)",
+              "query_processor.middleware.enterprise$maybe_apply_column_level_perms_check_middleware$fn__77139.invoke(enterprise.clj:103)",
+              "query_processor.execute$execute$fn__77441.invoke(execute.clj:96)",
+              "query_processor.setup$do_with_qp_setup.invokeStatic(setup.clj:225)",
+              "query_processor.setup$do_with_qp_setup.invoke(setup.clj:216)",
+              "query_processor.execute$execute.invokeStatic(execute.clj:95)",
+              "query_processor.execute$execute.invoke(execute.clj:91)",
+              "query_processor$process_query_STAR__STAR_.invokeStatic(query_processor.clj:50)",
+              "query_processor$process_query_STAR__STAR_.invoke(query_processor.clj:45)",
+              "query_processor.middleware.enterprise$fn__77156$handle_audit_app_internal_queries__77157$fn__77159.invoke(enterprise.clj:135)",
+              "query_processor.middleware.enterprise$handle_audit_app_internal_queries_middleware$fn__77167.invoke(enterprise.clj:142)",
+              "query_processor.middleware.process_userland_query$process_userland_query_middleware$fn__84959.invoke(process_userland_query.clj:179)",
+              "query_processor.middleware.catch_exceptions$catch_exceptions$fn__85019.invoke(catch_exceptions.clj:137)",
+              "query_processor$process_query$fn__85084.invoke(query_processor.clj:81)",
+              "query_processor.setup$do_with_canceled_chan$fn__77391.invoke(setup.clj:187)",
+              "query_processor.setup$do_with_database_local_settings$fn__77385.invoke(setup.clj:181)",
+              "query_processor.setup$do_with_driver$fn__77379$fn__77380.invoke(setup.clj:166)",
+              "driver$do_with_driver.invokeStatic(driver.clj:49)",
+              "driver$do_with_driver.invoke(driver.clj:44)",
+              "query_processor.setup$do_with_driver$fn__77379.invoke(setup.clj:165)",
+              "query_processor.setup$do_with_metadata_provider$fn__77371$fn__77374.invoke(setup.clj:151)",
+              "query_processor.store$do_with_metadata_provider.invokeStatic(store.clj:185)",
+              "query_processor.store$do_with_metadata_provider.invoke(store.clj:171)",
+              "query_processor.store$do_with_metadata_provider.invokeStatic(store.clj:178)",
+              "query_processor.store$do_with_metadata_provider.invoke(store.clj:171)",
+              "query_processor.setup$do_with_metadata_provider$fn__77371.invoke(setup.clj:150)",
+              "query_processor.setup$do_with_resolved_database$fn__77363.invoke(setup.clj:128)",
+              "query_processor.setup$do_with_qp_setup.invokeStatic(setup.clj:232)",
+              "query_processor.setup$do_with_qp_setup.invoke(setup.clj:216)",
+              "query_processor$process_query.invokeStatic(query_processor.clj:79)",
+              "query_processor$process_query.invoke(query_processor.clj:72)",
+              "query_processor.api$run_streaming_query$fn__96312.invoke(api.clj:87)",
+              "query_processor.streaming$_streaming_response$fn__65071$fn__65072$fn__65073.invoke(streaming.clj:213)",
+              "query_processor.streaming$_streaming_response$fn__65071$fn__65072.invoke(streaming.clj:211)",
+              "query_processor.streaming$do_with_streaming_rff.invokeStatic(streaming.clj:202)",
+              "query_processor.streaming$do_with_streaming_rff.invoke(streaming.clj:189)",
+              "query_processor.streaming$_streaming_response$fn__65071.invoke(streaming.clj:208)",
+              "server.streaming_response$do_f_STAR_.invokeStatic(streaming_response.clj:79)",
+              "server.streaming_response$do_f_STAR_.invoke(streaming_response.clj:77)",
+              "server.streaming_response$do_f_async$task__56654.invoke(streaming_response.clj:94)"
+            ],
+            "error_type": "invalid-query",
+            "ex-data": {
+              "driver": "postgres",
+              "sql": [
+                "-- Metabase:: userID: 1 queryType: native queryHash: feba7c406ecc41b6e30c921a8b4fc3cddbe2bf9f43cbe15dd9582723ba16ac89",
+                "SELECT",
+                "  AVG(",
+                "    DATEDIFF(",
+                "      delivery_info ->> 'update_date',",
+                "      delivery_info ->> 'create_date'",
+                "    )",
+                "  )",
+                "FROM",
+                "  tb_oem_market_order",
+                "WHERE",
+                "  delivery_info ->> 'create_date' IS NOT NULL",
+                "  AND delivery_info ->> 'update_date' IS NOT NULL"
+              ],
+              "params": null,
+              "type": "invalid-query"
+            }
+          }
+        ],
+        "action_id": null,
+        "state": "42883",
+        "error_type": "invalid-query",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT AVG(DATEDIFF(delivery_info ->> 'update_date', delivery_info ->> 'create_date')) FROM tb_oem_market_order WHERE delivery_info ->> 'create_date' IS NOT NULL AND delivery_info ->> 'update_date' IS NOT NULL",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "status": "failed",
+        "class": "class org.postgresql.util.PSQLException",
+        "stacktrace": [
+          "org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2734)",
+          "org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2421)",
+          "org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)",
+          "org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:518)",
+          "org.postgresql.jdbc.PgStatement.execute(PgStatement.java:435)",
+          "org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:357)",
+          "org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:342)",
+          "org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:318)",
+          "org.postgresql.jdbc.PgStatement.execute(PgStatement.java:313)",
+          "com.mchange.v2.c3p0.impl.NewProxyStatement.execute(NewProxyStatement.java:1341)",
+          "--> driver.sql_jdbc.execute$fn__93249.invokeStatic(execute.clj:584)",
+          "driver.sql_jdbc.execute$fn__93249.invoke(execute.clj:582)",
+          "driver.sql_jdbc.execute$execute_statement_or_prepared_statement_BANG_.invokeStatic(execute.clj:592)",
+          "driver.sql_jdbc.execute$execute_statement_or_prepared_statement_BANG_.invoke(execute.clj:589)",
+          "driver.sql_jdbc.execute$execute_reducible_query$fn__93339$fn__93340.invoke(execute.clj:769)",
+          "driver.sql_jdbc.execute$execute_reducible_query$fn__93339.invoke(execute.clj:768)",
+          "driver.sql_jdbc.execute$fn__93132$fn__93133.invoke(execute.clj:419)",
+          "driver.sql_jdbc.execute$do_with_resolved_connection.invokeStatic(execute.clj:347)",
+          "driver.sql_jdbc.execute$do_with_resolved_connection.invoke(execute.clj:330)",
+          "driver.sql_jdbc.execute$fn__93132.invokeStatic(execute.clj:413)",
+          "driver.sql_jdbc.execute$fn__93132.invoke(execute.clj:411)",
+          "driver.sql_jdbc.execute$execute_reducible_query.invokeStatic(execute.clj:761)",
+          "driver.sql_jdbc.execute$execute_reducible_query.invoke(execute.clj:750)",
+          "driver.sql_jdbc$fn__98077.invokeStatic(sql_jdbc.clj:81)",
+          "driver.sql_jdbc$fn__98077.invoke(sql_jdbc.clj:79)",
+          "query_processor.pipeline$_STAR_execute_STAR_.invokeStatic(pipeline.clj:58)",
+          "query_processor.pipeline$_STAR_execute_STAR_.invoke(pipeline.clj:43)",
+          "query_processor.pipeline$_STAR_run_STAR_.invokeStatic(pipeline.clj:116)",
+          "query_processor.pipeline$_STAR_run_STAR_.invoke(pipeline.clj:105)",
+          "query_processor.execute$run.invokeStatic(execute.clj:64)",
+          "query_processor.execute$run.invoke(execute.clj:58)",
+          "query_processor.middleware.enterprise$swap_destination_db_middleware$fn__77119.invoke(enterprise.clj:73)",
+          "query_processor.middleware.enterprise$apply_impersonation_postprocessing_middleware$fn__77102.invoke(enterprise.clj:48)",
+          "query_processor.middleware.update_used_cards$update_used_cards_BANG_$fn__77318.invoke(update_used_cards.clj:67)",
+          "query_processor.execute$add_native_form_to_result_metadata$fn__77407.invoke(execute.clj:25)",
+          "query_processor.execute$add_preprocessed_query_to_result_metadata_for_userland_query$fn__77413.invoke(execute.clj:36)",
+          "query_processor.middleware.cache$maybe_return_cached_results$maybe_return_cached_results_STAR___77260.invoke(cache.clj:241)",
+          "query_processor.middleware.permissions$check_query_permissions$fn__72418.invoke(permissions.clj:163)",
+          "query_processor.middleware.enterprise$check_download_permissions_middleware$fn__77129.invoke(enterprise.clj:90)",
+          "query_processor.middleware.enterprise$maybe_apply_column_level_perms_check_middleware$fn__77139.invoke(enterprise.clj:103)",
+          "query_processor.execute$execute$fn__77441.invoke(execute.clj:96)",
+          "query_processor.setup$do_with_qp_setup.invokeStatic(setup.clj:225)",
+          "query_processor.setup$do_with_qp_setup.invoke(setup.clj:216)",
+          "query_processor.execute$execute.invokeStatic(execute.clj:95)",
+          "query_processor.execute$execute.invoke(execute.clj:91)",
+          "query_processor$process_query_STAR__STAR_.invokeStatic(query_processor.clj:50)",
+          "query_processor$process_query_STAR__STAR_.invoke(query_processor.clj:45)",
+          "query_processor.middleware.enterprise$fn__77156$handle_audit_app_internal_queries__77157$fn__77159.invoke(enterprise.clj:135)",
+          "query_processor.middleware.enterprise$handle_audit_app_internal_queries_middleware$fn__77167.invoke(enterprise.clj:142)",
+          "query_processor.middleware.process_userland_query$process_userland_query_middleware$fn__84959.invoke(process_userland_query.clj:179)",
+          "query_processor.middleware.catch_exceptions$catch_exceptions$fn__85019.invoke(catch_exceptions.clj:137)",
+          "query_processor$process_query$fn__85084.invoke(query_processor.clj:81)",
+          "query_processor.setup$do_with_canceled_chan$fn__77391.invoke(setup.clj:187)",
+          "query_processor.setup$do_with_database_local_settings$fn__77385.invoke(setup.clj:181)",
+          "query_processor.setup$do_with_driver$fn__77379$fn__77380.invoke(setup.clj:166)",
+          "driver$do_with_driver.invokeStatic(driver.clj:49)",
+          "driver$do_with_driver.invoke(driver.clj:44)",
+          "query_processor.setup$do_with_driver$fn__77379.invoke(setup.clj:165)",
+          "query_processor.setup$do_with_metadata_provider$fn__77371$fn__77374.invoke(setup.clj:151)",
+          "query_processor.store$do_with_metadata_provider.invokeStatic(store.clj:185)",
+          "query_processor.store$do_with_metadata_provider.invoke(store.clj:171)",
+          "query_processor.store$do_with_metadata_provider.invokeStatic(store.clj:178)",
+          "query_processor.store$do_with_metadata_provider.invoke(store.clj:171)",
+          "query_processor.setup$do_with_metadata_provider$fn__77371.invoke(setup.clj:150)",
+          "query_processor.setup$do_with_resolved_database$fn__77363.invoke(setup.clj:128)",
+          "query_processor.setup$do_with_qp_setup.invokeStatic(setup.clj:232)",
+          "query_processor.setup$do_with_qp_setup.invoke(setup.clj:216)",
+          "query_processor$process_query.invokeStatic(query_processor.clj:79)",
+          "query_processor$process_query.invoke(query_processor.clj:72)",
+          "query_processor.api$run_streaming_query$fn__96312.invoke(api.clj:87)",
+          "query_processor.streaming$_streaming_response$fn__65071$fn__65072$fn__65073.invoke(streaming.clj:213)",
+          "query_processor.streaming$_streaming_response$fn__65071$fn__65072.invoke(streaming.clj:211)",
+          "query_processor.streaming$do_with_streaming_rff.invokeStatic(streaming.clj:202)",
+          "query_processor.streaming$do_with_streaming_rff.invoke(streaming.clj:189)",
+          "query_processor.streaming$_streaming_response$fn__65071.invoke(streaming.clj:208)",
+          "server.streaming_response$do_f_STAR_.invokeStatic(streaming_response.clj:79)",
+          "server.streaming_response$do_f_STAR_.invoke(streaming_response.clj:77)",
+          "server.streaming_response$do_f_async$task__56654.invoke(streaming_response.clj:94)"
+        ],
+        "card_id": null,
+        "context": "ad-hoc",
+        "error": "ERROR: function datediff(text, text) does not exist\n  Hint: No function matches the given name and argument types. You might need to add explicit type casts.\n  Position: 130",
+        "row_count": 0,
+        "running_time": 0,
+        "data": {
+          "rows": [],
+          "cols": []
+        }
+      }
+    }
+  },
+  {
+    "table_name": "tb_market_seller",
+    "kpi_name": "Sellers With Complete Address",
+    "sql_query": "SELECT COUNT(*) FROM tb_market_seller WHERE address IS NOT NULL AND address_detail IS NOT NULL",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[0]],\"cols\":[{\"database_type\":\"int8\",\"lib/deduplicated-name\":\"count\",\"lib/original-name\":\"count\",\"name\":\"count\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"count\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"count\",\"base_type\":\"type/BigInteger\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT COUNT(*) FROM tb_market_seller WHERE address IS NOT NULL AND address_detail IS NOT NULL\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"int8\",\"semantic_type\":\"type/Quantity\",\"lib/deduplicated-name\":\"count\",\"lib/original-name\":\"count\",\"name\":\"count\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"count\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"count\",\"fingerprint\":{\"global\":{\"distinct-count\":1,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":0.0,\"q1\":0.0,\"q3\":0.0,\"max\":0.0,\"sd\":null,\"avg\":0.0}}},\"base_type\":\"type/BigInteger\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T02:05:51.03872708Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT COUNT(*) FROM tb_market_seller WHERE address IS NOT NULL AND address_detail IS NOT NULL\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":1,\"running_time\":535}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              0
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "int8",
+              "lib/deduplicated-name": "count",
+              "lib/original-name": "count",
+              "name": "count",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "count",
+                {
+                  "base-type": "type/BigInteger"
+                }
+              ],
+              "effective_type": "type/BigInteger",
+              "display_name": "count",
+              "base_type": "type/BigInteger"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT COUNT(*) FROM tb_market_seller WHERE address IS NOT NULL AND address_detail IS NOT NULL"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "int8",
+                "semantic_type": "type/Quantity",
+                "lib/deduplicated-name": "count",
+                "lib/original-name": "count",
+                "name": "count",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "count",
+                  {
+                    "base-type": "type/BigInteger"
+                  }
+                ],
+                "effective_type": "type/BigInteger",
+                "display_name": "count",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 1,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 0.0,
+                      "q1": 0.0,
+                      "q3": 0.0,
+                      "max": 0.0,
+                      "sd": null,
+                      "avg": 0.0
+                    }
+                  }
+                },
+                "base_type": "type/BigInteger"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T02:05:51.03872708Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT COUNT(*) FROM tb_market_seller WHERE address IS NOT NULL AND address_detail IS NOT NULL",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 1,
+        "running_time": 535
+      }
+    }
+  },
+  {
+    "table_name": "tb_payment_root",
+    "kpi_name": "Total Payments per Partner",
+    "sql_query": "SELECT partner_id, COUNT(payment_root_id) FROM tb_payment_root WHERE partner_id IS NOT NULL GROUP BY partner_id",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[2,1],[110,9],[16,2],[6,67],[12,2],[123,3],[26,26],[128,2],[23,1],[149,4],[11,1],[24,3],[19,2],[99,2],[122,2],[31,80],[4,1],[49,47],[97,14],[109,2],[20,7],[28,2],[33,2],[9,88],[1,22]],\"cols\":[{\"database_type\":\"int4\",\"lib/deduplicated-name\":\"partner_id\",\"lib/original-name\":\"partner_id\",\"name\":\"partner_id\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"partner_id\",{\"base-type\":\"type/Integer\"}],\"effective_type\":\"type/Integer\",\"display_name\":\"partner_id\",\"base_type\":\"type/Integer\"},{\"database_type\":\"int8\",\"lib/deduplicated-name\":\"count\",\"lib/original-name\":\"count\",\"name\":\"count\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"count\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"count\",\"base_type\":\"type/BigInteger\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT partner_id, COUNT(payment_root_id) FROM tb_payment_root WHERE partner_id IS NOT NULL GROUP BY partner_id\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"int4\",\"semantic_type\":null,\"lib/deduplicated-name\":\"partner_id\",\"lib/original-name\":\"partner_id\",\"name\":\"partner_id\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"partner_id\",{\"base-type\":\"type/Integer\"}],\"effective_type\":\"type/Integer\",\"display_name\":\"partner_id\",\"fingerprint\":{\"global\":{\"distinct-count\":25,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":1.0,\"q1\":11.75,\"q3\":101.5,\"max\":149.0,\"sd\":49.00040816156536,\"avg\":50.04}}},\"base_type\":\"type/Integer\"},{\"database_type\":\"int8\",\"semantic_type\":\"type/Quantity\",\"lib/deduplicated-name\":\"count\",\"lib/original-name\":\"count\",\"name\":\"count\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"count\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"count\",\"fingerprint\":{\"global\":{\"distinct-count\":13,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":1.0,\"q1\":1.7297058540778356,\"q3\":16.0,\"max\":88.0,\"sd\":26.025180114650503,\"avg\":15.68}}},\"base_type\":\"type/BigInteger\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T02:05:52.67326983Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT partner_id, COUNT(payment_root_id) FROM tb_payment_root WHERE partner_id IS NOT NULL GROUP BY partner_id\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":25,\"running_time\":715}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              2,
+              1
+            ],
+            [
+              110,
+              9
+            ],
+            [
+              16,
+              2
+            ],
+            [
+              6,
+              67
+            ],
+            [
+              12,
+              2
+            ],
+            [
+              123,
+              3
+            ],
+            [
+              26,
+              26
+            ],
+            [
+              128,
+              2
+            ],
+            [
+              23,
+              1
+            ],
+            [
+              149,
+              4
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              24,
+              3
+            ],
+            [
+              19,
+              2
+            ],
+            [
+              99,
+              2
+            ],
+            [
+              122,
+              2
+            ],
+            [
+              31,
+              80
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              49,
+              47
+            ],
+            [
+              97,
+              14
+            ],
+            [
+              109,
+              2
+            ],
+            [
+              20,
+              7
+            ],
+            [
+              28,
+              2
+            ],
+            [
+              33,
+              2
+            ],
+            [
+              9,
+              88
+            ],
+            [
+              1,
+              22
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "int4",
+              "lib/deduplicated-name": "partner_id",
+              "lib/original-name": "partner_id",
+              "name": "partner_id",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "partner_id",
+                {
+                  "base-type": "type/Integer"
+                }
+              ],
+              "effective_type": "type/Integer",
+              "display_name": "partner_id",
+              "base_type": "type/Integer"
+            },
+            {
+              "database_type": "int8",
+              "lib/deduplicated-name": "count",
+              "lib/original-name": "count",
+              "name": "count",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "count",
+                {
+                  "base-type": "type/BigInteger"
+                }
+              ],
+              "effective_type": "type/BigInteger",
+              "display_name": "count",
+              "base_type": "type/BigInteger"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT partner_id, COUNT(payment_root_id) FROM tb_payment_root WHERE partner_id IS NOT NULL GROUP BY partner_id"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "int4",
+                "semantic_type": null,
+                "lib/deduplicated-name": "partner_id",
+                "lib/original-name": "partner_id",
+                "name": "partner_id",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "partner_id",
+                  {
+                    "base-type": "type/Integer"
+                  }
+                ],
+                "effective_type": "type/Integer",
+                "display_name": "partner_id",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 25,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 1.0,
+                      "q1": 11.75,
+                      "q3": 101.5,
+                      "max": 149.0,
+                      "sd": 49.00040816156536,
+                      "avg": 50.04
+                    }
+                  }
+                },
+                "base_type": "type/Integer"
+              },
+              {
+                "database_type": "int8",
+                "semantic_type": "type/Quantity",
+                "lib/deduplicated-name": "count",
+                "lib/original-name": "count",
+                "name": "count",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "count",
+                  {
+                    "base-type": "type/BigInteger"
+                  }
+                ],
+                "effective_type": "type/BigInteger",
+                "display_name": "count",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 13,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 1.0,
+                      "q1": 1.7297058540778356,
+                      "q3": 16.0,
+                      "max": 88.0,
+                      "sd": 26.025180114650503,
+                      "avg": 15.68
+                    }
+                  }
+                },
+                "base_type": "type/BigInteger"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T02:05:52.67326983Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT partner_id, COUNT(payment_root_id) FROM tb_payment_root WHERE partner_id IS NOT NULL GROUP BY partner_id",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 25,
+        "running_time": 715
+      }
+    }
+  },
+  {
+    "table_name": "tb_market_cart",
+    "kpi_name": "Average Cart Size",
+    "sql_query": "SELECT AVG(cnt) FROM tb_market_cart WHERE cnt IS NOT NULL",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[2.5000000000000000]],\"cols\":[{\"database_type\":\"numeric\",\"lib/deduplicated-name\":\"avg\",\"lib/original-name\":\"avg\",\"name\":\"avg\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"avg\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"avg\",\"base_type\":\"type/Decimal\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT AVG(cnt) FROM tb_market_cart WHERE cnt IS NOT NULL\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"numeric\",\"semantic_type\":null,\"lib/deduplicated-name\":\"avg\",\"lib/original-name\":\"avg\",\"name\":\"avg\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"avg\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"avg\",\"fingerprint\":{\"global\":{\"distinct-count\":1,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":2.5,\"q1\":2.5,\"q3\":2.5,\"max\":2.5,\"sd\":null,\"avg\":2.5}}},\"base_type\":\"type/Decimal\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T02:05:54.497005709Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT AVG(cnt) FROM tb_market_cart WHERE cnt IS NOT NULL\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":1,\"running_time\":535}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              2.5
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "numeric",
+              "lib/deduplicated-name": "avg",
+              "lib/original-name": "avg",
+              "name": "avg",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "avg",
+                {
+                  "base-type": "type/Decimal"
+                }
+              ],
+              "effective_type": "type/Decimal",
+              "display_name": "avg",
+              "base_type": "type/Decimal"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT AVG(cnt) FROM tb_market_cart WHERE cnt IS NOT NULL"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "numeric",
+                "semantic_type": null,
+                "lib/deduplicated-name": "avg",
+                "lib/original-name": "avg",
+                "name": "avg",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "avg",
+                  {
+                    "base-type": "type/Decimal"
+                  }
+                ],
+                "effective_type": "type/Decimal",
+                "display_name": "avg",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 1,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 2.5,
+                      "q1": 2.5,
+                      "q3": 2.5,
+                      "max": 2.5,
+                      "sd": null,
+                      "avg": 2.5
+                    }
+                  }
+                },
+                "base_type": "type/Decimal"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T02:05:54.497005709Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT AVG(cnt) FROM tb_market_cart WHERE cnt IS NOT NULL",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 1,
+        "running_time": 535
+      }
+    }
+  },
+  {
+    "table_name": "tb_market_category",
+    "kpi_name": "Duplicate Slugs",
+    "sql_query": "SELECT COUNT(*) - COUNT(DISTINCT slug) FROM tb_market_category WHERE slug IS NOT NULL",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[11]],\"cols\":[{\"database_type\":\"int8\",\"lib/deduplicated-name\":\"?column?\",\"lib/original-name\":\"?column?\",\"name\":\"?column?\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"?column?\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"?column?\",\"base_type\":\"type/BigInteger\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT COUNT(*) - COUNT(DISTINCT slug) FROM tb_market_category WHERE slug IS NOT NULL\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"int8\",\"semantic_type\":null,\"lib/deduplicated-name\":\"?column?\",\"lib/original-name\":\"?column?\",\"name\":\"?column?\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"?column?\",{\"base-type\":\"type/BigInteger\"}],\"effective_type\":\"type/BigInteger\",\"display_name\":\"?column?\",\"fingerprint\":{\"global\":{\"distinct-count\":1,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":11.0,\"q1\":11.0,\"q3\":11.0,\"max\":11.0,\"sd\":null,\"avg\":11.0}}},\"base_type\":\"type/BigInteger\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T02:05:56.165980529Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT COUNT(*) - COUNT(DISTINCT slug) FROM tb_market_category WHERE slug IS NOT NULL\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":1,\"running_time\":537}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              11
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "int8",
+              "lib/deduplicated-name": "?column?",
+              "lib/original-name": "?column?",
+              "name": "?column?",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "?column?",
+                {
+                  "base-type": "type/BigInteger"
+                }
+              ],
+              "effective_type": "type/BigInteger",
+              "display_name": "?column?",
+              "base_type": "type/BigInteger"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT COUNT(*) - COUNT(DISTINCT slug) FROM tb_market_category WHERE slug IS NOT NULL"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "int8",
+                "semantic_type": null,
+                "lib/deduplicated-name": "?column?",
+                "lib/original-name": "?column?",
+                "name": "?column?",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "?column?",
+                  {
+                    "base-type": "type/BigInteger"
+                  }
+                ],
+                "effective_type": "type/BigInteger",
+                "display_name": "?column?",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 1,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 11.0,
+                      "q1": 11.0,
+                      "q3": 11.0,
+                      "max": 11.0,
+                      "sd": null,
+                      "avg": 11.0
+                    }
+                  }
+                },
+                "base_type": "type/BigInteger"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T02:05:56.165980529Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT COUNT(*) - COUNT(DISTINCT slug) FROM tb_market_category WHERE slug IS NOT NULL",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 1,
+        "running_time": 537
+      }
+    }
+  },
+  {
+    "table_name": "tb_oem_market_payment",
+    "kpi_name": "Total Commission by Strategy Type",
+    "sql_query": "SELECT payment_strategy_type_id, SUM(commission) FROM tb_oem_market_payment WHERE commission IS NOT NULL AND payment_strategy_type_id IS NOT NULL GROUP BY payment_strategy_type_id",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[1,3791817]],\"cols\":[{\"database_type\":\"int4\",\"lib/deduplicated-name\":\"payment_strategy_type_id\",\"lib/original-name\":\"payment_strategy_type_id\",\"name\":\"payment_strategy_type_id\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"payment_strategy_type_id\",{\"base-type\":\"type/Integer\"}],\"effective_type\":\"type/Integer\",\"display_name\":\"payment_strategy_type_id\",\"base_type\":\"type/Integer\"},{\"database_type\":\"numeric\",\"lib/deduplicated-name\":\"sum\",\"lib/original-name\":\"sum\",\"name\":\"sum\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"sum\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"sum\",\"base_type\":\"type/Decimal\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT payment_strategy_type_id, SUM(commission) FROM tb_oem_market_payment WHERE commission IS NOT NULL AND payment_strategy_type_id IS NOT NULL GROUP BY payment_strategy_type_id\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"int4\",\"semantic_type\":null,\"lib/deduplicated-name\":\"payment_strategy_type_id\",\"lib/original-name\":\"payment_strategy_type_id\",\"name\":\"payment_strategy_type_id\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"payment_strategy_type_id\",{\"base-type\":\"type/Integer\"}],\"effective_type\":\"type/Integer\",\"display_name\":\"payment_strategy_type_id\",\"fingerprint\":{\"global\":{\"distinct-count\":1,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":1.0,\"q1\":1.0,\"q3\":1.0,\"max\":1.0,\"sd\":null,\"avg\":1.0}}},\"base_type\":\"type/Integer\"},{\"database_type\":\"numeric\",\"semantic_type\":null,\"lib/deduplicated-name\":\"sum\",\"lib/original-name\":\"sum\",\"name\":\"sum\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"sum\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"sum\",\"fingerprint\":{\"global\":{\"distinct-count\":1,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":3791817.0,\"q1\":3791817.0,\"q3\":3791817.0,\"max\":3791817.0,\"sd\":null,\"avg\":3791817.0}}},\"base_type\":\"type/Decimal\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T02:05:57.797213809Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT payment_strategy_type_id, SUM(commission) FROM tb_oem_market_payment WHERE commission IS NOT NULL AND payment_strategy_type_id IS NOT NULL GROUP BY payment_strategy_type_id\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":1,\"running_time\":713}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              1,
+              3791817
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "int4",
+              "lib/deduplicated-name": "payment_strategy_type_id",
+              "lib/original-name": "payment_strategy_type_id",
+              "name": "payment_strategy_type_id",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "payment_strategy_type_id",
+                {
+                  "base-type": "type/Integer"
+                }
+              ],
+              "effective_type": "type/Integer",
+              "display_name": "payment_strategy_type_id",
+              "base_type": "type/Integer"
+            },
+            {
+              "database_type": "numeric",
+              "lib/deduplicated-name": "sum",
+              "lib/original-name": "sum",
+              "name": "sum",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "sum",
+                {
+                  "base-type": "type/Decimal"
+                }
+              ],
+              "effective_type": "type/Decimal",
+              "display_name": "sum",
+              "base_type": "type/Decimal"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT payment_strategy_type_id, SUM(commission) FROM tb_oem_market_payment WHERE commission IS NOT NULL AND payment_strategy_type_id IS NOT NULL GROUP BY payment_strategy_type_id"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "int4",
+                "semantic_type": null,
+                "lib/deduplicated-name": "payment_strategy_type_id",
+                "lib/original-name": "payment_strategy_type_id",
+                "name": "payment_strategy_type_id",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "payment_strategy_type_id",
+                  {
+                    "base-type": "type/Integer"
+                  }
+                ],
+                "effective_type": "type/Integer",
+                "display_name": "payment_strategy_type_id",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 1,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 1.0,
+                      "q1": 1.0,
+                      "q3": 1.0,
+                      "max": 1.0,
+                      "sd": null,
+                      "avg": 1.0
+                    }
+                  }
+                },
+                "base_type": "type/Integer"
+              },
+              {
+                "database_type": "numeric",
+                "semantic_type": null,
+                "lib/deduplicated-name": "sum",
+                "lib/original-name": "sum",
+                "name": "sum",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "sum",
+                  {
+                    "base-type": "type/Decimal"
+                  }
+                ],
+                "effective_type": "type/Decimal",
+                "display_name": "sum",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 1,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 3791817.0,
+                      "q1": 3791817.0,
+                      "q3": 3791817.0,
+                      "max": 3791817.0,
+                      "sd": null,
+                      "avg": 3791817.0
+                    }
+                  }
+                },
+                "base_type": "type/Decimal"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T02:05:57.797213809Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT payment_strategy_type_id, SUM(commission) FROM tb_oem_market_payment WHERE commission IS NOT NULL AND payment_strategy_type_id IS NOT NULL GROUP BY payment_strategy_type_id",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 1,
+        "running_time": 713
+      }
+    }
+  },
+  {
+    "table_name": "tb_market_order",
+    "kpi_name": "Total Sales by User",
+    "sql_query": "SELECT user_id, SUM(payment_total) FROM tb_market_order WHERE user_id IS NOT NULL AND payment_total IS NOT NULL GROUP BY user_id",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"data\":{\"rows\":[[68,1200],[9,484920],[7,60000],[45,593381],[15,419727],[48,152833],[85,2000],[72,20000],[39,1700],[81,59460],[50,4000],[47,51500],[28,71400],[64,1000],[2,193500],[16,179500]],\"cols\":[{\"database_type\":\"int4\",\"lib/deduplicated-name\":\"user_id\",\"lib/original-name\":\"user_id\",\"name\":\"user_id\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"user_id\",{\"base-type\":\"type/Integer\"}],\"effective_type\":\"type/Integer\",\"display_name\":\"user_id\",\"base_type\":\"type/Integer\"},{\"database_type\":\"numeric\",\"lib/deduplicated-name\":\"sum\",\"lib/original-name\":\"sum\",\"name\":\"sum\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"sum\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"sum\",\"base_type\":\"type/Decimal\"}],\"native_form\":{\"params\":null,\"query\":\"SELECT user_id, SUM(payment_total) FROM tb_market_order WHERE user_id IS NOT NULL AND payment_total IS NOT NULL GROUP BY user_id\"},\"pivot-export-options\":{\"show-row-totals\":true,\"show-column-totals\":true},\"results_timezone\":\"GMT\",\"format-rows?\":true,\"results_metadata\":{\"columns\":[{\"database_type\":\"int4\",\"semantic_type\":null,\"lib/deduplicated-name\":\"user_id\",\"lib/original-name\":\"user_id\",\"name\":\"user_id\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"user_id\",{\"base-type\":\"type/Integer\"}],\"effective_type\":\"type/Integer\",\"display_name\":\"user_id\",\"fingerprint\":{\"global\":{\"distinct-count\":16,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":2.0,\"q1\":15.5,\"q3\":66.0,\"max\":85.0,\"sd\":27.187006700505545,\"avg\":42.25}}},\"base_type\":\"type/Integer\"},{\"database_type\":\"numeric\",\"semantic_type\":null,\"lib/deduplicated-name\":\"sum\",\"lib/original-name\":\"sum\",\"name\":\"sum\",\"lib/source\":\"source/native\",\"source\":\"native\",\"field_ref\":[\"field\",\"sum\",{\"base-type\":\"type/Decimal\"}],\"effective_type\":\"type/Decimal\",\"display_name\":\"sum\",\"fingerprint\":{\"global\":{\"distinct-count\":16,\"nil%\":0.0},\"type\":{\"type/Number\":{\"min\":1000.0,\"q1\":3000.0,\"q3\":186500.0,\"max\":593381.0,\"sd\":190129.7629977901,\"avg\":143507.5625}}},\"base_type\":\"type/Decimal\"}]},\"insights\":null},\"cached\":null,\"database_id\":2,\"started_at\":\"2025-08-25T02:05:59.650186045Z\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT user_id, SUM(payment_total) FROM tb_market_order WHERE user_id IS NOT NULL AND payment_total IS NOT NULL GROUP BY user_id\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"average_execution_time\":null,\"status\":\"completed\",\"context\":\"ad-hoc\",\"row_count\":16,\"running_time\":756}",
+      "error_details": {
+        "data": {
+          "rows": [
+            [
+              68,
+              1200
+            ],
+            [
+              9,
+              484920
+            ],
+            [
+              7,
+              60000
+            ],
+            [
+              45,
+              593381
+            ],
+            [
+              15,
+              419727
+            ],
+            [
+              48,
+              152833
+            ],
+            [
+              85,
+              2000
+            ],
+            [
+              72,
+              20000
+            ],
+            [
+              39,
+              1700
+            ],
+            [
+              81,
+              59460
+            ],
+            [
+              50,
+              4000
+            ],
+            [
+              47,
+              51500
+            ],
+            [
+              28,
+              71400
+            ],
+            [
+              64,
+              1000
+            ],
+            [
+              2,
+              193500
+            ],
+            [
+              16,
+              179500
+            ]
+          ],
+          "cols": [
+            {
+              "database_type": "int4",
+              "lib/deduplicated-name": "user_id",
+              "lib/original-name": "user_id",
+              "name": "user_id",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "user_id",
+                {
+                  "base-type": "type/Integer"
+                }
+              ],
+              "effective_type": "type/Integer",
+              "display_name": "user_id",
+              "base_type": "type/Integer"
+            },
+            {
+              "database_type": "numeric",
+              "lib/deduplicated-name": "sum",
+              "lib/original-name": "sum",
+              "name": "sum",
+              "lib/source": "source/native",
+              "source": "native",
+              "field_ref": [
+                "field",
+                "sum",
+                {
+                  "base-type": "type/Decimal"
+                }
+              ],
+              "effective_type": "type/Decimal",
+              "display_name": "sum",
+              "base_type": "type/Decimal"
+            }
+          ],
+          "native_form": {
+            "params": null,
+            "query": "SELECT user_id, SUM(payment_total) FROM tb_market_order WHERE user_id IS NOT NULL AND payment_total IS NOT NULL GROUP BY user_id"
+          },
+          "pivot-export-options": {
+            "show-row-totals": true,
+            "show-column-totals": true
+          },
+          "results_timezone": "GMT",
+          "format-rows?": true,
+          "results_metadata": {
+            "columns": [
+              {
+                "database_type": "int4",
+                "semantic_type": null,
+                "lib/deduplicated-name": "user_id",
+                "lib/original-name": "user_id",
+                "name": "user_id",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "user_id",
+                  {
+                    "base-type": "type/Integer"
+                  }
+                ],
+                "effective_type": "type/Integer",
+                "display_name": "user_id",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 16,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 2.0,
+                      "q1": 15.5,
+                      "q3": 66.0,
+                      "max": 85.0,
+                      "sd": 27.187006700505545,
+                      "avg": 42.25
+                    }
+                  }
+                },
+                "base_type": "type/Integer"
+              },
+              {
+                "database_type": "numeric",
+                "semantic_type": null,
+                "lib/deduplicated-name": "sum",
+                "lib/original-name": "sum",
+                "name": "sum",
+                "lib/source": "source/native",
+                "source": "native",
+                "field_ref": [
+                  "field",
+                  "sum",
+                  {
+                    "base-type": "type/Decimal"
+                  }
+                ],
+                "effective_type": "type/Decimal",
+                "display_name": "sum",
+                "fingerprint": {
+                  "global": {
+                    "distinct-count": 16,
+                    "nil%": 0.0
+                  },
+                  "type": {
+                    "type/Number": {
+                      "min": 1000.0,
+                      "q1": 3000.0,
+                      "q3": 186500.0,
+                      "max": 593381.0,
+                      "sd": 190129.7629977901,
+                      "avg": 143507.5625
+                    }
+                  }
+                },
+                "base_type": "type/Decimal"
+              }
+            ]
+          },
+          "insights": null
+        },
+        "cached": null,
+        "database_id": 2,
+        "started_at": "2025-08-25T02:05:59.650186045Z",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT user_id, SUM(payment_total) FROM tb_market_order WHERE user_id IS NOT NULL AND payment_total IS NOT NULL GROUP BY user_id",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "average_execution_time": null,
+        "status": "completed",
+        "context": "ad-hoc",
+        "row_count": 16,
+        "running_time": 756
+      }
+    }
+  },
+  {
+    "table_name": "tb_market_order_log",
+    "kpi_name": "Average Time to Cancel Order",
+    "sql_query": "SELECT AVG(DATEDIFF('second', create_date, cancelled_date)) FROM tb_market_order_log WHERE status = 'cancelled' AND create_date IS NOT NULL AND cancelled_date IS NOT NULL AND cancelled_date > create_date",
+    "test_result": {
+      "status": "failed",
+      "error_code": 202,
+      "error_message": "{\"database_id\":2,\"parameterized\":false,\"started_at\":\"2025-08-25T02:06:01.530046818Z\",\"via\":[{\"status\":\"failed\",\"class\":\"class clojure.lang.ExceptionInfo\",\"error\":\"Error executing query: ERROR: column \\\"cancelled_date\\\" does not exist\\n  Position: 162\",\"stacktrace\":[\"--> driver.sql_jdbc.execute$execute_reducible_query$fn__93339$fn__93340.invoke(execute.clj:771)\",\"driver.sql_jdbc.execute$execute_reducible_query$fn__93339.invoke(execute.clj:768)\",\"driver.sql_jdbc.execute$fn__93132$fn__93133.invoke(execute.clj:419)\",\"driver.sql_jdbc.execute$do_with_resolved_connection.invokeStatic(execute.clj:347)\",\"driver.sql_jdbc.execute$do_with_resolved_connection.invoke(execute.clj:330)\",\"driver.sql_jdbc.execute$fn__93132.invokeStatic(execute.clj:413)\",\"driver.sql_jdbc.execute$fn__93132.invoke(execute.clj:411)\",\"driver.sql_jdbc.execute$execute_reducible_query.invokeStatic(execute.clj:761)\",\"driver.sql_jdbc.execute$execute_reducible_query.invoke(execute.clj:750)\",\"driver.sql_jdbc$fn__98077.invokeStatic(sql_jdbc.clj:81)\",\"driver.sql_jdbc$fn__98077.invoke(sql_jdbc.clj:79)\",\"query_processor.pipeline$_STAR_execute_STAR_.invokeStatic(pipeline.clj:58)\",\"query_processor.pipeline$_STAR_execute_STAR_.invoke(pipeline.clj:43)\",\"query_processor.pipeline$_STAR_run_STAR_.invokeStatic(pipeline.clj:116)\",\"query_processor.pipeline$_STAR_run_STAR_.invoke(pipeline.clj:105)\",\"query_processor.execute$run.invokeStatic(execute.clj:64)\",\"query_processor.execute$run.invoke(execute.clj:58)\",\"query_processor.middleware.enterprise$swap_destination_db_middleware$fn__77119.invoke(enterprise.clj:73)\",\"query_processor.middleware.enterprise$apply_impersonation_postprocessing_middleware$fn__77102.invoke(enterprise.clj:48)\",\"query_processor.middleware.update_used_cards$update_used_cards_BANG_$fn__77318.invoke(update_used_cards.clj:67)\",\"query_processor.execute$add_native_form_to_result_metadata$fn__77407.invoke(execute.clj:25)\",\"query_processor.execute$add_preprocessed_query_to_result_metadata_for_userland_query$fn__77413.invoke(execute.clj:36)\",\"query_processor.middleware.cache$maybe_return_cached_results$maybe_return_cached_results_STAR___77260.invoke(cache.clj:241)\",\"query_processor.middleware.permissions$check_query_permissions$fn__72418.invoke(permissions.clj:163)\",\"query_processor.middleware.enterprise$check_download_permissions_middleware$fn__77129.invoke(enterprise.clj:90)\",\"query_processor.middleware.enterprise$maybe_apply_column_level_perms_check_middleware$fn__77139.invoke(enterprise.clj:103)\",\"query_processor.execute$execute$fn__77441.invoke(execute.clj:96)\",\"query_processor.setup$do_with_qp_setup.invokeStatic(setup.clj:225)\",\"query_processor.setup$do_with_qp_setup.invoke(setup.clj:216)\",\"query_processor.execute$execute.invokeStatic(execute.clj:95)\",\"query_processor.execute$execute.invoke(execute.clj:91)\",\"query_processor$process_query_STAR__STAR_.invokeStatic(query_processor.clj:50)\",\"query_processor$process_query_STAR__STAR_.invoke(query_processor.clj:45)\",\"query_processor.middleware.enterprise$fn__77156$handle_audit_app_internal_queries__77157$fn__77159.invoke(enterprise.clj:135)\",\"query_processor.middleware.enterprise$handle_audit_app_internal_queries_middleware$fn__77167.invoke(enterprise.clj:142)\",\"query_processor.middleware.process_userland_query$process_userland_query_middleware$fn__84959.invoke(process_userland_query.clj:179)\",\"query_processor.middleware.catch_exceptions$catch_exceptions$fn__85019.invoke(catch_exceptions.clj:137)\",\"query_processor$process_query$fn__85084.invoke(query_processor.clj:81)\",\"query_processor.setup$do_with_canceled_chan$fn__77391.invoke(setup.clj:187)\",\"query_processor.setup$do_with_database_local_settings$fn__77385.invoke(setup.clj:181)\",\"query_processor.setup$do_with_driver$fn__77379$fn__77380.invoke(setup.clj:166)\",\"driver$do_with_driver.invokeStatic(driver.clj:49)\",\"driver$do_with_driver.invoke(driver.clj:44)\",\"query_processor.setup$do_with_driver$fn__77379.invoke(setup.clj:165)\",\"query_processor.setup$do_with_metadata_provider$fn__77371$fn__77374.invoke(setup.clj:151)\",\"query_processor.store$do_with_metadata_provider.invokeStatic(store.clj:185)\",\"query_processor.store$do_with_metadata_provider.invoke(store.clj:171)\",\"query_processor.store$do_with_metadata_provider.invokeStatic(store.clj:178)\",\"query_processor.store$do_with_metadata_provider.invoke(store.clj:171)\",\"query_processor.setup$do_with_metadata_provider$fn__77371.invoke(setup.clj:150)\",\"query_processor.setup$do_with_resolved_database$fn__77363.invoke(setup.clj:128)\",\"query_processor.setup$do_with_qp_setup.invokeStatic(setup.clj:232)\",\"query_processor.setup$do_with_qp_setup.invoke(setup.clj:216)\",\"query_processor$process_query.invokeStatic(query_processor.clj:79)\",\"query_processor$process_query.invoke(query_processor.clj:72)\",\"query_processor.api$run_streaming_query$fn__96312.invoke(api.clj:87)\",\"query_processor.streaming$_streaming_response$fn__65071$fn__65072$fn__65073.invoke(streaming.clj:213)\",\"query_processor.streaming$_streaming_response$fn__65071$fn__65072.invoke(streaming.clj:211)\",\"query_processor.streaming$do_with_streaming_rff.invokeStatic(streaming.clj:202)\",\"query_processor.streaming$do_with_streaming_rff.invoke(streaming.clj:189)\",\"query_processor.streaming$_streaming_response$fn__65071.invoke(streaming.clj:208)\",\"server.streaming_response$do_f_STAR_.invokeStatic(streaming_response.clj:79)\",\"server.streaming_response$do_f_STAR_.invoke(streaming_response.clj:77)\",\"server.streaming_response$do_f_async$task__56654.invoke(streaming_response.clj:94)\"],\"error_type\":\"invalid-query\",\"ex-data\":{\"driver\":\"postgres\",\"sql\":[\"-- Metabase:: userID: 1 queryType: native queryHash: d8ed3dcb8e52f1e754770e506bf9c93877fdadd63e132fbc7fe4a48957c6e492\",\"SELECT\",\"  AVG(DATEDIFF('second', create_date, cancelled_date))\",\"FROM\",\"  tb_market_order_log\",\"WHERE\",\"  status = 'cancelled'\",\"  AND create_date IS NOT NULL\",\"  AND cancelled_date IS NOT NULL\",\"  AND cancelled_date > create_date\"],\"params\":null,\"type\":\"invalid-query\"}}],\"action_id\":null,\"state\":\"42703\",\"error_type\":\"invalid-query\",\"json_query\":{\"type\":\"native\",\"native\":{\"query\":\"SELECT AVG(DATEDIFF('second', create_date, cancelled_date)) FROM tb_market_order_log WHERE status = 'cancelled' AND create_date IS NOT NULL AND cancelled_date IS NOT NULL AND cancelled_date > create_date\",\"template-tags\":{}},\"database\":2,\"middleware\":{\"js-int-to-string?\":true,\"userland-query?\":true,\"add-default-userland-constraints?\":true}},\"status\":\"failed\",\"class\":\"class org.postgresql.util.PSQLException\",\"stacktrace\":[\"org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2734)\",\"org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2421)\",\"org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)\",\"org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:518)\",\"org.postgresql.jdbc.PgStatement.execute(PgStatement.java:435)\",\"org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:357)\",\"org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:342)\",\"org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:318)\",\"org.postgresql.jdbc.PgStatement.execute(PgStatement.java:313)\",\"com.mchange.v2.c3p0.impl.NewProxyStatement.execute(NewProxyStatement.java:1341)\",\"--> driver.sql_jdbc.execute$fn__93249.invokeStatic(execute.clj:584)\",\"driver.sql_jdbc.execute$fn__93249.invoke(execute.clj:582)\",\"driver.sql_jdbc.execute$execute_statement_or_prepared_statement_BANG_.invokeStatic(execute.clj:592)\",\"driver.sql_jdbc.execute$execute_statement_or_prepared_statement_BANG_.invoke(execute.clj:589)\",\"driver.sql_jdbc.execute$execute_reducible_query$fn__93339$fn__93340.invoke(execute.clj:769)\",\"driver.sql_jdbc.execute$execute_reducible_query$fn__93339.invoke(execute.clj:768)\",\"driver.sql_jdbc.execute$fn__93132$fn__93133.invoke(execute.clj:419)\",\"driver.sql_jdbc.execute$do_with_resolved_connection.invokeStatic(execute.clj:347)\",\"driver.sql_jdbc.execute$do_with_resolved_connection.invoke(execute.clj:330)\",\"driver.sql_jdbc.execute$fn__93132.invokeStatic(execute.clj:413)\",\"driver.sql_jdbc.execute$fn__93132.invoke(execute.clj:411)\",\"driver.sql_jdbc.execute$execute_reducible_query.invokeStatic(execute.clj:761)\",\"driver.sql_jdbc.execute$execute_reducible_query.invoke(execute.clj:750)\",\"driver.sql_jdbc$fn__98077.invokeStatic(sql_jdbc.clj:81)\",\"driver.sql_jdbc$fn__98077.invoke(sql_jdbc.clj:79)\",\"query_processor.pipeline$_STAR_execute_STAR_.invokeStatic(pipeline.clj:58)\",\"query_processor.pipeline$_STAR_execute_STAR_.invoke(pipeline.clj:43)\",\"query_processor.pipeline$_STAR_run_STAR_.invokeStatic(pipeline.clj:116)\",\"query_processor.pipeline$_STAR_run_STAR_.invoke(pipeline.clj:105)\",\"query_processor.execute$run.invokeStatic(execute.clj:64)\",\"query_processor.execute$run.invoke(execute.clj:58)\",\"query_processor.middleware.enterprise$swap_destination_db_middleware$fn__77119.invoke(enterprise.clj:73)\",\"query_processor.middleware.enterprise$apply_impersonation_postprocessing_middleware$fn__77102.invoke(enterprise.clj:48)\",\"query_processor.middleware.update_used_cards$update_used_cards_BANG_$fn__77318.invoke(update_used_cards.clj:67)\",\"query_processor.execute$add_native_form_to_result_metadata$fn__77407.invoke(execute.clj:25)\",\"query_processor.execute$add_preprocessed_query_to_result_metadata_for_userland_query$fn__77413.invoke(execute.clj:36)\",\"query_processor.middleware.cache$maybe_return_cached_results$maybe_return_cached_results_STAR___77260.invoke(cache.clj:241)\",\"query_processor.middleware.permissions$check_query_permissions$fn__72418.invoke(permissions.clj:163)\",\"query_processor.middleware.enterprise$check_download_permissions_middleware$fn__77129.invoke(enterprise.clj:90)\",\"query_processor.middleware.enterprise$maybe_apply_column_level_perms_check_middleware$fn__77139.invoke(enterprise.clj:103)\",\"query_processor.execute$execute$fn__77441.invoke(execute.clj:96)\",\"query_processor.setup$do_with_qp_setup.invokeStatic(setup.clj:225)\",\"query_processor.setup$do_with_qp_setup.invoke(setup.clj:216)\",\"query_processor.execute$execute.invokeStatic(execute.clj:95)\",\"query_processor.execute$execute.invoke(execute.clj:91)\",\"query_processor$process_query_STAR__STAR_.invokeStatic(query_processor.clj:50)\",\"query_processor$process_query_STAR__STAR_.invoke(query_processor.clj:45)\",\"query_processor.middleware.enterprise$fn__77156$handle_audit_app_internal_queries__77157$fn__77159.invoke(enterprise.clj:135)\",\"query_processor.middleware.enterprise$handle_audit_app_internal_queries_middleware$fn__77167.invoke(enterprise.clj:142)\",\"query_processor.middleware.process_userland_query$process_userland_query_middleware$fn__84959.invoke(process_userland_query.clj:179)\",\"query_processor.middleware.catch_exceptions$catch_exceptions$fn__85019.invoke(catch_exceptions.clj:137)\",\"query_processor$process_query$fn__85084.invoke(query_processor.clj:81)\",\"query_processor.setup$do_with_canceled_chan$fn__77391.invoke(setup.clj:187)\",\"query_processor.setup$do_with_database_local_settings$fn__77385.invoke(setup.clj:181)\",\"query_processor.setup$do_with_driver$fn__77379$fn__77380.invoke(setup.clj:166)\",\"driver$do_with_driver.invokeStatic(driver.clj:49)\",\"driver$do_with_driver.invoke(driver.clj:44)\",\"query_processor.setup$do_with_driver$fn__77379.invoke(setup.clj:165)\",\"query_processor.setup$do_with_metadata_provider$fn__77371$fn__77374.invoke(setup.clj:151)\",\"query_processor.store$do_with_metadata_provider.invokeStatic(store.clj:185)\",\"query_processor.store$do_with_metadata_provider.invoke(store.clj:171)\",\"query_processor.store$do_with_metadata_provider.invokeStatic(store.clj:178)\",\"query_processor.store$do_with_metadata_provider.invoke(store.clj:171)\",\"query_processor.setup$do_with_metadata_provider$fn__77371.invoke(setup.clj:150)\",\"query_processor.setup$do_with_resolved_database$fn__77363.invoke(setup.clj:128)\",\"query_processor.setup$do_with_qp_setup.invokeStatic(setup.clj:232)\",\"query_processor.setup$do_with_qp_setup.invoke(setup.clj:216)\",\"query_processor$process_query.invokeStatic(query_processor.clj:79)\",\"query_processor$process_query.invoke(query_processor.clj:72)\",\"query_processor.api$run_streaming_query$fn__96312.invoke(api.clj:87)\",\"query_processor.streaming$_streaming_response$fn__65071$fn__65072$fn__65073.invoke(streaming.clj:213)\",\"query_processor.streaming$_streaming_response$fn__65071$fn__65072.invoke(streaming.clj:211)\",\"query_processor.streaming$do_with_streaming_rff.invokeStatic(streaming.clj:202)\",\"query_processor.streaming$do_with_streaming_rff.invoke(streaming.clj:189)\",\"query_processor.streaming$_streaming_response$fn__65071.invoke(streaming.clj:208)\",\"server.streaming_response$do_f_STAR_.invokeStatic(streaming_response.clj:79)\",\"server.streaming_response$do_f_STAR_.invoke(streaming_response.clj:77)\",\"server.streaming_response$do_f_async$task__56654.invoke(streaming_response.clj:94)\"],\"card_id\":null,\"context\":\"ad-hoc\",\"error\":\"ERROR: column \\\"cancelled_date\\\" does not exist\\n  Position: 162\",\"row_count\":0,\"running_time\":0,\"data\":{\"rows\":[],\"cols\":[]}}",
+      "error_details": {
+        "database_id": 2,
+        "parameterized": false,
+        "started_at": "2025-08-25T02:06:01.530046818Z",
+        "via": [
+          {
+            "status": "failed",
+            "class": "class clojure.lang.ExceptionInfo",
+            "error": "Error executing query: ERROR: column \"cancelled_date\" does not exist\n  Position: 162",
+            "stacktrace": [
+              "--> driver.sql_jdbc.execute$execute_reducible_query$fn__93339$fn__93340.invoke(execute.clj:771)",
+              "driver.sql_jdbc.execute$execute_reducible_query$fn__93339.invoke(execute.clj:768)",
+              "driver.sql_jdbc.execute$fn__93132$fn__93133.invoke(execute.clj:419)",
+              "driver.sql_jdbc.execute$do_with_resolved_connection.invokeStatic(execute.clj:347)",
+              "driver.sql_jdbc.execute$do_with_resolved_connection.invoke(execute.clj:330)",
+              "driver.sql_jdbc.execute$fn__93132.invokeStatic(execute.clj:413)",
+              "driver.sql_jdbc.execute$fn__93132.invoke(execute.clj:411)",
+              "driver.sql_jdbc.execute$execute_reducible_query.invokeStatic(execute.clj:761)",
+              "driver.sql_jdbc.execute$execute_reducible_query.invoke(execute.clj:750)",
+              "driver.sql_jdbc$fn__98077.invokeStatic(sql_jdbc.clj:81)",
+              "driver.sql_jdbc$fn__98077.invoke(sql_jdbc.clj:79)",
+              "query_processor.pipeline$_STAR_execute_STAR_.invokeStatic(pipeline.clj:58)",
+              "query_processor.pipeline$_STAR_execute_STAR_.invoke(pipeline.clj:43)",
+              "query_processor.pipeline$_STAR_run_STAR_.invokeStatic(pipeline.clj:116)",
+              "query_processor.pipeline$_STAR_run_STAR_.invoke(pipeline.clj:105)",
+              "query_processor.execute$run.invokeStatic(execute.clj:64)",
+              "query_processor.execute$run.invoke(execute.clj:58)",
+              "query_processor.middleware.enterprise$swap_destination_db_middleware$fn__77119.invoke(enterprise.clj:73)",
+              "query_processor.middleware.enterprise$apply_impersonation_postprocessing_middleware$fn__77102.invoke(enterprise.clj:48)",
+              "query_processor.middleware.update_used_cards$update_used_cards_BANG_$fn__77318.invoke(update_used_cards.clj:67)",
+              "query_processor.execute$add_native_form_to_result_metadata$fn__77407.invoke(execute.clj:25)",
+              "query_processor.execute$add_preprocessed_query_to_result_metadata_for_userland_query$fn__77413.invoke(execute.clj:36)",
+              "query_processor.middleware.cache$maybe_return_cached_results$maybe_return_cached_results_STAR___77260.invoke(cache.clj:241)",
+              "query_processor.middleware.permissions$check_query_permissions$fn__72418.invoke(permissions.clj:163)",
+              "query_processor.middleware.enterprise$check_download_permissions_middleware$fn__77129.invoke(enterprise.clj:90)",
+              "query_processor.middleware.enterprise$maybe_apply_column_level_perms_check_middleware$fn__77139.invoke(enterprise.clj:103)",
+              "query_processor.execute$execute$fn__77441.invoke(execute.clj:96)",
+              "query_processor.setup$do_with_qp_setup.invokeStatic(setup.clj:225)",
+              "query_processor.setup$do_with_qp_setup.invoke(setup.clj:216)",
+              "query_processor.execute$execute.invokeStatic(execute.clj:95)",
+              "query_processor.execute$execute.invoke(execute.clj:91)",
+              "query_processor$process_query_STAR__STAR_.invokeStatic(query_processor.clj:50)",
+              "query_processor$process_query_STAR__STAR_.invoke(query_processor.clj:45)",
+              "query_processor.middleware.enterprise$fn__77156$handle_audit_app_internal_queries__77157$fn__77159.invoke(enterprise.clj:135)",
+              "query_processor.middleware.enterprise$handle_audit_app_internal_queries_middleware$fn__77167.invoke(enterprise.clj:142)",
+              "query_processor.middleware.process_userland_query$process_userland_query_middleware$fn__84959.invoke(process_userland_query.clj:179)",
+              "query_processor.middleware.catch_exceptions$catch_exceptions$fn__85019.invoke(catch_exceptions.clj:137)",
+              "query_processor$process_query$fn__85084.invoke(query_processor.clj:81)",
+              "query_processor.setup$do_with_canceled_chan$fn__77391.invoke(setup.clj:187)",
+              "query_processor.setup$do_with_database_local_settings$fn__77385.invoke(setup.clj:181)",
+              "query_processor.setup$do_with_driver$fn__77379$fn__77380.invoke(setup.clj:166)",
+              "driver$do_with_driver.invokeStatic(driver.clj:49)",
+              "driver$do_with_driver.invoke(driver.clj:44)",
+              "query_processor.setup$do_with_driver$fn__77379.invoke(setup.clj:165)",
+              "query_processor.setup$do_with_metadata_provider$fn__77371$fn__77374.invoke(setup.clj:151)",
+              "query_processor.store$do_with_metadata_provider.invokeStatic(store.clj:185)",
+              "query_processor.store$do_with_metadata_provider.invoke(store.clj:171)",
+              "query_processor.store$do_with_metadata_provider.invokeStatic(store.clj:178)",
+              "query_processor.store$do_with_metadata_provider.invoke(store.clj:171)",
+              "query_processor.setup$do_with_metadata_provider$fn__77371.invoke(setup.clj:150)",
+              "query_processor.setup$do_with_resolved_database$fn__77363.invoke(setup.clj:128)",
+              "query_processor.setup$do_with_qp_setup.invokeStatic(setup.clj:232)",
+              "query_processor.setup$do_with_qp_setup.invoke(setup.clj:216)",
+              "query_processor$process_query.invokeStatic(query_processor.clj:79)",
+              "query_processor$process_query.invoke(query_processor.clj:72)",
+              "query_processor.api$run_streaming_query$fn__96312.invoke(api.clj:87)",
+              "query_processor.streaming$_streaming_response$fn__65071$fn__65072$fn__65073.invoke(streaming.clj:213)",
+              "query_processor.streaming$_streaming_response$fn__65071$fn__65072.invoke(streaming.clj:211)",
+              "query_processor.streaming$do_with_streaming_rff.invokeStatic(streaming.clj:202)",
+              "query_processor.streaming$do_with_streaming_rff.invoke(streaming.clj:189)",
+              "query_processor.streaming$_streaming_response$fn__65071.invoke(streaming.clj:208)",
+              "server.streaming_response$do_f_STAR_.invokeStatic(streaming_response.clj:79)",
+              "server.streaming_response$do_f_STAR_.invoke(streaming_response.clj:77)",
+              "server.streaming_response$do_f_async$task__56654.invoke(streaming_response.clj:94)"
+            ],
+            "error_type": "invalid-query",
+            "ex-data": {
+              "driver": "postgres",
+              "sql": [
+                "-- Metabase:: userID: 1 queryType: native queryHash: d8ed3dcb8e52f1e754770e506bf9c93877fdadd63e132fbc7fe4a48957c6e492",
+                "SELECT",
+                "  AVG(DATEDIFF('second', create_date, cancelled_date))",
+                "FROM",
+                "  tb_market_order_log",
+                "WHERE",
+                "  status = 'cancelled'",
+                "  AND create_date IS NOT NULL",
+                "  AND cancelled_date IS NOT NULL",
+                "  AND cancelled_date > create_date"
+              ],
+              "params": null,
+              "type": "invalid-query"
+            }
+          }
+        ],
+        "action_id": null,
+        "state": "42703",
+        "error_type": "invalid-query",
+        "json_query": {
+          "type": "native",
+          "native": {
+            "query": "SELECT AVG(DATEDIFF('second', create_date, cancelled_date)) FROM tb_market_order_log WHERE status = 'cancelled' AND create_date IS NOT NULL AND cancelled_date IS NOT NULL AND cancelled_date > create_date",
+            "template-tags": {}
+          },
+          "database": 2,
+          "middleware": {
+            "js-int-to-string?": true,
+            "userland-query?": true,
+            "add-default-userland-constraints?": true
+          }
+        },
+        "status": "failed",
+        "class": "class org.postgresql.util.PSQLException",
+        "stacktrace": [
+          "org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2734)",
+          "org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2421)",
+          "org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)",
+          "org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:518)",
+          "org.postgresql.jdbc.PgStatement.execute(PgStatement.java:435)",
+          "org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:357)",
+          "org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:342)",
+          "org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:318)",
+          "org.postgresql.jdbc.PgStatement.execute(PgStatement.java:313)",
+          "com.mchange.v2.c3p0.impl.NewProxyStatement.execute(NewProxyStatement.java:1341)",
+          "--> driver.sql_jdbc.execute$fn__93249.invokeStatic(execute.clj:584)",
+          "driver.sql_jdbc.execute$fn__93249.invoke(execute.clj:582)",
+          "driver.sql_jdbc.execute$execute_statement_or_prepared_statement_BANG_.invokeStatic(execute.clj:592)",
+          "driver.sql_jdbc.execute$execute_statement_or_prepared_statement_BANG_.invoke(execute.clj:589)",
+          "driver.sql_jdbc.execute$execute_reducible_query$fn__93339$fn__93340.invoke(execute.clj:769)",
+          "driver.sql_jdbc.execute$execute_reducible_query$fn__93339.invoke(execute.clj:768)",
+          "driver.sql_jdbc.execute$fn__93132$fn__93133.invoke(execute.clj:419)",
+          "driver.sql_jdbc.execute$do_with_resolved_connection.invokeStatic(execute.clj:347)",
+          "driver.sql_jdbc.execute$do_with_resolved_connection.invoke(execute.clj:330)",
+          "driver.sql_jdbc.execute$fn__93132.invokeStatic(execute.clj:413)",
+          "driver.sql_jdbc.execute$fn__93132.invoke(execute.clj:411)",
+          "driver.sql_jdbc.execute$execute_reducible_query.invokeStatic(execute.clj:761)",
+          "driver.sql_jdbc.execute$execute_reducible_query.invoke(execute.clj:750)",
+          "driver.sql_jdbc$fn__98077.invokeStatic(sql_jdbc.clj:81)",
+          "driver.sql_jdbc$fn__98077.invoke(sql_jdbc.clj:79)",
+          "query_processor.pipeline$_STAR_execute_STAR_.invokeStatic(pipeline.clj:58)",
+          "query_processor.pipeline$_STAR_execute_STAR_.invoke(pipeline.clj:43)",
+          "query_processor.pipeline$_STAR_run_STAR_.invokeStatic(pipeline.clj:116)",
+          "query_processor.pipeline$_STAR_run_STAR_.invoke(pipeline.clj:105)",
+          "query_processor.execute$run.invokeStatic(execute.clj:64)",
+          "query_processor.execute$run.invoke(execute.clj:58)",
+          "query_processor.middleware.enterprise$swap_destination_db_middleware$fn__77119.invoke(enterprise.clj:73)",
+          "query_processor.middleware.enterprise$apply_impersonation_postprocessing_middleware$fn__77102.invoke(enterprise.clj:48)",
+          "query_processor.middleware.update_used_cards$update_used_cards_BANG_$fn__77318.invoke(update_used_cards.clj:67)",
+          "query_processor.execute$add_native_form_to_result_metadata$fn__77407.invoke(execute.clj:25)",
+          "query_processor.execute$add_preprocessed_query_to_result_metadata_for_userland_query$fn__77413.invoke(execute.clj:36)",
+          "query_processor.middleware.cache$maybe_return_cached_results$maybe_return_cached_results_STAR___77260.invoke(cache.clj:241)",
+          "query_processor.middleware.permissions$check_query_permissions$fn__72418.invoke(permissions.clj:163)",
+          "query_processor.middleware.enterprise$check_download_permissions_middleware$fn__77129.invoke(enterprise.clj:90)",
+          "query_processor.middleware.enterprise$maybe_apply_column_level_perms_check_middleware$fn__77139.invoke(enterprise.clj:103)",
+          "query_processor.execute$execute$fn__77441.invoke(execute.clj:96)",
+          "query_processor.setup$do_with_qp_setup.invokeStatic(setup.clj:225)",
+          "query_processor.setup$do_with_qp_setup.invoke(setup.clj:216)",
+          "query_processor.execute$execute.invokeStatic(execute.clj:95)",
+          "query_processor.execute$execute.invoke(execute.clj:91)",
+          "query_processor$process_query_STAR__STAR_.invokeStatic(query_processor.clj:50)",
+          "query_processor$process_query_STAR__STAR_.invoke(query_processor.clj:45)",
+          "query_processor.middleware.enterprise$fn__77156$handle_audit_app_internal_queries__77157$fn__77159.invoke(enterprise.clj:135)",
+          "query_processor.middleware.enterprise$handle_audit_app_internal_queries_middleware$fn__77167.invoke(enterprise.clj:142)",
+          "query_processor.middleware.process_userland_query$process_userland_query_middleware$fn__84959.invoke(process_userland_query.clj:179)",
+          "query_processor.middleware.catch_exceptions$catch_exceptions$fn__85019.invoke(catch_exceptions.clj:137)",
+          "query_processor$process_query$fn__85084.invoke(query_processor.clj:81)",
+          "query_processor.setup$do_with_canceled_chan$fn__77391.invoke(setup.clj:187)",
+          "query_processor.setup$do_with_database_local_settings$fn__77385.invoke(setup.clj:181)",
+          "query_processor.setup$do_with_driver$fn__77379$fn__77380.invoke(setup.clj:166)",
+          "driver$do_with_driver.invokeStatic(driver.clj:49)",
+          "driver$do_with_driver.invoke(driver.clj:44)",
+          "query_processor.setup$do_with_driver$fn__77379.invoke(setup.clj:165)",
+          "query_processor.setup$do_with_metadata_provider$fn__77371$fn__77374.invoke(setup.clj:151)",
+          "query_processor.store$do_with_metadata_provider.invokeStatic(store.clj:185)",
+          "query_processor.store$do_with_metadata_provider.invoke(store.clj:171)",
+          "query_processor.store$do_with_metadata_provider.invokeStatic(store.clj:178)",
+          "query_processor.store$do_with_metadata_provider.invoke(store.clj:171)",
+          "query_processor.setup$do_with_metadata_provider$fn__77371.invoke(setup.clj:150)",
+          "query_processor.setup$do_with_resolved_database$fn__77363.invoke(setup.clj:128)",
+          "query_processor.setup$do_with_qp_setup.invokeStatic(setup.clj:232)",
+          "query_processor.setup$do_with_qp_setup.invoke(setup.clj:216)",
+          "query_processor$process_query.invokeStatic(query_processor.clj:79)",
+          "query_processor$process_query.invoke(query_processor.clj:72)",
+          "query_processor.api$run_streaming_query$fn__96312.invoke(api.clj:87)",
+          "query_processor.streaming$_streaming_response$fn__65071$fn__65072$fn__65073.invoke(streaming.clj:213)",
+          "query_processor.streaming$_streaming_response$fn__65071$fn__65072.invoke(streaming.clj:211)",
+          "query_processor.streaming$do_with_streaming_rff.invokeStatic(streaming.clj:202)",
+          "query_processor.streaming$do_with_streaming_rff.invoke(streaming.clj:189)",
+          "query_processor.streaming$_streaming_response$fn__65071.invoke(streaming.clj:208)",
+          "server.streaming_response$do_f_STAR_.invokeStatic(streaming_response.clj:79)",
+          "server.streaming_response$do_f_STAR_.invoke(streaming_response.clj:77)",
+          "server.streaming_response$do_f_async$task__56654.invoke(streaming_response.clj:94)"
+        ],
+        "card_id": null,
+        "context": "ad-hoc",
+        "error": "ERROR: column \"cancelled_date\" does not exist\n  Position: 162",
+        "row_count": 0,
+        "running_time": 0,
+        "data": {
+          "rows": [],
+          "cols": []
+        }
+      }
+    }
+  }
+]

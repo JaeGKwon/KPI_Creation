@@ -1,0 +1,142 @@
+[
+  {
+    "kpi_name": "Average Cart Value",
+    "table_name": "tb_market_cart",
+    "original_sql": "SELECT AVG(sum) FROM (SELECT SUM(price * cnt) as sum FROM tb_market_cart JOIN tb_product ON tb_market_cart.product_id = tb_product.product_id WHERE price IS NOT NULL AND cnt IS NOT NULL GROUP BY user_id) as subquery",
+    "fixed_sql": "SELECT AVG(sum) \nFROM (\n    SELECT SUM(price * cnt) as sum \n    FROM tb_market_cart \n    JOIN tb_product ON tb_market_cart.product_id = tb_product.product_id \n    WHERE price IS NOT NULL AND cnt IS NOT NULL \n    GROUP BY user_id\n) as subquery;",
+    "fixes_applied": [
+      "Applied LLM-based SQL fixes"
+    ],
+    "timestamp": "2025-08-25T00:22:49.167020"
+  },
+  {
+    "kpi_name": "Average Deliveries per User",
+    "table_name": "tb_user_delivery",
+    "original_sql": "SELECT AVG(delivery_count) FROM (SELECT user_id, COUNT(*) as delivery_count FROM tb_user_delivery GROUP BY user_id) as subquery",
+    "fixed_sql": "SELECT AVG(delivery_count) \nFROM (SELECT user_id, COUNT(*) as delivery_count \n      FROM tb_user_delivery \n      GROUP BY user_id) subquery;",
+    "fixes_applied": [
+      "Applied LLM-based SQL fixes"
+    ],
+    "timestamp": "2025-08-25T00:23:07.953370"
+  },
+  {
+    "kpi_name": "Orders Per Receiver",
+    "table_name": "tb_market_order_address",
+    "original_sql": "SELECT AVG(order_count) FROM (SELECT receiver, COUNT(order_id) as order_count FROM tb_market_order_address WHERE receiver IS NOT NULL GROUP BY receiver)",
+    "fixed_sql": "SELECT AVG(order_count) \nFROM (\n    SELECT receiver, COUNT(order_id) as order_count \n    FROM tb_market_order_address \n    WHERE receiver IS NOT NULL \n    GROUP BY receiver\n) AS subquery;",
+    "fixes_applied": [
+      "Applied LLM-based SQL fixes"
+    ],
+    "timestamp": "2025-08-25T00:25:33.263137"
+  },
+  {
+    "kpi_name": "Orders Per Delivery Location",
+    "table_name": "tb_market_order_address",
+    "original_sql": "SELECT AVG(order_count) FROM (SELECT address, COUNT(order_id) as order_count FROM tb_market_order_address WHERE address IS NOT NULL GROUP BY address)",
+    "fixed_sql": "SELECT AVG(order_count) \nFROM (\n    SELECT COUNT(order_id) as order_count \n    FROM tb_market_order_address \n    WHERE address IS NOT NULL \n    GROUP BY address\n) AS subquery;",
+    "fixes_applied": [
+      "Applied LLM-based SQL fixes"
+    ],
+    "timestamp": "2025-08-25T00:25:37.905927"
+  },
+  {
+    "kpi_name": "Orders Per Zipcode",
+    "table_name": "tb_market_order_address",
+    "original_sql": "SELECT AVG(order_count) FROM (SELECT zipcode, COUNT(order_id) as order_count FROM tb_market_order_address WHERE zipcode IS NOT NULL GROUP BY zipcode)",
+    "fixed_sql": "SELECT AVG(order_count) \nFROM (SELECT COUNT(order_id) as order_count \n      FROM tb_market_order_address \n      WHERE zipcode IS NOT NULL \n      GROUP BY zipcode) AS subquery;",
+    "fixes_applied": [
+      "Applied LLM-based SQL fixes"
+    ],
+    "timestamp": "2025-08-25T00:25:42.480531"
+  },
+  {
+    "kpi_name": "Orders Per Delivery Name",
+    "table_name": "tb_market_order_address",
+    "original_sql": "SELECT AVG(order_count) FROM (SELECT delivery_name, COUNT(order_id) as order_count FROM tb_market_order_address WHERE delivery_name IS NOT NULL GROUP BY delivery_name)",
+    "fixed_sql": "SELECT AVG(order_count) \nFROM (\n    SELECT delivery_name, COUNT(order_id) as order_count \n    FROM tb_market_order_address \n    WHERE delivery_name IS NOT NULL \n    GROUP BY delivery_name\n) AS subquery;",
+    "fixes_applied": [
+      "Applied LLM-based SQL fixes"
+    ],
+    "timestamp": "2025-08-25T00:25:48.422705"
+  },
+  {
+    "kpi_name": "Orders Per Cellphone Number",
+    "table_name": "tb_market_order_address",
+    "original_sql": "SELECT AVG(order_count) FROM (SELECT cellphone1, COUNT(order_id) as order_count FROM tb_market_order_address WHERE cellphone1 IS NOT NULL GROUP BY cellphone1)",
+    "fixed_sql": "SELECT AVG(order_count) \nFROM (\n    SELECT cellphone1, COUNT(order_id) as order_count \n    FROM tb_market_order_address \n    WHERE cellphone1 IS NOT NULL \n    GROUP BY cellphone1\n) AS subquery;",
+    "fixes_applied": [
+      "Applied LLM-based SQL fixes"
+    ],
+    "timestamp": "2025-08-25T00:25:53.949761"
+  },
+  {
+    "kpi_name": "Orders Per Receiver-Cellphone Combination",
+    "table_name": "tb_market_order_address",
+    "original_sql": "SELECT AVG(order_count) FROM (SELECT CONCAT(receiver, '_', cellphone1) as receiver_cellphone, COUNT(order_id) as order_count FROM tb_market_order_address WHERE receiver IS NOT NULL AND cellphone1 IS NOT NULL GROUP BY receiver_cellphone)",
+    "fixed_sql": "SELECT AVG(order_count) \nFROM (\n    SELECT CONCAT(receiver, '_', cellphone1) as receiver_cellphone, COUNT(order_id) as order_count \n    FROM tb_market_order_address \n    WHERE receiver IS NOT NULL AND cellphone1 IS NOT NULL \n    GROUP BY CONCAT(receiver, '_', cellphone1)\n) AS subquery;",
+    "fixes_applied": [
+      "Applied LLM-based SQL fixes"
+    ],
+    "timestamp": "2025-08-25T00:25:58.861166"
+  },
+  {
+    "kpi_name": "Orders Per Receiver-Delivery Name Combination",
+    "table_name": "tb_market_order_address",
+    "original_sql": "SELECT AVG(order_count) FROM (SELECT CONCAT(receiver, '_', delivery_name) as receiver_delivery, COUNT(order_id) as order_count FROM tb_market_order_address WHERE receiver IS NOT NULL AND delivery_name IS NOT NULL GROUP BY receiver_delivery)",
+    "fixed_sql": "SELECT AVG(order_count) \nFROM (\n    SELECT CONCAT(receiver, '_', delivery_name) as receiver_delivery, COUNT(order_id) as order_count \n    FROM tb_market_order_address \n    WHERE receiver IS NOT NULL AND delivery_name IS NOT NULL \n    GROUP BY receiver, delivery_name\n) as subquery;",
+    "fixes_applied": [
+      "Applied LLM-based SQL fixes"
+    ],
+    "timestamp": "2025-08-25T00:26:03.780460"
+  },
+  {
+    "kpi_name": "RFQs with Multiple Files",
+    "table_name": "tb_rfq_file",
+    "original_sql": "SELECT COUNT(*) FROM (SELECT rfq_id FROM tb_rfq_file WHERE rfq_id IS NOT NULL GROUP BY rfq_id HAVING COUNT(*) > 1) AS subquery",
+    "fixed_sql": "SELECT COUNT(rfq_id) \nFROM tb_rfq_file \nWHERE rfq_id IS NOT NULL \nGROUP BY rfq_id \nHAVING COUNT(rfq_id) > 1;",
+    "fixes_applied": [
+      "Applied LLM-based SQL fixes"
+    ],
+    "timestamp": "2025-08-25T00:26:23.132909"
+  },
+  {
+    "kpi_name": "RFQs with Thickness Over Average",
+    "table_name": "tb_rfq_file",
+    "original_sql": "SELECT COUNT(DISTINCT rfq_id) FROM tb_rfq_file WHERE thickness IS NOT NULL AND thickness > (SELECT AVG(thickness) FROM tb_rfq_file WHERE thickness IS NOT NULL)",
+    "fixed_sql": "SELECT COUNT(DISTINCT rfq_id) \nFROM tb_rfq_file \nWHERE thickness IS NOT NULL \nAND thickness > (SELECT AVG(thickness) FROM tb_rfq_file WHERE thickness IS NOT NULL)",
+    "fixes_applied": [
+      "Applied LLM-based SQL fixes"
+    ],
+    "timestamp": "2025-08-25T00:26:28.353763"
+  },
+  {
+    "kpi_name": "Products per Partner",
+    "table_name": "tb_partner_product",
+    "original_sql": "SELECT AVG(product_count) FROM (SELECT partner_id, COUNT(*) as product_count FROM tb_partner_product WHERE partner_id IS NOT NULL GROUP BY partner_id) subquery",
+    "fixed_sql": "SELECT AVG(product_count) \nFROM (\n    SELECT partner_id, COUNT(*) as product_count \n    FROM tb_partner_product \n    WHERE partner_id IS NOT NULL \n    GROUP BY partner_id\n) AS subquery;",
+    "fixes_applied": [
+      "Applied LLM-based SQL fixes"
+    ],
+    "timestamp": "2025-08-25T00:26:38.598181"
+  },
+  {
+    "kpi_name": "Product Diversity per Partner",
+    "table_name": "tb_partner_product",
+    "original_sql": "SELECT AVG(product_count) FROM (SELECT partner_id, COUNT(DISTINCT product) as product_count FROM tb_partner_product WHERE partner_id IS NOT NULL GROUP BY partner_id) subquery",
+    "fixed_sql": "SELECT AVG(product_count) \nFROM (\n    SELECT partner_id, COUNT(DISTINCT product) as product_count \n    FROM tb_partner_product \n    WHERE partner_id IS NOT NULL \n    GROUP BY partner_id\n) AS subquery;",
+    "fixes_applied": [
+      "Applied LLM-based SQL fixes"
+    ],
+    "timestamp": "2025-08-25T00:26:48.232061"
+  },
+  {
+    "kpi_name": "Partner Diversity per Product",
+    "table_name": "tb_partner_product",
+    "original_sql": "SELECT AVG(partner_count) FROM (SELECT product, COUNT(DISTINCT partner_id) as partner_count FROM tb_partner_product WHERE product IS NOT NULL GROUP BY product) subquery",
+    "fixed_sql": "SELECT AVG(partner_count) \nFROM (\n    SELECT product, COUNT(DISTINCT partner_id) as partner_count \n    FROM tb_partner_product \n    WHERE product IS NOT NULL \n    GROUP BY product\n) AS subquery;",
+    "fixes_applied": [
+      "Applied LLM-based SQL fixes"
+    ],
+    "timestamp": "2025-08-25T00:26:50.404020"
+  }
+]
