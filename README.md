@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Metabase KPI Extractor
 
 A Python tool that extracts table metadata from Metabase API and generates useful KPIs using OpenAI's LLM.
@@ -217,3 +218,7 @@ For issues and questions:
 2. Review the test scripts
 3. Check Metabase and OpenAI documentation
 4. Create an issue with detailed error information 
+=======
+# KPI_Creation
+Automated KPI creating using Metabase
+>>>>>>> b1479c8048f2abce619116ba88b5d51af8469ecf
